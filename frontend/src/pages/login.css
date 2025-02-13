@@ -1,0 +1,9 @@
+input {
+
+    all: unset;
+  
+  }
+
+.inputclass{
+    border-bottom:2px solid yellowgreen;
+}

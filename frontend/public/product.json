@@ -1,0 +1,578 @@
+[
+  {
+    "id": 1,
+    "title": "Men's Slim Fit Casual Shirt",
+    "price": 25.99,
+    "description": "Classic slim fit shirt, perfect for casual wear.",
+    "category": "men",
+    "image": "https://n-img0.junaroad.com/uiproducts/21032010/zoom_0-1709314404.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 180
+    }
+  },
+  {
+    "id": 2,
+    "title": "Men's Cotton T-Shirt",
+    "price": 19.99,
+    "description": "Comfortable cotton t-shirt for everyday use.",
+    "category": "men",
+    "image": "https://n-img0.junaroad.com/uiproducts/21624443/zoom_0-1733316053.jpg",
+    "rating": {
+      "rate": 4.0,
+      "count": 220
+    }
+  },
+  {
+    "id": 3,
+    "title": "Men's Linen Shirt",
+    "price": 32.50,
+    "description": "Lightweight linen shirt, ideal for summer.",
+    "category": "men",
+    "image": "https://n-img0.junaroad.com/uiproducts/21717944/zoom_0-1738583459.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 150
+    }
+  },
+  {
+    "id": 4,
+    "title": "Men's Chinos",
+    "price": 39.99,
+    "description": "Stylish and comfortable chinos for any occasion.",
+    "category": "men",
+    "image": "https://redtape.com/cdn/shop/files/RTC0027_1.jpg?v=1738408352",
+    "rating": {
+      "rate": 4.3,
+      "count": 190
+    }
+  },
+  {
+    "id": 5,
+    "title": "Men's Cargo Pants",
+    "price": 44.99,
+    "description": "Durable cargo pants with multiple pockets.",
+    "category": "men",
+    "image": "https://m.media-amazon.com/images/I/81xRg0piFpL._AC_UY1100_.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 160
+    }
+  },
+    {
+    "id": 6,
+    "title": "Men's Dress Pants",
+    "price": 54.99,
+    "description": "Classic dress pants for formal events.",
+    "category": "men",
+    "image": "https://m.media-amazon.com/images/I/616evE3EBIL._AC_UY1100_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 120
+    }
+  },
+  {
+    "id": 7,
+    "title": "Men's Kurta",
+    "price": 49.99,
+    "description": "Traditional kurta for festive occasions.",
+    "category": "men",
+    "image": "https://assets.panashindia.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/0/904mw18-2418_1.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 170
+    }
+  },
+  {
+    "id": 8,
+    "title": "Men's Silk Kurta",
+    "price": 69.99,
+    "description": "Elegant silk kurta for special events.",
+    "category": "men",
+    "image": "https://sojanya.com/cdn/shop/files/V-SJR-LK-SilkPrint-48033-Pblu-2_2048x.jpg?v=1718193179",
+    "rating": {
+      "rate": 4.7,
+      "count": 100
+    }
+  },
+  {
+    "id": 9,
+    "title": "Men's Embroidered Kurta",
+    "price": 59.99,
+    "description": "Intricately embroidered kurta for a rich look.",
+    "category": "men",
+    "image": "https://sanwara.com/cdn/shop/files/1_273dc620-3b44-4e2e-b134-1af8a96d5591.jpg?v=1738145311",
+    "rating": {
+      "rate": 4.5,
+      "count": 140
+    }
+  },
+  {
+    "id": 10,
+    "title": "Men's Jeans",
+    "price": 49.99,
+    "description": "Classic denim jeans for a timeless style.",
+    "category": "men",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJS3OgBMDZnfSn9LX5PlxSgI_vw6s51RH0Fw&s",
+    "rating": {
+      "rate": 4.3,
+      "count": 200
+    }
+  },
+  {
+    "id": 11,
+    "title": "Women's Blouse",
+    "price": 29.99,
+    "description": "Stylish blouse for any occasion.",
+    "category": "women",
+    "image": "https://www.taneira.com/dw/image/v2/BKMH_PRD/on/demandware.static/-/Sites-Taneira-product-catalog/default/dwe958a806/images/Taneira/Catalog/BLAJ44XR_1.jpg?sw=480&sh=728",
+    "rating": {
+      "rate": 4.2,
+      "count": 180
+    }
+  },
+  {
+    "id": 12,
+    "title": "Women's Crop Top",
+    "price": 19.99,
+    "description": "Trendy crop top for a modern look.",
+    "category": "women",
+    "image": "https://assets.ajio.com/medias/sys_master/root/20240612/wusL/6669b50a05ac7d77bb0e71f1/-473Wx593H-462910552-black-MODEL2.jpg",
+    "rating": {
+      "rate": 4.0,
+      "count": 220
+    }
+  },
+  {
+    "id": 13,
+    "title": "Women's Formal Top",
+    "price": 34.99,
+    "description": "Elegant formal top for special events.",
+    "category": "women",
+    "image": "https://imagescdn.vanheusenindia.com/img/app/product/3/39703883-14708658.jpg?auto=format&w=390",
+    "rating": {
+      "rate": 4.5,
+      "count": 150
+    }
+  },
+  {
+    "id": 14,
+    "title": "Women's Silk Saree",
+    "price": 79.99,
+    "description": "Beautiful silk saree for traditional occasions.",
+    "category": "women",
+    "image": "https://static3.azafashions.com/tr:w-450/uploads/product_gallery/1658028-0534682001659701578.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 120
+    }
+  },
+  {
+    "id": 15,
+    "title": "Women's Cotton Saree",
+    "price": 59.99,
+    "description": "Comfortable cotton saree for everyday wear.",
+    "category": "women",
+    "image": "https://royskart.com/cdn/shop/products/57_e99f93a3-96fe-45df-b50e-b6367c0bb902.jpg?v=1683877286",
+    "rating": {
+      "rate": 4.3,
+      "count": 190
+    }
+  },
+  {
+    "id": 16,
+    "title": "Women's Georgette Saree",
+    "price": 69.99,
+    "description": "Lightweight georgette saree for a graceful look.",
+    "category": "women",
+    "image": "https://images.cbazaar.com/images/embroidered-cord-work-teal-georgette-saree-with-blouse-for-women-sasacy6730-u.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 190
+    }
+  },
+    {
+      "id": 17,
+      "title": "Women's Churidar Set",
+      "price": 64.99,
+      "description": "Elegant churidar set for a traditional look.",
+      "category": "women",
+      "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/JULY/30/PLWAYMxM_bc4bd48f7f67404e81b6e125ef1fd677.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 170
+      }
+    },
+    {
+      "id": 18,
+      "title": "Women's Embroidered Churidar",
+      "price": 74.99,
+      "description": "Beautifully embroidered churidar for special occasions.",
+      "category": "women",
+      "image": "https://cdn.sareeka.com/image/cache/data2024/purple-georgette-salwar-suit-with-embroidered-and-thread-work-for-women-283341-1000x1375.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 100
+      }
+    },
+    {
+      "id": 19,
+      "title": "Women's Printed Churidar",
+      "price": 54.99,
+      "description": "Stylish printed churidar for casual wear.",
+      "category": "women",
+      "image": "https://img.faballey.com/images/Product/ILK00361Z/3.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 140
+      }
+    },
+    {
+      "id": 20,
+      "title": "Women's Handbag",
+      "price": 49.99,
+      "description": "Trendy handbag for everyday use.",
+      "category": "women",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/hand-messenger-bag/i/e/k/waqar-bag-waqar-bag-handbag-hercraft-original-imagnyafqyjdpc6g.jpeg?q=90&crop=false",
+      "rating": {
+        "rate": 4.3,
+        "count": 200
+      }
+    },
+    {
+      "id": 21,
+      "title": "Kids Cotton Shirt",
+      "price": 14.99,
+      "description": "Comfortable cotton shirt for kids.",
+      "category": "kids",
+      "image": "https://www.ratanjaipur.com/cdn/shop/files/1_1_c1239015-7e2f-4d5a-b8be-cac251277395.jpg?v=1737689294&width=1500",
+      "rating": {
+        "rate": 4.2,
+        "count": 180
+      }
+    },
+    {
+      "id": 22,
+      "title": "Kids Graphic Tee",
+      "price": 12.99,
+      "description": "Fun graphic tee for kids.",
+      "category": "kids",
+      "image": "https://thetribekids.com/cdn/shop/files/neel-boys-relaxed-spread-collar-checked-cotton-casual-shirt-white-534428_460x@2x.jpg?v=1735211583",
+      "rating": {
+        "rate": 4.0,
+        "count": 220
+      }
+    },
+    {
+      "id": 23,
+      "title": "Kids Formal Shirt",
+      "price": 19.99,
+      "description": "Smart formal shirt for kids.",
+      "category": "kids",
+      "image": "https://images.meesho.com/images/products/422905233/dam5m_512.webp",
+      "rating": {
+        "rate": 4.5,
+        "count": 150
+      }
+    },
+    {
+      "id": 24,
+      "title": "Kids Cotton Pants",
+      "price": 17.99,
+      "description": "Comfortable cotton pants for kids.",
+      "category": "kids",
+      "image": "https://assets0.mirraw.com/images/11110674/1_luxe_webp.webp?1709151044",
+      "rating": {
+        "rate": 4.3,
+        "count": 190
+      }
+    },
+    {
+      "id": 25,
+      "title": "Kids Cargo Pants",
+      "price": 22.99,
+      "description": "Durable cargo pants for kids.",
+      "category": "kids",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20240814/ZB3R/66bc85921d763220fa7a05fb/-473Wx593H-700283150-khaki-MODEL.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 160
+      }
+    },
+    {
+      "id": 26,
+      "title": "Kids Dress Pants",
+      "price": 24.99,
+      "description": "Stylish dress pants for kids.",
+      "category": "kids",
+      "image": "https://media.kohlsimg.com/is/image/kohls/3770255_ALT62?wid=400&hei=400&op_sharpen=1",
+      "rating": {
+        "rate": 4.6,
+        "count": 120
+      }
+    },
+    {
+      "id": 27,
+      "title": "Kids Building Blocks",
+      "price": 29.99,
+      "description": "Fun building blocks for kids.",
+      "category": "kids",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlLq3_ry0EO8qLdTaLxdzTN5fqmvbgdeIezg&s",
+      "rating": {
+        "rate": 4.4,
+        "count": 170
+      }
+    },
+    {
+      "id": 28,
+      "title": "Kids Plush Toy",
+      "price": 19.99,
+      "description": "Soft plush toy for kids.",
+      "category": "kids",
+      "image": "https://storio.in/cdn/shop/files/41Guk9aQzxL.jpg?v=1716550469",
+      "rating": {
+        "rate": 4.7,
+        "count": 100
+      }
+    },
+    {
+      "id": 29,
+      "title": "Kids Educational Toy",
+      "price": 34.99,
+      "description": "Engaging educational toy for kids.",
+      "category": "kids",
+      "image": "https://www.jiomart.com/images/product/original/rvbke820ci/whinsy-kids-learning-educational-toys-for-2-year-old-product-images-orvbke820ci-p605686019-0-202310212034.png?im=Resize=(1000,1000)",
+      "rating": {
+        "rate": 4.5,
+        "count": 140
+      }
+    },
+    {
+      "id": 30,
+      "title": "Kids Baseball Cap",
+      "price": 9.99,
+      "description": "Stylish baseball cap for kids.",
+      "category": "kids",
+      "image": "https://d1ejm5im4bv2vf.cloudfront.net/pub/media/mf_webp/jpg/media/catalog/product/cache/718154c3aff62b1ad64160986aa81112/r/e/red-cap-side.webp",
+      "rating": {
+        "rate": 4.3,
+        "count": 200
+      }
+    },
+    {
+      "id": 31,
+      "title": "Women's Heels",
+      "price": 59.99,
+      "description": "Elegant heels for women.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 180
+      }
+    },
+    {
+      "id": 32,
+      "title": "Women's Sandals",
+      "price": 39.99,
+      "description": "Comfortable sandals for women.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.0,
+        "count": 220
+      }
+    },
+    {
+      "id": 33,
+      "title": "Women's Flats",
+      "price": 44.99,
+      "description": "Stylish flats for women.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 150
+      }
+    },
+    {
+      "id": 34,
+      "title": "Women's Boots",
+      "price": 79.99,
+      "description": "Trendy boots for women.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 190
+      }
+    },
+    {
+      "id": 35,
+      "title": "Men's Sneakers",
+      "price": 69.99,
+      "description": "Casual sneakers for men.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 160
+      }
+    },
+    {
+      "id": 36,
+      "title": "Men's Formal Shoes",
+      "price": 89.99,
+      "description": "Classic formal shoes for men.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 120
+      }
+    },
+    {
+      "id": 37,
+      "title": "Men's Boots",
+      "price": 99.99,
+      "description": "Durable boots for men.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 170
+      }
+    },
+    {
+      "id": 38,
+      "title": "Kids Sneakers",
+      "price": 39.99,
+      "description": "Comfortable sneakers for kids.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 100
+      }
+    },
+    {
+      "id": 39,
+      "title": "Kids Sandals",
+      "price": 29.99,
+      "description": "Casual sandals for kids.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 140
+      }
+    },
+    {
+      "id": 40,
+      "title": "Kids Boots",
+      "price": 49.99,
+      "description": "Warm boots for kids.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 200
+      }
+    },
+    {
+      "id": 41,
+      "title": "Wrist Watch",
+      "price": 79.99,
+      "description": "Stylish wrist watch for men and women.",
+      "category": "accessories",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 180
+      }
+    },
+    {
+      "id": 42,
+      "title": "Sunglasses",
+      "price": 29.99,
+      "description": "Trendy sunglasses for men and women.",
+      "category": "accessories",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.0,
+        "count": 220
+      }
+    },
+    {
+      "id": 43,
+      "title": "Wallet",
+      "price": 34.99,
+      "description": "Leather wallet for men.",
+      "category": "accessories",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 150
+      }
+    },
+    {
+      "id": 44,
+      "title": "Belt",
+      "price": 24.99,
+      "description": "Stylish belt for men and women.",
+      "category": "accessories",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 190
+      }
+    },
+    {
+      "id": 45,
+      "title": "Scarf",
+      "price": 19.99,
+      "description": "Warm scarf for men and women.",
+      "category": "accessories",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 160
+      }
+    },
+    {
+      "id": 46,
+      "title": "Hat",
+      "price": 14.99,
+      "description": "Trendy hat for men and women.",
+      "category": "accessories",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 120
+      }
+    },
+    {
+      "id": 47,
+      "title": "Gloves",
+      "price": 19.99,
+      "description": "Warm gloves for men and women.",
+      "category": "accessories",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 170
+      }
+    },
+    {
+      "id": 48,
+      "title": "Jewelry Set",
+      "price": 59.99,
+      "description": "Elegant jewelry set for women.",
+      "category": "accessories",
+      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 100
+      }
+    }
+]
