@@ -11,16 +11,20 @@ import Productitem from '../component/Productitem';
 function Homedata(){
   let [data,setData] = useState([])
   useEffect(() =>{
-    fetch("/product.json")
+    fetch("/seller.json")
       .then(response => response.json())
       .then(productdata => setData(productdata))
   },[])
 
   return (
     <>
-        <div>{
-          data.map((product) => <Productitem key={product.id} product={product}/>)
-        }</div>
+        <div className='container mt-5'>
+          <div className='row'>
+          { 
+            data.map((product) => <Productitem key={product.id} product={product}/>)
+          }
+          </div>
+        </div>
     </>
   )
 }

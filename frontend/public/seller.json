@@ -1,0 +1,56 @@
+[
+    {
+        "id" : 1,
+        "title" : "INSPO I HARSH VARRDHAN KAPOOR",
+        "likes"  : 24,
+        "image" : "https://n-img3.junaroad.com/stories/story_p_6762beb063d80c684669ba40-1734526289.jpeg",
+        "prodile_image" : "https://n-img3.junaroad.com/stories/story_p_6762beb063d80c684669ba40-1734526289.jpeg",
+        "seller_name" : "Trend Experts",
+        "followers" : "34k"
+    },
+    {
+        "id" : 2,
+        "title" : "NEW IN",
+        "likes"  : 39,
+        "image" : "https://n-img3.junaroad.com/stories/story_p_67595a1049023569c477abc9-1734426885.jpeg",
+        "prodile_image" : "https://n-img3.junaroad.com/stories/story_p_67595a1049023569c477abc9-1734426885.jpeg",
+        "seller_name" : "Trend Experts",
+        "followers" : "16k"
+    },
+    {
+        "id" : 3,
+        "title" : "The #UrbanAdeventurer",
+        "likes"  : 46,
+        "image" : "https://n-img0.junaroad.com/stories/story_p_674d804f309028317a1bae08-1733259960.jpeg",
+        "prodile_image" : "https://n-img3.junaroad.com/stories/story_p_67595a1049023569c477abc9-1734426885.jpeg",
+        "seller_name" : "Trend Experts",
+        "followers" : "34k"
+    },
+    {
+        "id" : 4,
+        "title" : "TREND ALERT!",
+        "likes"  : 47,
+        "image" : "https://n-img1.junaroad.com/stories/story_p_674d887d49023578ebc4358e-1738155022.jpeg",
+        "prodile_image" : "https://n-img1.junaroad.com/stories/story_p_674d887d49023578ebc4358e-1738155022.jpeg",
+        "seller_name" : "Trend Experts",
+        "followers" : "34k"
+    },
+    {
+        "id" : 5,
+        "title" : "GET HIS LOOKS",
+        "likes"  : 15,
+        "image" : "https://n-img4.junaroad.com/stories/story_p_6746eadf4e6b0d2c5f3c9148-1739169620.jpeg",
+        "prodile_image" : "https://n-img4.junaroad.com/stories/story_p_6746eadf4e6b0d2c5f3c9148-1739169620.jpeg",
+        "seller_name" : "Trend Experts",
+        "followers" : "34k"
+    },
+    {
+        "id" : 6,
+        "title" : "POOKIE SPOTTED",
+        "likes"  : 31,
+        "image" : "https://n-img3.junaroad.com/stories/story_p_6746e93e63d80c026545bd6c-1733259835.jpeg",
+        "prodile_image" : "https://n-img3.junaroad.com/stories/story_p_67595a1049023569c477abc9-1734426885.jpeg",
+        "seller_name" : "Trend Experts",
+        "followers" : "34k"
+    }
+]
