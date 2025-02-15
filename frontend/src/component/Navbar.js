@@ -57,7 +57,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav d-flex">
                     <li className="nav-item dropdown">
-                        <Link className="nav-link" to="/women">WOMEN</Link>
+                        <Link className="nav-link" to="/women-clothing">WOMEN</Link>
                         <ul className="dropdown-menu fixed-dropdown">
                             <div>
                                 <p className='major-category'>Casual Wear</p>
@@ -79,7 +79,7 @@ function Navbar() {
                     </li>
 
                     <li className="nav-item dropdown">
-                        <Link className="nav-link" to="/men">MEN</Link>
+                        <Link className="nav-link" to="/men-clothing">MEN</Link>
                         <ul className="dropdown-menu fixed-dropdown">
                             <div>
                                 <p className='major-category'>Regular</p>
@@ -92,7 +92,7 @@ function Navbar() {
                     </li>
 
                     <li className="nav-item dropdown">
-                        <Link className="nav-link" to="/kids">KIDS</Link>
+                        <Link className="nav-link" to="/kids-clothing">KIDS</Link>
                         <ul className="dropdown-menu fixed-dropdown">
                             <div>
                                 <p className='major-category'>Regular wear</p>

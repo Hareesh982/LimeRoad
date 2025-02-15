@@ -1,0 +1,2468 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18178878/zoom_0-1639821727.jpg"
+        ],
+        "brand_image":"https://n-img3.junaroad.com/stories/story_p_6762beb063d80c684669ba40-1734526289.jpeg",
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Canary London",
+        "price": 799,
+        "before_disc": 1599,
+        "offer_percent": 50,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 2,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18620559/zoom_0-1667391317.jpg"
+        ],
+        "brand_image":"https://n-img3.junaroad.com/stories/story_p_67595a1049023569c477abc9-1734426885.jpeg",
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "V Mart",
+        "price": 549,
+        "before_disc": 600,
+        "offer_percent": 9,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 3,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18620672/zoom_0-1667391315.jpg"
+        ],
+        "brand_image":"https://n-img1.junaroad.com/stories/story_p_674d887d49023578ebc4358e-1738155022.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "V Mart",
+        "price": 549,
+        "before_disc": 600,
+        "offer_percent": 9,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 4,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18423372/zoom_0-1657118970.jpg"
+        ],
+        "brand_image":"https://n-img3.junaroad.com/stories/story_p_674d804f309028317a1bae08-1733259960.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Deshbandhu Khadi",
+        "price": 949,
+        "before_disc": 2040,
+        "offer_percent": 53,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 5,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18845976/zoom_0-1670858182.jpg"
+        ],
+        "brand_image":"https://n-img1.junaroad.com/stories/story_p_6746eadf4e6b0d2c5f3c9148-1739169620.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "V Mart",
+        "price": 449,
+        "before_disc": 475,
+        "offer_percent": 5,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 6,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18423254/zoom_0-1657107788.jpg"
+        ],
+        "brand_image":"https://n-img4.junaroad.com/stories/story_p_67500b9e4e6b0d54a50168de-1738685629.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Deshbandhu Khadi",
+        "price": 949,
+        "before_disc": 2040,
+        "offer_percent": 53,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 7,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/19102186/zoom_0-1672416708.jpg"
+        ],
+        "brand_image":"https://n-img3.junaroad.com/stories/story_p_678f367d209967094478f672-1737449591.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Canary London",
+        "price": 1899,
+        "before_disc": 2599,
+        "offer_percent": 27,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 8,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18615495/zoom_0-1666451230.jpg"
+        ],
+        "brand_image":"https://n-img3.junaroad.com/stories/story_p_678f367d209967094478f672-1737449591.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "V Mart",
+        "price": 649,
+        "before_disc": 750,
+        "offer_percent": 13,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 9,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/19131602/zoom_0-1673333755.jpg"
+        ],
+        "brand_image":"https://n-img0.junaroad.com/stories/story_p_6787775410766509c80baaf2-1738159086.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Ad By Arvind",
+        "price": 1599,
+        "before_disc": 2699,
+        "offer_percent": 41,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 10,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/19102186/zoom_0-1672416708.jpg"
+        ],
+        "brand_image":"https://n-img1.junaroad.com/stories/story_p_6785fa2cc8c9329f61c6828e-1736837434.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Canary London",
+        "price": 1899,
+        "before_disc": 2599,
+        "offer_percent": 27,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 11,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18982100/zoom_0-1672406737.jpg"
+        ],
+        "brand_image":"https://n-img1.junaroad.com/stories/story_p_678f3c0fc8c932ec03c1dee6-1738156990.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Asciiblues",
+        "price": 699,
+        "before_disc": 1499,
+        "offer_percent": 53,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 12,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18982118/zoom_0-1672406737.jpg"
+        ],
+        "brand_image":"https://n-img4.junaroad.com/stories/story_p_677b565f490235656e420b3a-1738162042.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Asciiblues",
+        "price": 649,
+        "before_disc": 1299,
+        "offer_percent": 50,
+        "category": {
+          "gender": "Men",
+          "type": "Formal Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 13,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18879115/zoom_0-1671203350.jpg"
+        ],
+        "brand_image":"https://n-img1.junaroad.com/stories/story_p_67613ceb4e6b0d36fa722585-1734431321.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Allen Kniel",
+        "price": 299,
+        "before_disc": 699,
+        "offer_percent": 57,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 14,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18940370/zoom_0-1671704186.jpg"
+        ],
+        "brand_image":"https://n-img0.junaroad.com/stories/story_p_6787775410766509c80baaf2-1738159086.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Fashion Fricks",
+        "price": 399,
+        "before_disc": 599,
+        "offer_percent": 33,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 15,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18940370/zoom_0-1671704186.jpg"
+        ],
+        "brand_image":"https://n-img0.junaroad.com/stories/story_p_67975a8a429fe29cb8737af8-1738399095.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Fashion Fricks",
+        "price": 399,
+        "before_disc": 599,
+        "offer_percent": 33,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 16,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18906307/zoom_0-1671443549.jpg"
+        ],
+        "brand_image":"https://n-img0.junaroad.com/stories/story_p_6787775410766509c80baaf2-1738159086.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Recast",
+        "price": 449,
+        "before_disc": 1199,
+        "offer_percent": 63,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 17,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18879110/zoom_0-1671203351.jpg"
+        ],
+        "brand_image":"https://n-img4.junaroad.com/stories/story_p_6798ab40c8c932ec03cb3bab-1738937287.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Allen Kniel",
+        "price": 299,
+        "before_disc": 799,
+        "offer_percent": 63,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 18,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/19111579/zoom_0-1672591922.jpg"
+        ],
+        "brand_image":"https://n-img4.junaroad.com/stories/story_p_67a4961f7c7328328b9396f7-1739428995.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Copperline",
+        "price": 1049,
+        "before_disc": 2599,
+        "offer_percent": 60,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 19,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/19155754/zoom_0-1673431944.jpg"
+        ],
+        "brand_image":"https://n-img3.junaroad.com/stories/story_p_67ac95b0107665c37e5aa95e-1739365386.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Mountain Colours",
+        "price": 449,
+        "before_disc": 1499,
+        "offer_percent": 70,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 20,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "brand_image":"https://n-img4.junaroad.com/stories/story_p_67a5d7b420996709448ee720-1739365502.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 21,
+        "image": [
+          "https://n-img0.junaroad.com/uiproducts/21578286/zoom_0-1728977685.jpg"
+        ],
+        "brand_image":"https://n-img1.junaroad.com/stories/story_p_6762b5cb49023565b00ab670-1735569242.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 22,
+        "image": [
+              "https://n-img1.junaroad.com/uiproducts/21578273/zoom_1-1728977686.jpg"       
+         ],
+        "brand_image":"https://n-img1.junaroad.com/stories/story_p_6768e6b6bec3da78b8618661-1734947069.jpeg",
+
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 23,
+        "image": [
+            "https://n-img0.junaroad.com/uiproducts/19112570/zoom_0-1672634572.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 24,
+        "image": [
+          "https://n-img1.junaroad.com/uiproducts/21498297/pri_175_p-1724342007.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 25,
+        "image": [
+          "https://n-img0.junaroad.com/uiproducts/21498232/pri_175_p-1724342005.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 26,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 27,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 28,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 29,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 30,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 31,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 32,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 33,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 34,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 35,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 36,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 37,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 38,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 39,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 40,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 41,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 42,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 43,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 44,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 45,
+        "image": [
+          "https://img3.junaroad.com/uiproducts/18313808/zoom_0-1648541975.jpg"
+        ],
+        "title": "Logo Print Round-Neck Sweatshirt",
+        "brand": "Classic Polo",
+        "price": 1149,
+        "before_disc": 1399,
+        "offer_percent": 18,
+        "category": {
+          "gender": "Men",
+          "type": "T-Shirts",
+          "model": "Western Wear"
+        },
+        "size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL",
+          "XXXL"
+        ],
+        "Quantity": 1
+      },
+      {
+        "id": 46,
+        "image": ["https://images.unsplash.com/photo-1559334417-a57bd929f003?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hpcnQlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D"],
+        "title": "Floral Print Casual Shirt",
+        "brand": "Zara",
+        "price": 899,
+        "before_disc": 1499,
+        "offer_percent": 40,
+        "category": {
+          "gender": "Women",
+          "type": "Shirts",
+          "model": "Casual Wear"
+        },
+        "size": ["S", "M", "L", "XL"],
+        "Quantity": 1
+      },
+      {
+        "id": 47,
+        "image": ["https://img.freepik.com/free-photo/young-girl-model-standing-white-gray-wall_144627-63049.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+        "title": "Floral Print Casual Shirt",
+        "brand": "Zara",
+        "price": 899,
+        "before_disc": 1499,
+        "offer_percent": 40,
+        "category": {
+          "gender": "Women",
+          "type": "Shirts",
+          "model": "Casual Wear"
+        },
+        "size": ["S", "M", "L", "XL"],
+        "Quantity": 1
+      },{
+        "id": 48,
+        "image": ["https://img.freepik.com/free-photo/young-beautiful-female-posing-with-hands-waist-shirt-looking-charming_176474-113440.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+        "title": "Floral Print Casual Shirt",
+        "brand": "Zara",
+        "price": 899,
+        "before_disc": 1499,
+        "offer_percent": 40,
+        "category": {
+          "gender": "Women",
+          "type": "Shirts",
+          "model": "Casual Wear"
+        },
+        "size": ["S", "M", "L", "XL"],
+        "Quantity": 1
+      },{
+        "id": 49,
+        "image": ["https://img.freepik.com/free-photo/beautiful-young-lady-holding-hand-head-green-shirt-looking-confident-front-view_176474-66284.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+        "title": "Floral Print Casual Shirt",
+        "brand": "Zara",
+        "price": 899,
+        "before_disc": 1499,
+        "offer_percent": 40,
+        "category": {
+          "gender": "Women",
+          "type": "Shirts",
+          "model": "Casual Wear"
+        },
+        "size": ["S", "M", "L", "XL"],
+        "Quantity": 1
+      },{
+        "id": 50,
+        "image": ["https://img.freepik.com/premium-photo/happy-young-adult-indian-woman-standing-against-grey-background_203461-408.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+        "title": "Floral Print Casual Shirt",
+        "brand": "Zara",
+        "price": 899,
+        "before_disc": 1499,
+        "offer_percent": 40,
+        "category": {
+          "gender": "Women",
+          "type": "Shirts",
+          "model": "Casual Wear"
+        },
+        "size": ["S", "M", "L", "XL"],
+        "Quantity": 1
+      },{
+        "id": 51,
+        "image": ["https://img.freepik.com/free-photo/brunette-woman-with-shirt-posing_144627-19046.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid="],
+        "title": "Floral Print Casual Shirt",
+        "brand": "Zara",
+        "price": 899,
+        "before_disc": 1499,
+        "offer_percent": 40,
+        "category": {
+          "gender": "Women",
+          "type": "Shirts",
+          "model": "Casual Wear"
+        },
+        "size": ["S", "M", "L", "XL"],
+        "Quantity": 1
+      },{
+        "id": 52,
+        "image": ["https://img.freepik.com/free-photo/cute-young-female-holding-hands-waist-shirt-looking-cheerful-front-view_176474-91202.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+        "brand": "Zara",
+        "price": 899,
+        "before_disc": 1499,
+        "offer_percent": 40,
+        "category": {
+          "gender": "Women",
+          "type": "Shirts",
+          "model": "Casual Wear"
+        },
+        "size": ["S", "M", "L", "XL"],
+        "Quantity": 1
+      },{
+      "id": 53,
+      "image": ["https://img.freepik.com/premium-photo/photo-unhappy-woman-copy-space_198067-44765.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+      "title": "Floral Print Casual Shirt",
+      "brand": "Zara",
+      "price": 899,
+      "before_disc": 1499,
+      "offer_percent": 40,
+      "category": {
+        "gender": "Women",
+        "type": "Shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 54,
+      "image": ["https://img.freepik.com/premium-photo/portrait-beautiful-young-smiling-girl-posing-white-background_136354-4468.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+      "title": "Floral Print Casual Shirt",
+      "brand": "Zara",
+      "price": 899,
+      "before_disc": 1499,
+      "offer_percent": 40,
+      "category": {
+        "gender": "Women",
+        "type": "Shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 55,
+      "image": ["https://img.freepik.com/premium-photo/stylish-beautiful-woman-denim-shirt-set-standing-near-wall-street-style-fashion-total-denim_624677-213.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+      "title": "Floral Print Casual Shirt",
+      "brand": "Zara",
+      "price": 899,
+      "before_disc": 1499,
+      "offer_percent": 40,
+      "category": {
+        "gender": "Women",
+        "type": "Shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 56,
+      "image": ["https://img.freepik.com/premium-photo/cute-girl-casual-outfit_872233-797.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+      "title": "Floral Print Casual Shirt",
+      "brand": "Zara",
+      "price": 899,
+      "before_disc": 1499,
+      "offer_percent": 40,
+      "category": {
+        "gender": "Women",
+        "type": "Shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 57,
+      "image": ["https://img.freepik.com/free-photo/beautiful-smiling-brunette-girl-pointing-fingers-your-logo-showing-something-center_1258-18999.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },
+    {
+      "id": 58,
+      "image": ["https://img.freepik.com/free-photo/smiling-joyfull-female-with-dark-hair_176532-7948.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 59,
+      "image": ["https://img.freepik.com/premium-photo/mexican-woman-posing-girl-power-self-love-empowerment_79390-792.jpg?ga=GA1.1.1989407673.1735671157&semt=ais_hybrid"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 60,
+      "image": ["https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW4lMjB0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 61,
+      "image": ["https://images.unsplash.com/photo-1610142991820-e02266a4a9f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29tYW4lMjB0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 62,
+      "image": ["https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdvbWFuJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 63,
+      "image": ["https://images.unsplash.com/photo-1591838497997-e0f38428c5c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 64,
+      "image": ["https://images.unsplash.com/photo-1618251824294-1f69e3516d4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHdvbWFuJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 65,
+      "image": ["https://images.unsplash.com/photo-1519382354314-4ed4af9611ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHdvbWFuJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 66,
+      "image": ["https://images.unsplash.com/photo-1513902501146-e2c7436cfe65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHdvbWFuJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },{
+      "id": 67,
+      "image": ["https://images.unsplash.com/photo-1567181389506-b829bbc668c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHdvbWFuJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww"],
+      "title": "Graphic Print T-shirt",
+      "brand": "Forever 21",
+      "price": 699,
+      "before_disc": 999,
+      "offer_percent": 30,
+      "category": {
+        "gender": "Women",
+        "type": "T-shirts",
+        "model": "Casual Wear"
+      },
+      "size": ["XS", "S", "M", "L"],
+      "Quantity": 1
+    },
+    {
+      "id": 68,
+      "image": ["https://assets0.mirraw.com/images/12952562/image_long_webp.webp?1732183849"],
+      "title": "Straight Fit Printed Kurta",
+      "brand": "FabIndia",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 69,
+      "image": ["https://assets0.mirraw.com/images/13032169/image_long_webp.webp?1736779605"],
+      "title": "Straight Fit Printed Kurta",
+      "brand": "Zara",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 70,
+      "image": ["https://assets0.mirraw.com/images/12123410/image_long_webp.webp?1708430799"],
+      "title": "Straight Fit Printed Kurta",
+      "brand": "FabIndia",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 71,
+      "image": ["https://assets0.mirraw.com/images/12974926/MV-606_(3)_long_webp.webp?1733830319"],
+      "title": "Straight Fit Printed Kurta",
+      "brand": "FabIndia",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 72,
+      "image": ["https://assets0.mirraw.com/images/12962248/image_long_webp.webp?1732803471"],
+      "title": "Straight Fit Printed Kurta",
+      "brand": "FabIndia",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 73,
+      "image": ["https://assets0.mirraw.com/images/12111688/1_long_webp.webp?1702383546"],
+      "title": "Anarkali Cotton Kurta",
+      "brand": "Biba",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 74,
+      "image": ["https://assets0.mirraw.com/images/12569441/image_long_webp.webp?1718704861"],
+      "title": "Anarkali Cotton Kurta",
+      "brand": "Biba",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 75,
+      "image": ["https://assets0.mirraw.com/images/13079133/image_long_webp.webp?1738928151"],
+      "title": "Anarkali Cotton Kurta",
+      "brand": "Biba",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 76,
+      "image": ["https://assets0.mirraw.com/images/12942684/image_long_webp.webp?1731492622"],
+      "title": "Anarkali Cotton Kurta",
+      "brand": "Biba",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 77,
+      "image": ["https://assets0.mirraw.com/images/13024485/556_Mustard_(1)_long_webp.webp?1736242680"],
+      "title": "Anarkali Cotton Kurta",
+      "brand": "FabIndia",
+      "price": 1899,
+      "before_disc": 2499,
+      "offer_percent": 24,
+      "category": {
+        "gender": "Women",
+        "type": "Kurtas",
+        "model": "Ethnic Wear"
+      },
+      "size": ["XS", "S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 78,
+      "image": ["https://assets0.mirraw.com/images/13079253/image_long_webp.webp?1738929292"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 79,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 80,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 81,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 82,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 83,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 84,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 85,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 86,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 87,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 88,
+      "image": ["https://img3.junaroad.com/uiproducts/18456743/zoom_0-1667396789.jpg"],
+      "title": "Peplum Top",
+      "brand": "Only",
+      "price": 1199,
+      "before_disc": 1799,
+      "offer_percent": 33,
+      "category": {
+        "gender": "Women",
+        "type": "Tops",
+        "model": "Party Wear"
+      },
+      "size": ["S", "M", "L", "XL"],
+      "Quantity": 1
+    },
+    {
+      "id": 89,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 90,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 91,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 92,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 93,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 94,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 95,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 96,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 97,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 98,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 99,
+      "image": ["https://img3.junaroad.com/uiproducts/18567890/zoom_0-1667394567.jpg"],
+      "title": "Cotton Handloom Saree",
+      "brand": "Handloom Weavers",
+      "price": 2999,
+      "before_disc": 3499,
+      "offer_percent": 14,
+      "category": {
+        "gender": "Women",
+        "type": "Sarees",
+        "model": "Traditional Wear"
+      },
+      "size": ["Free Size"],
+      "Quantity": 1
+    },
+    {
+      "id": 1,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18178878/zoom_0-1639821727.jpg"
+      ],
+      "title": "Elegant Handcrafted Tote Bag",
+      "brand": "Urban Chic",
+      "price": 899,
+      "before_disc": 1299,
+      "offer_percent": 31,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 2,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18620559/zoom_0-1667391317.jpg"
+      ],
+      "title": "Stylish Leather Sling Bag",
+      "brand": "Femme Luxe",
+      "price": 1299,
+      "before_disc": 1799,
+      "offer_percent": 28,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 3,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/19123201/zoom_0-1656820913.jpg"
+      ],
+      "title": "Casual Canvas Backpack",
+      "brand": "TravelStyle",
+      "price": 749,
+      "before_disc": 999,
+      "offer_percent": 25,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 4,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/19234567/zoom_0-1649308765.jpg"
+      ],
+      "title": "Classic Leather Wallet",
+      "brand": "Elegance",
+      "price": 599,
+      "before_disc": 799,
+      "offer_percent": 25,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 5,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18321245/zoom_0-1637453912.jpg"
+      ],
+      "title": "Luxury Clutch Purse",
+      "brand": "PartySpark",
+      "price": 1599,
+      "before_disc": 2099,
+      "offer_percent": 24,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 6,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18294560/zoom_0-1637381209.jpg"
+      ],
+      "title": "Printed Tote Bag",
+      "brand": "Everyday Style",
+      "price": 499,
+      "before_disc": 699,
+      "offer_percent": 29,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 7,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18563721/zoom_0-1636219383.jpg"
+      ],
+      "title": "Minimalist Crossbody Bag",
+      "brand": "CasualEdge",
+      "price": 799,
+      "before_disc": 1099,
+      "offer_percent": 27,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 8,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18749123/zoom_0-1668392939.jpg"
+      ],
+      "title": "Color Block Shoulder Bag",
+      "brand": "TrendyVibe",
+      "price": 1399,
+      "before_disc": 1999,
+      "offer_percent": 30,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 9,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18432971/zoom_0-1665283921.jpg"
+      ],
+      "title": "Bold Pattern Laptop Bag",
+      "brand": "OfficePro",
+      "price": 1699,
+      "before_disc": 2299,
+      "offer_percent": 26,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 10,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18876354/zoom_0-1670301920.jpg"
+      ],
+      "title": "Premium Travel Duffel Bag",
+      "brand": "Explorer",
+      "price": 2199,
+      "before_disc": 2999,
+      "offer_percent": 27,
+      "category": {
+          "gender": "Women",
+          "type": "Bags",
+          "model": "Accessories"
+      },
+      "size": [
+          "One Size"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 11,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18123233/zoom_0-1660891278.jpg"
+      ],
+      "title": "Embellished Stiletto Heels",
+      "brand": "GlamWalk",
+      "price": 1299,
+      "before_disc": 1799,
+      "offer_percent": 28,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 12,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18345298/zoom_0-1657287654.jpg"
+      ],
+      "title": "Casual Slip-On Sneakers",
+      "brand": "UrbanRun",
+      "price": 999,
+      "before_disc": 1399,
+      "offer_percent": 29,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 13,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18509212/zoom_0-1670283924.jpg"
+      ],
+      "title": "Classic Ballet Flats",
+      "brand": "SimpleSteps",
+      "price": 799,
+      "before_disc": 1099,
+      "offer_percent": 27,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 14,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18467213/zoom_0-1654981739.jpg"
+      ],
+      "title": "Party Block Heels",
+      "brand": "DanceDivas",
+      "price": 1499,
+      "before_disc": 2099,
+      "offer_percent": 29,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 15,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18623843/zoom_0-1641982918.jpg"
+      ],
+      "title": "Comfortable Walking Shoes",
+      "brand": "ActiveFeet",
+      "price": 1199,
+      "before_disc": 1699,
+      "offer_percent": 29,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 16,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18321244/zoom_0-1672928374.jpg"
+      ],
+      "title": "Summer Sandals",
+      "brand": "SunnySteps",
+      "price": 599,
+      "before_disc": 799,
+      "offer_percent": 25,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 17,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18592134/zoom_0-1658374391.jpg"
+      ],
+      "title": "Waterproof Rain Boots",
+      "brand": "RainyDay",
+      "price": 1499,
+      "before_disc": 1999,
+      "offer_percent": 25,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 18,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18423904/zoom_0-1648923410.jpg"
+      ],
+      "title": "Bold Pattern Loafers",
+      "brand": "WeekendWear",
+      "price": 1099,
+      "before_disc": 1599,
+      "offer_percent": 31,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 19,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18647356/zoom_0-1677298371.jpg"
+      ],
+      "title": "Textured Espadrilles",
+      "brand": "SummerVibe",
+      "price": 1399,
+      "before_disc": 1999,
+      "offer_percent": 30,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  },
+  {
+      "id": 20,
+      "image": [
+          "https://img3.junaroad.com/uiproducts/18176321/zoom_0-1678319282.jpg"
+      ],
+      "title": "Sporty Trainer Sneakers",
+      "brand": "RunPro",
+      "price": 1799,
+      "before_disc": 2499,
+      "offer_percent": 28,
+      "category": {
+          "gender": "Women",
+          "type": "Footwear",
+          "model": "Shoes"
+      },
+      "size": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+      ],
+      "Quantity": 1
+  }
+]}
