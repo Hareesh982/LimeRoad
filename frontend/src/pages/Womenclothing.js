@@ -25,7 +25,7 @@ function Clothing({product}){
                 margin: '10px', 
                 }}
             > <Link onClick={handleCurrentProduct} to={{pathname : '/details'}} style={{ width:'100%', height:'80%'}}>
-                <img src={product.image} alt='...'  width='100%' height='100%' style={{ objectFit: "cover" }} />
+                <img src={product.image} alt='...'  width='100%' height='100%' style={{ objectFit: "cover",borderRadius:'10px' }} />
               </Link>
                 <div className='mt-2 d-flex align-items-center gap-2'>
                   <span style={{border:'1px solid limegreen',color:'limegreen',borderRadius:'5px', fontSize:'12px',padding:'3px 5px'}}>OFFER</span>
@@ -51,7 +51,7 @@ function Clothing({product}){
   )
 }
 
-function Womenclothing(){
+export function Clothingfetch(){
   let [data,setData] = useState([])
   useEffect(() =>{
       axios.get('/product.json')
@@ -61,7 +61,7 @@ function Womenclothing(){
 
   return (
       <>
-          <Navbar/>
+          
           <div className='container'>
               <div className='row'>
                   {
@@ -72,6 +72,16 @@ function Womenclothing(){
               
           </div>
       </>
+  )
+}
+
+function Womenclothing(){
+  return (
+    <>
+        <Navbar/>
+        <Clothingfetch/>
+    </>
+    
   )
 }
 

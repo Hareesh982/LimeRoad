@@ -24,7 +24,7 @@ function Clothing({product}){
               }}
           >
              <Link onClick={handleCurrentProduct} to={{pathname : '/details'}} style={{ width:'100%', height:'80%'}}>
-                <img src={product.image} alt='...'  width='100%' height='100%' style={{ objectFit: "cover" }} />
+                <img src={product.image} alt='...'  width='100%' height='100%' style={{ objectFit: "cover",borderRadius:'10px' }} />
               </Link>
 
               <div className='mt-2 d-flex align-items-center gap-2'>
@@ -48,7 +48,7 @@ function Clothing({product}){
   )
 }
 
-function Menclothing(){
+export function MenClothingfetch(){
   let [data,setData] = useState([])
   useEffect(() =>{
       axios.get('/product.json')
@@ -58,7 +58,7 @@ function Menclothing(){
 
   return (
       <>
-      <Navbar/>
+      
           <div className='container'>
               <div className='row'>
                   {
@@ -69,6 +69,15 @@ function Menclothing(){
               
           </div>
       </>
+  )
+}
+
+function Menclothing() {
+  return (
+    <>
+      <Navbar/>
+      <MenClothingfetch/>
+    </>
   )
 }
 

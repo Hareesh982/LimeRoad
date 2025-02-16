@@ -1,45 +1,51 @@
-import React from 'react'
-import Navbar from '../component/Navbar'
-import Menfeed from '../component/Menfeed'
-import Allfeed from '../component/Allfeed'
-import Carouselfeed from '../carousel/Carouselfeed'
-import Productitem from '../component/Productitem'
+import React, { useState, useEffect } from 'react';
+import Navbar from '../component/Navbar';
+import Menfeed from '../component/Menfeed';
+import Allfeed from '../component/Allfeed';
+import Carouselfeed from '../carousel/Carouselfeed';
+import Productitem from '../component/Productitem';
 
-import { useState,useEffect } from 'react';
+function MenHomedata({ subCategory }) {
+  let [data, setData] = useState([]);
 
-function MenHomedata(){
-  let [data,setData] = useState([])
-  useEffect(() =>{
+  useEffect(() => {
     fetch("/seller.json")
       .then(response => response.json())
-      .then(productdata => setData(productdata))
-  },[])
+      .then(productdata => {
+        const menProducts = productdata.filter(product => product.category === "men" && (!subCategory || product.sub_category === subCategory));
+        setData(menProducts);
+      });
+  }, [subCategory]);
 
   return (
     <>
-        <div className='container mt-5'>
-          <div className='row'>
+      <div className='container mt-5'>
+        <div className='row'>
           { 
-            data.map((product) => <Productitem key={product.id} product={product}/>)
+            data.map((product) => <Productitem key={product.id} product={product} />)
           }
-          </div>
         </div>
+      </div>
     </>
-  )
+  );
 }
-
 
 function Men() {
+  const [subCategory, setSubCategory] = useState('');
+
+  const handleSubCategoryChange = (newSubCategory) => {
+    setSubCategory(newSubCategory);
+  };
+
   return (
     <>
-        <Navbar/>
-        <Allfeed/>
-        <Menfeed/>
-        <Carouselfeed/>
-        <MenHomedata/>
+      <Navbar />
+      <Allfeed />
+      <Menfeed onSubCategoryChange={handleSubCategoryChange} />
+      <Carouselfeed />
+      <MenHomedata subCategory={subCategory} />
     </>
-    
-  )
+  );
 }
 
-export default Men
+export default Men;

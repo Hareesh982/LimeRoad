@@ -1,47 +1,48 @@
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-import { Link } from 'react-router-dom'
+function Menfeed({ onSubCategoryChange }) {
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
+  const men = [
+    { wear: 'T-SHIRT', path: '/aspects/men_tshirt.jpg', subCategory: 'tshirt' },
+    { wear: 'SHIRTS', path: '/aspects/men_shirt.jpg', subCategory: 'shirts' },
+    { wear: 'JEANS', path: '/aspects/men_jeans.jpg', subCategory: 'jeans' },
+    { wear: 'TROUSERS', path: '/aspects/men_trousers.jpg', subCategory: 'trousers' },
+    { wear: 'ETHNIC SETS', path: '/aspects/men_ethnic.jpg', subCategory: 'ethnic' },
+    { wear: 'FOOTWEAR', path: '/aspects/men_footwear.jpg', subCategory: 'footwear' },
+    { wear: 'HOME', path: '/aspects/home.jpg', subCategory: 'home' },
+    { wear: 'ACCESSORY', path: '/aspects/men_access.jpg', subCategory: 'accessory' },
+    { wear: 'WINTER', path: '/aspects/men_winter.jpg', subCategory: 'winter' }
+  ];
 
-function Menfeed() {
-    const women = [
-        { wear: 'T-SHIRT', path: '/aspects/men_tshirt.jpg' },
-        { wear: 'SHIRTS', path: '/aspects/men_shirt.jpg' },
-        { wear: 'JEANS', path: '/aspects/men_jeans.jpg' },
-        { wear: 'TROUSERS', path: '/aspects/men_trousers.jpg' },
-        { wear: 'ETHNIC SETS', path: '/aspects/men_ethnic.jpg' },
-        { wear: 'FOOTWEAR', path: '/aspects/men_footwear.jpg' },
-        { wear: 'HOME', path: '/aspects/home.jpg' },
-        { wear: 'ACCESSORY', path: '/aspects/men_access.jpg' },
-        { wear: 'WINTER', path: '/aspects/men_winter.jpg' }
-      ]
-    return (
-        <>
-            <div className="container my-3">
-                <div className="row justify-content-center align-items-center g-3">
-                    <div className="col-auto">
-                        <Link to="/" className="d-flex flex-column align-items-center text-decoration-none text-dark">
-                            <img src="/aspects/myfeed.png" alt="kurthas" height="80" width="80" 
-                                style={{ borderRadius: '50%', border: '2px solid lightgreen', padding: '5px' }} 
-                            />
-                            <p className="small" style={{fontSize:'10px'}}>MY FEED</p>
-                        </Link>
-                    </div>
+  return (
+    <>
+      <div className="container my-3">
+        <div className="row justify-content-center align-items-center g-3">
+          <div className="col-auto">
+            <Link to="/men" className="d-flex flex-column align-items-center text-decoration-none text-dark">
+              <img src="/aspects/myfeed.png" alt="kurthas"  height="80" width="80"
+                style={{ borderRadius: '50%', border: '2px solid lightgreen', padding: '5px' }}
+              />
+              <p className="small" style={{ fontSize: '10px' }}>MY FEED</p>
+            </Link>
+          </div>
 
-                    {women.map((item, index) => (
-                        <div key={index} className="col-auto">
-                            <Link to="/" className="d-flex flex-column align-items-center text-decoration-none text-dark">
-                                <img src={item.path} alt="kurthas" height="65px" width="65px" 
-                                    style={{ borderRadius: '50%', padding: '5px' }} 
-                                />
-                                <p className="small" style={{fontSize:'10px'}}>{item.wear}</p>
-                            </Link>
-                        </div>
-                    ))}
-                </div>
+          {men.map((item, index) => (
+            <div key={index} className="col-auto">
+              <Link to="/men" className="d-flex flex-column align-items-center text-decoration-none text-dark" onClick={() => { onSubCategoryChange(item.subCategory); setSelectedIndex(index); }}>
+                <img src={item.path} alt={item.wear} height="65px" width="65px"
+                  style={{ borderRadius: '50%', padding: '5px', border: selectedIndex === index ? '2px solid lightgreen' : 'none' }}
+                />
+                <p className="small" style={{ fontSize: '10px' }}>{item.wear}</p>
+              </Link>
             </div>
-        </>
-        
-    )
+          ))}
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Menfeed
+export default Menfeed;

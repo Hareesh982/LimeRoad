@@ -16,10 +16,11 @@ let AppRoute = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/'>
-                    <Route index element={<Home/>} />
+                    <Route index element={<Women/>} />
                     <Route path='/women'    element={<Women/>}       />
                     <Route path='/men'      element={<Men/>}         />
                     <Route path='/kids'     element={<Kids/>}        />
+                    <Route path='/home'     element={<Home/>}        />
                     <Route path='/offers'   element={<Offers />}     />
                     <Route path='/vmart'    element={<Vmart />}      />
                     <Route path='/login'    element={<LoginPage/>}   />

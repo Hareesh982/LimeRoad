@@ -103,7 +103,7 @@ function Navbar() {
                             </div>
                         </ul>
                     </li>
-                    <Link className="nav-link" to="/">HOME</Link>
+                    <Link className="nav-link" to="/home">HOME</Link>
                     <Link className="nav-link offers" to="/offers">OFFERS</Link>
                     <Link className="nav-link vmart" to="/vmart">VMART</Link>
                 </ul>

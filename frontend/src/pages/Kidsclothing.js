@@ -19,12 +19,12 @@ function Clothing({ product }) {
         style={{
           height: '500px',
           width: 'calc(25% - 20px)',
-          margin: '10px', 
+          margin: '10px',
         }}
       >
         <Link onClick={handleCurrentProduct} to={{pathname : '/details'}} style={{ width:'100%', height:'80%'}}>
-                <img src={product.image} alt='...'  width='100%' height='100%' style={{ objectFit: "cover" }} />
-              </Link>
+          <img src={product.image} alt='...'  width='100%' height='100%' style={{ objectFit: "cover",borderRadius:'10px' }} />
+        </Link>
         <div className='mt-2 d-flex align-items-center gap-2'>
           <span style={{border:'1px solid limegreen',color:'limegreen',borderRadius:'5px', fontSize:'12px',padding:'3px 5px'}}>OFFER</span>
           <span style={{fontSize:'13px',color:'limegreen'}}>Deals</span>
