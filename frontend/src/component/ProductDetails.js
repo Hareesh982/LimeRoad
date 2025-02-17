@@ -6,26 +6,42 @@ import Footer from './Footer';
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../actions/cartActions';
 import { useEffect } from 'react';
+import Alert from '@mui/material/Alert';
+import { useState } from 'react';
+import Stack from '@mui/material/Stack';
 
 function ProductDetails({ product }) {
   let dispatch = useDispatch()
+  let [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [product]);
 
+
   let handleCart = () => {
-          dispatch(addToCart(product))
-          alert("item added to cart")
-      }
+    dispatch(addToCart(product));
+    setShowAlert(true);
+
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 1000);
+  }
   return (
+
     <>
+    {showAlert && (
+        <Stack sx={{ width: 'auto', position: 'fixed', top: 60, left: '50%', transform: 'translateX(-50%)', zIndex: 1000 }} spacing={2}>
+          <Alert variant="filled" severity="success">
+            Product added to cart successfully!
+          </Alert>
+        </Stack>
+      )}
       
       <div className='container mt-5'>
         <div className='row'>
           <div className='col-6'>
 
-            {/* <img src={product.image} alt={product.name} width='80%' height='85%'/> */}
             <div id="carouselExampleIndicators" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
