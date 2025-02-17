@@ -5,7 +5,7 @@
     "price": 25.99,
     "description": "Classic slim fit shirt, perfect for casual wear.",
     "category": "men",
-    "subcategory" : "shirt",
+    "subcategory" : "shirts",
     "image": "https://n-img0.junaroad.com/uiproducts/21032010/zoom_0-1709314404.jpg",
     "rating": {
       "rate": 3,
@@ -31,7 +31,7 @@
     "price": 32.50,
     "description": "Lightweight linen shirt, ideal for summer.",
     "category": "men",
-    "subcategory" : "shirt",
+    "subcategory" : "shirts",
     "image": "https://n-img0.junaroad.com/uiproducts/21717944/zoom_0-1738583459.jpg",
     "rating": {
       "rate": 4.5,
@@ -83,7 +83,7 @@
     "price": 49.99,
     "description": "Traditional kurta for festive occasions.",
     "category": "men",
-    "subcategory" : "kurtha",
+    "subcategory" : "ethnic",
     "image": "https://assets.panashindia.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/0/904mw18-2418_1.jpg",
     "rating": {
       "rate": 4.4,
@@ -96,7 +96,7 @@
     "price": 69.99,
     "description": "Elegant silk kurta for special events.",
     "category": "men",
-    "subcategory" : "kurtha",
+    "subcategory" : "ethnic",
     "image": "https://sojanya.com/cdn/shop/files/V-SJR-LK-SilkPrint-48033-Pblu-2_2048x.jpg?v=1718193179",
     "rating": {
       "rate": 4.7,
@@ -109,7 +109,7 @@
     "price": 59.99,
     "description": "Intricately embroidered kurta for a rich look.",
     "category": "men",
-    "subcategory" : "kurtha",
+    "subcategory" : "ethnic",
     "image": "https://sanwara.com/cdn/shop/files/1_273dc620-3b44-4e2e-b134-1af8a96d5591.jpg?v=1738145311",
     "rating": {
       "rate": 4.5,
@@ -135,7 +135,10 @@
     "price": 29.99,
     "description": "Stylish blouse for any occasion.",
     "category": "women",
-    "image": "https://www.taneira.com/dw/image/v2/BKMH_PRD/on/demandware.static/-/Sites-Taneira-product-catalog/default/dwe958a806/images/Taneira/Catalog/BLAJ44XR_1.jpg?sw=480&sh=728",
+    "subcategory" : "tops",
+    "image": "https://n-img0.junaroad.com/uiproducts/15138397/zoom_0-1526474748.jpg",
+    "image_2" : "https://n-img1.junaroad.com/uiproducts/15138397/zoom_1-1526474748.jpg",
+    "image_3" : "https://n-img2.junaroad.com/uiproducts/15138397/zoom_2-1526474748.jpg",
     "rating": {
       "rate": 4.2,
       "count": 180
@@ -143,12 +146,15 @@
   },
   {
     "id": 12,
-    "title": "Women's Crop Top",
+    "title": "silver sequin regular top",
     "price": 19.99,
     "description": "Trendy crop top for a modern look.",
     "category": "women",
-    "image": "https://assets.ajio.com/medias/sys_master/root/20240612/wusL/6669b50a05ac7d77bb0e71f1/-473Wx593H-462910552-black-MODEL2.jpg",
-    "rating": {
+    "subcategory" : "tops",
+    "image": "https://n-img0.junaroad.com/uiproducts/21496510/zoom_0-1723829620.jpg",
+    "image_2" : "https://n-img1.junaroad.com/uiproducts/21496510/zoom_1-1723829620.jpg",
+    "image_3" : "https://n-img0.junaroad.com/uiproducts/21496510/zoom_3-1723829620.jpg",
+     "rating": {
       "rate": 4.0,
       "count": 220
     }
@@ -158,8 +164,11 @@
     "title": "Women's Formal Top",
     "price": 34.99,
     "description": "Elegant formal top for special events.",
+    "subcategory" : "tops",
     "category": "women",
-    "image": "https://imagescdn.vanheusenindia.com/img/app/product/3/39703883-14708658.jpg?auto=format&w=390",
+    "image": "https://n-img0.junaroad.com/uiproducts/19695344/zoom_0-1681300455.jpg",
+    "image_2" : "https://n-img1.junaroad.com/uiproducts/19695344/zoom_1-1681300455.jpg",
+    "image_3" : "https://n-img0.junaroad.com/uiproducts/19695344/zoom_3-1681300455.jpg",
     "rating": {
       "rate": 4.5,
       "count": 150
@@ -171,6 +180,7 @@
     "price": 79.99,
     "description": "Beautiful silk saree for traditional occasions.",
     "category": "women",
+    "subcategory" : "sarees",
     "image": "https://static3.azafashions.com/tr:w-450/uploads/product_gallery/1658028-0534682001659701578.jpg",
     "rating": {
       "rate": 4.6,
@@ -183,6 +193,7 @@
     "price": 59.99,
     "description": "Comfortable cotton saree for everyday wear.",
     "category": "women",
+    "subcategory" : "sarees",
     "image": "https://royskart.com/cdn/shop/products/57_e99f93a3-96fe-45df-b50e-b6367c0bb902.jpg?v=1683877286",
     "rating": {
       "rate": 4.3,
@@ -195,6 +206,7 @@
     "price": 69.99,
     "description": "Lightweight georgette saree for a graceful look.",
     "category": "women",
+    "subcategory" : "sarees",
     "image": "https://images.cbazaar.com/images/embroidered-cord-work-teal-georgette-saree-with-blouse-for-women-sasacy6730-u.jpg",
     "rating": {
       "rate": 4.3,
@@ -207,6 +219,7 @@
       "price": 64.99,
       "description": "Elegant churidar set for a traditional look.",
       "category": "women",
+      "subcategory" : "kurthas",
       "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/JULY/30/PLWAYMxM_bc4bd48f7f67404e81b6e125ef1fd677.jpg",
       "rating": {
         "rate": 4.4,
@@ -219,6 +232,7 @@
       "price": 74.99,
       "description": "Beautifully embroidered churidar for special occasions.",
       "category": "women",
+      "subcategory" : "kurthas",
       "image": "https://cdn.sareeka.com/image/cache/data2024/purple-georgette-salwar-suit-with-embroidered-and-thread-work-for-women-283341-1000x1375.jpg",
       "rating": {
         "rate": 4.7,
@@ -231,6 +245,7 @@
       "price": 54.99,
       "description": "Stylish printed churidar for casual wear.",
       "category": "women",
+      "subcategory" : "kurthas",
       "image": "https://img.faballey.com/images/Product/ILK00361Z/3.jpg",
       "rating": {
         "rate": 4.5,
@@ -243,6 +258,7 @@
       "price": 49.99,
       "description": "Trendy handbag for everyday use.",
       "category": "women",
+      "subcategory" : "bags",
       "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/hand-messenger-bag/i/e/k/waqar-bag-waqar-bag-handbag-hercraft-original-imagnyafqyjdpc6g.jpeg?q=90&crop=false",
       "rating": {
         "rate": 4.3,
@@ -371,11 +387,14 @@
     },
     {
       "id": 31,
-      "title": "Women's Heels",
-      "price": 59.99,
-      "description": "Elegant heels for women.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "title": "women white solid cotton shirt",
+      "price": 12,
+      "description": "Regular fit sleeve type Long Sleeves color white material Cotton.",
+      "category": "women",
+      "subcategory" : "tops",
+      "image": "https://n-img0.junaroad.com/uiproducts/21492438/zoom_0-1732540208.jpg",
+      "image_2" : "https://n-img1.junaroad.com/uiproducts/21492438/zoom_1-1732540208.jpg",
+      "image_3" : "https://n-img2.junaroad.com/uiproducts/21492438/zoom_2-1732540208.jpg",
       "rating": {
         "rate": 4.2,
         "count": 180
@@ -383,59 +402,74 @@
     },
     {
       "id": 32,
-      "title": "Women's Sandals",
-      "price": 39.99,
-      "description": "Comfortable sandals for women.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "title": "women printed sleeveless crop top",
+      "price": 20,
+      "description": "Regular fit sleeve type Long Sleeves color white material Cotton.",
+      "category": "women",
+      "subcategory" : "tops",
+      "image": "https://n-img0.junaroad.com/uiproducts/21525150/zoom_0-1726039533.jpg",
+      "image_2" : "https://n-img1.junaroad.com/uiproducts/21525150/zoom_1-1726039533.jpg",
+      "image_3" : "https://n-img0.junaroad.com/uiproducts/21525150/zoom_3-1726039533.jpg",
       "rating": {
-        "rate": 4.0,
-        "count": 220
+        "rate": 4.2,
+        "count": 180
       }
     },
     {
       "id": 33,
-      "title": "Women's Flats",
-      "price": 44.99,
-      "description": "Stylish flats for women.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "title": "women white cotton regular top",
+      "price": 15,
+      "description": "Regular fit sleeve type Long Sleeves color white material Cotton.",
+      "category": "women",
+      "subcategory" : "tops",
+      "image": "https://n-img2.junaroad.com/uiproducts/21092653/zoom_0-1716399939.jpg",
+      "image_2" : "https://n-img1.junaroad.com/uiproducts/21092653/zoom_1-1716399939.jpg",
+      "image_3" : "https://n-img2.junaroad.com/uiproducts/21092653/zoom_2-1716399939.jpg",
       "rating": {
-        "rate": 4.5,
-        "count": 150
+        "rate": 4.2,
+        "count": 180
       }
     },
     {
       "id": 34,
-      "title": "Women's Boots",
-      "price": 79.99,
-      "description": "Trendy boots for women.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "title": "women printed v neck flared tunic",
+      "price": 10,
+      "description": "Regular fit sleeve type Long Sleeves color white material Cotton.",
+      "category": "women",
+      "subcategory" : "tops",
+      "image": "https://n-img0.junaroad.com/uiproducts/21374139/zoom_0-1720186659.jpg",
+      "image_2" : "https://n-img1.junaroad.com/uiproducts/21374139/zoom_1-1720186659.jpg",
+      "image_3" : "https://n-img2.junaroad.com/uiproducts/21374139/zoom_2-1720186659.jpg",
       "rating": {
-        "rate": 4.3,
-        "count": 190
+        "rate": 4.2,
+        "count": 180
       }
     },
     {
       "id": 35,
-      "title": "Men's Sneakers",
-      "price": 69.99,
-      "description": "Casual sneakers for men.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "title": "maroon self design banarasi saree with blouse",
+      "price": 200,
+      "description": "SANGAM PRINTS brings to you this saree which is made from Banarasi Silk fabric and is available in attractive colours..",
+      "category": "women",
+      "subcategory" : "sarees",
+      "image": "https://n-img0.junaroad.com/uiproducts/19708632/zoom_0-1683305342.jpg",
+      "image_2" : "https://n-img1.junaroad.com/uiproducts/19708632/zoom_1-1683305342.jpg",
+      "image_3" : "https://n-img1.junaroad.com/uiproducts/19708632/zoom_1-1683305342.jpg",
       "rating": {
-        "rate": 4.1,
-        "count": 160
+        "rate": 4.6,
+        "count": 120
       }
     },
     {
       "id": 36,
-      "title": "Men's Formal Shoes",
-      "price": 89.99,
-      "description": "Classic formal shoes for men.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "title": "women solid with work embroidered saree with blouse",
+      "price": 99,
+      "description": "SANGAM PRINTS brings to you this saree which is made from Banarasi Silk fabric and is available in attractive colours..",
+      "category": "women",
+      "subcategory" : "sarees",
+      "image": "https://n-img1.junaroad.com/uiproducts/21559060/zoom_0-1730524451.jpg",
+      "image_2" : "https://n-img1.junaroad.com/uiproducts/21559060/zoom_1-1730524451.jpg",
+      "image_3" : "https://n-img2.junaroad.com/uiproducts/21559060/zoom_2-1730524451.jpg",
       "rating": {
         "rate": 4.6,
         "count": 120
@@ -443,146 +477,32 @@
     },
     {
       "id": 37,
-      "title": "Men's Boots",
-      "price": 99.99,
-      "description": "Durable boots for men.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.4,
-        "count": 170
-      }
-    },
-    {
-      "id": 38,
-      "title": "Kids Sneakers",
-      "price": 39.99,
-      "description": "Comfortable sneakers for kids.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.7,
-        "count": 100
-      }
-    },
-    {
-      "id": 39,
-      "title": "Kids Sandals",
-      "price": 29.99,
-      "description": "Casual sandals for kids.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.5,
-        "count": 140
-      }
-    },
-    {
-      "id": 40,
-      "title": "Kids Boots",
-      "price": 49.99,
-      "description": "Warm boots for kids.",
-      "category": "footwear",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.3,
-        "count": 200
-      }
-    },
-    {
-      "id": 41,
-      "title": "Wrist Watch",
-      "price": 79.99,
-      "description": "Stylish wrist watch for men and women.",
-      "category": "accessories",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.2,
-        "count": 180
-      }
-    },
-    {
-      "id": 42,
-      "title": "Sunglasses",
-      "price": 29.99,
-      "description": "Trendy sunglasses for men and women.",
-      "category": "accessories",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.0,
-        "count": 220
-      }
-    },
-    {
-      "id": 43,
-      "title": "Wallet",
-      "price": 34.99,
-      "description": "Leather wallet for men.",
-      "category": "accessories",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.5,
-        "count": 150
-      }
-    },
-    {
-      "id": 44,
-      "title": "Belt",
-      "price": 24.99,
-      "description": "Stylish belt for men and women.",
-      "category": "accessories",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.3,
-        "count": 190
-      }
-    },
-    {
-      "id": 45,
-      "title": "Scarf",
-      "price": 19.99,
-      "description": "Warm scarf for men and women.",
-      "category": "accessories",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.1,
-        "count": 160
-      }
-    },
-    {
-      "id": 46,
-      "title": "Hat",
-      "price": 14.99,
-      "description": "Trendy hat for men and women.",
-      "category": "accessories",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "title": "women self design bordered saree with blouse",
+      "price": 149,
+      "description": "SANGAM PRINTS brings to you this saree which is made from Banarasi Silk fabric and is available in attractive colours..",
+      "category": "women",
+      "subcategory" : "sarees",
+      "image": "https://n-img0.junaroad.com/uiproducts/21185980/zoom_0-1714465509.jpg",
+      "image_2" : "https://n-img1.junaroad.com/uiproducts/21185980/zoom_1-1714465509.jpg",
+      "image_3" : "https://n-img2.junaroad.com/uiproducts/21185980/zoom_2-1714465509.jpg",
       "rating": {
         "rate": 4.6,
         "count": 120
       }
     },
     {
-      "id": 47,
-      "title": "Gloves",
-      "price": 19.99,
-      "description": "Warm gloves for men and women.",
-      "category": "accessories",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
+      "id": 38,
+      "title": "women solid with bordered saree with blouse",
+      "price": 129,
+      "description": "SANGAM PRINTS brings to you this saree which is made from Banarasi Silk fabric and is available in attractive colours..",
+      "category": "women",
+      "subcategory" : "sarees",
+      "image": "https://n-img2.junaroad.com/uiproducts/21305433/zoom_0-1717410255.jpg",
+      "image_2" : "https://n-img1.junaroad.com/uiproducts/21305433/zoom_1-1717410255.jpg",
+      "image_3" : "https://n-img2.junaroad.com/uiproducts/21305433/zoom_2-1717410255.jpg",
       "rating": {
-        "rate": 4.4,
-        "count": 170
-      }
-    },
-    {
-      "id": 48,
-      "title": "Jewelry Set",
-      "price": 59.99,
-      "description": "Elegant jewelry set for women.",
-      "category": "accessories",
-      "image": "https://m.media-amazon.com/images/I/71E8m6b9WJL._AC_UL320_.jpg",
-      "rating": {
-        "rate": 4.7,
-        "count": 100
+        "rate": 4.6,
+        "count": 120
       }
     }
 ]

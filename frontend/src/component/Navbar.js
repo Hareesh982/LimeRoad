@@ -1,10 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 let Profile = () =>{
+    
     return (
         <div style={{ 
             display:'flex',
@@ -36,6 +38,7 @@ let Profile = () =>{
 }
 
 function Navbar() {
+    const cartCounter = useSelector(state => state.cart.cartCounter);
     const [showProfile, setShowProfile] = useState(false);
     return (
         <>
@@ -60,33 +63,24 @@ function Navbar() {
                         <Link className="nav-link" to="/women-clothing">WOMEN</Link>
                         <ul className="dropdown-menu fixed-dropdown">
                             <div>
-                                <p className='major-category'>Casual Wear</p>
-                                <Link className="dropdown-item" to="/women/tops">Tops</Link>
-                                <Link className="dropdown-item" to="/women/dresses">Dresses</Link>
-                                <Link className="dropdown-item" to="/women/jeans">Jeans</Link>
-                                <Link className="dropdown-item" to="/women/shoes">Shoes</Link>
-                                <Link className="dropdown-item" to="/women/bags">Bags</Link>
-                            </div>
-                            <div>
-                                <p className='major-category'>DailyWear</p>
-                                <li><Link className="dropdown-item" to="/women/accessories">Accessories</Link></li>
-                                <li><Link className="dropdown-item" to="/women/jackets">Jackets</Link></li>
-                                <li><Link className="dropdown-item" to="/women/skirts">Skirts</Link></li>
-                                <li><Link className="dropdown-item" to="/women/sleepwear">Sleepwear</Link></li>
-                                <li><Link className="dropdown-item" to="/women/activewear">Activewear</Link></li>
+                                <p className='major-category'>Daily Wear</p>
+                                <li><Link className="dropdown-item" to="/women-clothing?subcategory=kurthas">Kurtas</Link></li>
+                                <li><Link className="dropdown-item" to="/women-clothing?subcategory=tops">Tops</Link></li>
+                                <li><Link className="dropdown-item" to="/women-clothing?subcategory=ethnic">ethnic</Link></li>
+                                <li><Link className="dropdown-item" to="/women-clothing?subcategory=sarees">sarees</Link></li>
                             </div>
                         </ul>
                     </li>
-
                     <li className="nav-item dropdown">
                         <Link className="nav-link" to="/men-clothing">MEN</Link>
                         <ul className="dropdown-menu fixed-dropdown">
                             <div>
-                                <p className='major-category'>Regular</p>
-                                <li><Link className="dropdown-item" to="/men/shirts">Shirts</Link></li>
-                                <li><Link className="dropdown-item" to="/men/pants">Pants</Link></li>
-                                <li><Link className="dropdown-item" to="/men/kurtas">Kurtas</Link></li>
-                                <li><Link className="dropdown-item" to="/men/jeans">Jeans</Link></li>
+                                <p className='major-category'>Daily Wear</p>
+                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=tshirt">T-Shirts</Link></li>
+                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=shirts">Shirts</Link></li>
+                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=jeans">Jeans</Link></li>
+                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=trousers">Trousers</Link></li>
+                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=ethnic">Ethnic sets</Link></li>
                             </div>
                         </ul>
                     </li>
@@ -126,7 +120,10 @@ function Navbar() {
                     <Link to="/cart" className="cart-icon d-flex flex-column align-items-center ">
                         <i className="bi bi-cart-fill"></i> 
                         CART
-                        <span className="cart-badge">3</span>
+                        {
+                            cartCounter ? <span className="cart-badge">{cartCounter}</span> : null
+                        }
+                        
                     </Link>
 
 

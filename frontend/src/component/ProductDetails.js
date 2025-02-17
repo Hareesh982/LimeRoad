@@ -1,17 +1,61 @@
 import React from 'react';
 import './ProductDetails.css';
-import {Clothingfetch} from '../pages/Womenclothing';
+import { Clothingfetch } from '../pages/Womenclothing';
 import { MenClothingfetch } from '../pages/Menclothing';
+import Footer from './Footer';
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../actions/cartActions';
+import { useEffect } from 'react';
 
 function ProductDetails({ product }) {
- 
+  let dispatch = useDispatch()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [product]);
+
+  let handleCart = () => {
+          dispatch(addToCart(product))
+          alert("item added to cart")
+      }
   return (
     <>
+      
       <div className='container mt-5'>
         <div className='row'>
-          <div className='col-6' style={{height:'50%'}}>
-            <img src={product.image} alt={product.name} width='100%' height='100%'  style={{ objectFit: 'cover'}} />
+          <div className='col-6'>
+
+            {/* <img src={product.image} alt={product.name} width='80%' height='85%'/> */}
+            <div id="carouselExampleIndicators" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" >
+                  <div class="carousel-item active" >
+                    <img src={product.image} class="d-block w-100" alt="..."/>
+                  </div>
+                  <div class="carousel-item">
+                    <img src={product.image_2} class="d-block w-100" alt="..."/>
+                  </div>
+                  <div class="carousel-item">
+                    <img src={product.image_3} class="d-block w-100" alt="..."/>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          
           </div>
+
+
           <div className='col-6' style={{height:'50%',backgroundColor:'white',padding:'20px',borderRadius:'0px'}} >
             <div className='d-flex flex-column'>
               <span style={{fontSize:'30px'}}>{product.title}</span>
@@ -42,17 +86,18 @@ function ProductDetails({ product }) {
                 <span style={{fontSize:'12px'}}>M.R.P. inclusive of all taxes</span>
               </div>
               
-              <button className='mt-3' style={{ width: '100%',backgroundColor:'yellowgreen',border:'none',padding:'10px',color:'white',fontWeight:'bold',borderRadius:'5px' }}>Add to Cart</button>
+              <button onClick={handleCart} className='mt-3' style={{ width: '100%',backgroundColor:'yellowgreen',border:'none',padding:'10px',color:'white',fontWeight:'bold',borderRadius:'5px' }}>Add to Cart</button>
               <button className='mt-3' style={{ width: '100%',backgroundColor:'yellowgreen',border:'none',padding:'10px',color:'white',fontWeight:'bold',borderRadius:'5px' }}>Buy now</button>
             </div>
           </div>
         </div>
       </div>
-      <div className='container mt-5'>
-        {product.category === "women" && <Clothingfetch />}
-        {product.category === "men" && <MenClothingfetch />}
-      </div>
       
+      <div className='container mt-5'>
+        {product.category === "women" && <Clothingfetch category={product.category} subcategory={product.subcategory} />}
+        {product.category === "men" && <MenClothingfetch category={product.category} subcategory={product.subcategory} />}
+      </div>
+      <Footer/>
     </>
   );
 }

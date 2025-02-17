@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 function Productitem({ product }) {
@@ -18,11 +19,27 @@ function Productitem({ product }) {
 
           <p style={{margin:'5px'}}>{product.title}</p>
 
+
           <div className="d-flex" style={{ height: '80%'}}>
-            <div>
-              <img src={product.image} alt="..." style={{ height: '100%',width:'100%'}}/>
-            </div>
+            {
+              product.category === 'women' && (
+                <Link to={`/women-clothing?subcategory=${product.sub_category}`}>
+                  <img src={product.image}  alt="..." style={{ height: '100%',width:'100%'}}/>
+                </Link>
+              ) 
+            }
+            {
+              product.category === 'men' && 
+                (
+                  <Link to={`/men-clothing?subcategory=${product.sub_category}`}>
+                    <img src={product.image}  alt="..." style={{ height: '100%',width:'100%'}}/>
+                  </Link>
+                )
+            }
           </div>
+
+
+
 
           <div className='d-flex align-items-center gap-2'>
             

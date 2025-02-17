@@ -10,6 +10,7 @@ import Menclothing from '../pages/Menclothing';
 import Womenclothing from '../pages/Womenclothing';
 import Kidsclothing from '../pages/Kidsclothing';
 import Details from '../pages/Details';
+import CartDetails from '../pages/cartProduct';
 
 let AppRoute = () => {
     return (
@@ -28,6 +29,7 @@ let AppRoute = () => {
                     <Route path='/women-clothing' element={<Womenclothing/>}    />
                     <Route path='/kids-clothing' element={<Kidsclothing/>}  />
                     <Route path='/details'  element={<Details/>}     />
+                    <Route path='/cart' element={<CartDetails/>} />
                 </Route>
             </Routes>
         </BrowserRouter>
