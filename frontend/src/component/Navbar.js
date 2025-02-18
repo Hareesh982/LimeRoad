@@ -39,9 +39,12 @@ let Profile = () =>{
 
 function Navbar() {
     const cartCounter = useSelector(state => state.cart.cartCounter);
+    const [search,setSearch]=useState(false)
+
     const [showProfile, setShowProfile] = useState(false);
     return (
         <>
+        {!search ? (
         <nav className="navbar navbar-expand-lg d-flex g-5 justify-content-center">
                 <div>
                     <Link className="navbar-brand" to="/">
@@ -109,12 +112,11 @@ function Navbar() {
                             SCRAPBOOK
                         </div>
                     </Link>
-                    <Link to="#" className='d-flex flex-column align-items-center'>
-                        <i className="bi bi-search"></i> 
-                        SEARCH
+                    <Link className="d-flex flex-column align-items-center"
+                        onClick={()=>{setSearch(true)}}>
+                        <i className="bi bi-search"></i>
+                        Search
                     </Link>
-
-
 
 
                     <Link to="/cart" className="cart-icon d-flex flex-column align-items-center ">
@@ -123,7 +125,6 @@ function Navbar() {
                         {
                             cartCounter ? <span className="cart-badge">{cartCounter}</span> : null
                         }
-                        
                     </Link>
 
 
@@ -141,7 +142,20 @@ function Navbar() {
                     </div>
 
                 </div>
-        </nav>
+        </nav>):( 
+            <div className="search-overlay">
+                <div className="search-box">
+                    <i className="bi bi-search"></i>
+                    <input
+                        type="text"
+                        placeholder="Search for products"
+                        className="search-input"
+                        autoFocus
+                    />
+                </div>
+                <button className="search-close" onClick={() => setSearch(false)}>✖</button>
+            </div>
+        )}
 
         <Outlet/>
     </>
@@ -149,3 +163,4 @@ function Navbar() {
 }
 
 export default Navbar
+

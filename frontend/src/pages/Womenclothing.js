@@ -14,16 +14,19 @@ function Clothing({ product }) {
 
   return (
     <>
+   
       <div
-        className="d-flex flex-column  justify-content-start"
+        className="d-flex col-3 flex-column justify-content-start"
         style={{
           height: '500px',
-          width: 'calc(25% - 20px)',
+          width: '300px',
           margin: '10px',
         }}
-      >
-        <Link onClick={handleCurrentProduct} to={{ pathname: '/details' }} style={{ width: '100%', height: '80%' }}>
+        >
+
+        <Link onClick={handleCurrentProduct} to={{ pathname: '/details' }} style={{ width: '100%', height: '80%',position:'relative' }}>
           <img src={product.image} alt='...' width='100%' height='100%' style={{ objectFit: "cover", borderRadius: '10px' }} />
+          <p className='px-3' style={{position:'absolute',borderBottomRightRadius:'10px',borderTopRightRadius:'10px', bottom:'50px',left:'0px',color:'black',backgroundColor:'white'}}>new arrival</p>
         </Link>
 
         <div className='mt-2 d-flex align-items-center gap-2'>
@@ -49,6 +52,8 @@ function Clothing({ product }) {
 
 export function Clothingfetch({ category, subcategory }) {
   let [data, setData] = useState([]);
+  
+
   const [searchParams] = useSearchParams();
   const routeSubcategory = searchParams.get('subcategory');
   let new_data = data;
@@ -62,6 +67,7 @@ export function Clothingfetch({ category, subcategory }) {
   }
   else if(routeSubcategory){
     new_data = data.filter(product => product.category === category && product.subcategory === routeSubcategory);
+    
   }
   else{
     new_data = data.filter(product => product.category === category);
@@ -71,13 +77,37 @@ export function Clothingfetch({ category, subcategory }) {
     <>
       <div className='container'>
         <div className='row'>
-          {
-            new_data.length > 0 ? (
-              new_data.map(product => <Clothing key={product.id} product={product} />)
-            ) : (
-              <p>No products found for this subcategory.</p>
-            )
-          }
+
+          
+          {routeSubcategory && (
+            <div className="col-md-3">
+              <div className="p-3 bg-white mt-3 radius-10 shadow rounded text-center">
+                <h4>Filters</h4>
+                <select name="cars" id="cars">
+                  <option value="lesser_price">
+                    <p>&lt; $100</p>
+                  </option>
+                  <option value="greater_price">
+                    <p> &gt;$100</p>
+                  </option>
+                  
+                </select>
+                
+              </div>
+            </div>
+          )}
+
+          
+          <div className={routeSubcategory ? "col-md-9" : "col-md-12"}>
+            <div className='row'>
+              {new_data.length > 0 ? (
+                new_data.map(product => <Clothing key={product.id} product={product} />)
+              ) : (
+                <p>No products found for this subcategory.</p>
+              )}
+            </div>
+          </div>
+
         </div>
       </div>
     </>

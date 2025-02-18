@@ -110,6 +110,27 @@ body{
     align-items: center;
     justify-content: center;
 }
+.search-overlay{
+    background-color: white;
+    padding: 10px;
+}
+.search-box{
+    border: 3px solid yellowgreen;
+    background-color: white;
+    transition: 2s ease;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+}
+.search-close{
+    text-align: center;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 50%;
+}
 
 @media (max-width: 991px) {
     .navbar-collapse {

@@ -11,6 +11,8 @@ import { useState } from 'react';
 import Stack from '@mui/material/Stack';
 
 function ProductDetails({ product }) {
+  let mrpPrice = product.price + product.price * 0.3;
+
   let dispatch = useDispatch()
   let [showAlert, setShowAlert] = useState(false);
 
@@ -30,7 +32,7 @@ function ProductDetails({ product }) {
   return (
 
     <>
-    {showAlert && (
+      {showAlert && (
         <Stack sx={{ width: 'auto', position: 'fixed', top: 60, left: '50%', transform: 'translateX(-50%)', zIndex: 1000 }} spacing={2}>
           <Alert variant="filled" severity="success">
             Product added to cart successfully!
@@ -92,7 +94,7 @@ function ProductDetails({ product }) {
                 </select>
               </div>
               
-              <span className='mt-3'>M.R.P : ${product.price + product.price * 0.3}</span>
+              <span className='mt-3'>M.R.P : ${mrpPrice.toFixed(2)}</span>
               <span className='mt-3'><span style={{color:'red'}}>30%</span> Discount</span>
               <hr/>
               <span className='mt-3'>After Discount</span>
