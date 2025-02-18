@@ -1,9 +1,5 @@
-input {
-
-    all: unset;
-  
-  }
 
 .inputclass{
+  all: unset;
     border-bottom:2px solid yellowgreen;
 }
