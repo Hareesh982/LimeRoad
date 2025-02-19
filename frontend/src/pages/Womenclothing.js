@@ -54,6 +54,7 @@ export function Clothingfetch({ category, subcategory }) {
 
   const [searchParams] = useSearchParams();
   const routeSubcategory = searchParams.get('subcategory');
+  const routeCategory = searchParams.get('category');
   let new_data = data;
 
   useEffect(() => {
@@ -78,10 +79,10 @@ export function Clothingfetch({ category, subcategory }) {
   if (subcategory) {
     new_data = data.filter(product => product.category === category && product.subcategory === subcategory);
   } else if (routeSubcategory) {
-    new_data = data.filter(product => product.category === category && product.subcategory === routeSubcategory);
+    new_data = data.filter(product => product.category === routeCategory && product.subcategory === routeSubcategory);
     new_data = applyFilters(new_data);
   } else {
-    new_data = data.filter(product => product.category === category);
+    new_data = data.filter(product => product.category === routeCategory);
   }
 
   const handleFilterChange = (filter) => {
@@ -131,7 +132,7 @@ function Womenclothing() {
   return (
     <>
       <Navbar />
-      <Clothingfetch category="women" />
+      <Clothingfetch/>
     </>
   );
 }

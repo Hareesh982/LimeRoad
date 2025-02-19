@@ -1,0 +1,28 @@
+.labeldata{
+    font-size: 12px;
+    color: grey;
+}
+.inputdata{
+    all: unset;
+    border-bottom: 1px solid yellowgreen;
+    padding: 4px 0px;
+}
+.payment-option{
+    background-color: rgb(239, 238, 238);
+    padding: 10px;
+    margin: 1px;
+}
+.payment-button{
+    border: none;
+    background-color: yellowgreen;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.card-price{
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+}

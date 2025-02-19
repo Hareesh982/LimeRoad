@@ -132,6 +132,11 @@ body{
     margin-left: 50%;
 }
 
+.search-input{
+    all: unset;
+    background: transparent;
+}
+
 @media (max-width: 991px) {
     .navbar-collapse {
         text-align: center;

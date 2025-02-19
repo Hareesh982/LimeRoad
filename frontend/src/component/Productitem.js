@@ -21,21 +21,11 @@ function Productitem({ product }) {
 
 
           <div className="d-flex" style={{ height: '80%'}}>
-            {
-              product.category === 'women' && (
-                <Link to={`/women-clothing?subcategory=${product.sub_category}`}>
-                  <img src={product.image}  alt="..." style={{ height: '100%',width:'100%'}}/>
-                </Link>
-              ) 
-            }
-            {
-              product.category === 'men' && 
-                (
-                  <Link to={`/men-clothing?subcategory=${product.sub_category}`}>
-                    <img src={product.image}  alt="..." style={{ height: '100%',width:'100%'}}/>
-                  </Link>
-                )
-            }
+
+              <Link to={`/main-clothing?subcategory=${product.sub_category}&category=${product.category}`}>
+                <img src={product.image} alt="..." style={{ height: '100%', width: '100%' }} />
+              </Link>
+
           </div>
 
 

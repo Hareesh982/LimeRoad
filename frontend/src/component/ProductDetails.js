@@ -1,7 +1,6 @@
 import React from 'react';
 import './ProductDetails.css';
 import { Clothingfetch } from '../pages/Womenclothing';
-import { MenClothingfetch } from '../pages/Menclothing';
 import Footer from './Footer';
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../actions/cartActions';
@@ -112,8 +111,7 @@ function ProductDetails({ product }) {
       </div>
       
       <div className='container mt-5'>
-        {product.category === "women" && <Clothingfetch category={product.category} subcategory={product.subcategory} />}
-        {product.category === "men" && <MenClothingfetch category={product.category} subcategory={product.subcategory} />}
+        <Clothingfetch category={product.category} subcategory={product.subcategory} />
       </div>
       <Footer/>
     </>

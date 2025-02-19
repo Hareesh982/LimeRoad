@@ -63,27 +63,27 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav d-flex">
                     <li className="nav-item dropdown">
-                        <Link className="nav-link" to="/women-clothing">WOMEN</Link>
+                        <Link className="nav-link" to="/main-clothing?category=women">WOMEN</Link>
                         <ul className="dropdown-menu fixed-dropdown">
                             <div>
                                 <p className='major-category'>Daily Wear</p>
-                                <li><Link className="dropdown-item" to="/women-clothing?subcategory=kurthas">Kurtas</Link></li>
-                                <li><Link className="dropdown-item" to="/women-clothing?subcategory=tops">Tops</Link></li>
-                                <li><Link className="dropdown-item" to="/women-clothing?subcategory=ethnic">ethnic</Link></li>
-                                <li><Link className="dropdown-item" to="/women-clothing?subcategory=sarees">sarees</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=kurthas&category=women">Kurtas</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=tops&category=women">Tops</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=ethnic&category=women">ethnic</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=sarees&category=women">sarees</Link></li>
                             </div>
                         </ul>
                     </li>
                     <li className="nav-item dropdown">
-                        <Link className="nav-link" to="/men-clothing">MEN</Link>
+                        <Link className="nav-link" to="/main-clothing?category=men">MEN</Link>
                         <ul className="dropdown-menu fixed-dropdown">
                             <div>
                                 <p className='major-category'>Daily Wear</p>
-                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=tshirt">T-Shirts</Link></li>
-                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=shirts">Shirts</Link></li>
-                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=jeans">Jeans</Link></li>
-                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=trousers">Trousers</Link></li>
-                                <li><Link className="dropdown-item" to="/men-clothing?subcategory=ethnic">Ethnic sets</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=tshirt&category=men">T-Shirts</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=shirts&category=men">Shirts</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=jeans&category=men">Jeans</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=trousers&category=men">Trousers</Link></li>
+                                <li><Link className="dropdown-item" to="/main-clothing?subcategory=ethnic&category=men">Ethnic sets</Link></li>
                             </div>
                         </ul>
                     </li>
