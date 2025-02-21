@@ -28,17 +28,23 @@ let Authlogin = () => {
         event.preventDefault()
 
         try{
-            await axios.post('http://127.0.0.1:3005/login',formData)
-            Swal.fire({
-                title: "Login Successful",
-                icon: "success",
-                confirmButtonText: "Click to continue",
-                allowOutsideClick: false 
-              }).then((result) => {
-                if (result.isConfirmed) {
-                    navigate('/'); 
-                }
-              });
+            let response = await axios.post('http://127.0.0.1:3005/login', formData, { withCredentials: true })
+            if (response.status === 200) {
+                const token = response.data.token;
+                const message = response.data.message
+                localStorage.setItem('token', token); 
+    
+                Swal.fire({
+                    title: message,
+                    icon: "success",
+                    confirmButtonText: "Click to continue",
+                    allowOutsideClick: false
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        navigate('/');
+                    }
+                });
+            };
         }
         catch(err){
             setError(err.response?.data?.message)

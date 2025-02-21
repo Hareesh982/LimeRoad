@@ -1,15 +1,16 @@
-let Customer = require('../model/customer');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
-dotenv.config();
-const sendResetMail = require('../mailer/mail')
+
+const Customer = require('../model/customer');
 const Vendor = require('../model/vendor')
 const Admin = require('../model/admin')
 
+const sendResetMail = require('../mailer/mail')
 
 
 
+dotenv.config();
 
 
 const customerDetails = async (req, res) => {
@@ -32,7 +33,7 @@ const customerDetails = async (req, res) => {
                 return res.status(400).json({ message: 'Mobile number already in use' });
             }
 
-            let user = new Customer({ name, email, mobile, password: hashedPassword });
+            let user = new Customer({ name, email, mobile, password: hashedPassword,userType});
             await user.save();
             return res.status(201).json({ message: 'Customer registered successfully' });
         }
@@ -46,7 +47,7 @@ const customerDetails = async (req, res) => {
             if (VendormobileCheck) {
                 return res.status(400).json({ message: 'Mobile number already in use' });
             }
-            let vendor = new Vendor({ name, email, mobile, password: hashedPassword });
+            let vendor = new Vendor({ name, email, mobile, password: hashedPassword,userType });
             await vendor.save();
             return res.status(201).json({ message: 'Customer registered successfully' });
         }
@@ -61,7 +62,7 @@ const customerDetails = async (req, res) => {
                 return res.status(400).json({ message: 'Mobile number already in use' });
             }
 
-            let admin = new Admin({ name, email, mobile, password: hashedPassword });
+            let admin = new Admin({ name, email, mobile, password: hashedPassword,userType });
             await admin.save();
             return res.status(201).json({ message: 'Customer registered successfully' });
         }
@@ -73,10 +74,7 @@ const customerDetails = async (req, res) => {
 };
 
 
-
-
-
-
+//---------------------------------Check mail function-------------------------------------------------
 
 async function checkEmail(email) {
     let user_customer = await Customer.findOne({ email });
@@ -99,9 +97,7 @@ async function checkEmail(email) {
 }
 
 
-
-
-
+//-----------------------------Log in function----------------------------------------------
 
 const customerLogin = async (req, res) => {
     try {
@@ -131,9 +127,7 @@ const customerLogin = async (req, res) => {
             { expiresIn: '1d' }
         );
 
-        res.cookie('token', token, { httpOnly: true });
-
-        return res.status(200).json({ message: 'Login successful' });
+        return res.status(200).json({ message: 'Login successful', token });
 
     } catch (error) {
         console.log(error)
@@ -143,8 +137,42 @@ const customerLogin = async (req, res) => {
 
 
 
+const verifyToken = (req, res, next) => {
+    const authHeader = req.header("Authorization")
+    console.log('auth header',authHeader)
+
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+        return res.status(401).json({ message: 'Unauthorized' });
+    }
+
+    const token = authHeader.split(" ")[1]; // Extract token from "Bearer <token>"
+
+    jwt.verify(token, process.env.JWT_SECRET_KEY, (err, payload) => {
+        if (err) {
+            return res.status(403).json({ message: 'Forbidden' });
+        }
+        req.user = payload;
+        next();
+    });
+
+    // let token = req.header("Authorization")
+    // if(token){
+    //     let payload = jwt.verify(token,process.env.JWT_SECRET)
+    //     console.log(payload.id)
+    //     let user = await User.findById(payload.id)
+    //     console.log(user)
+    //     req.user = user
+    //     next()
+    // }
+    // else{
+    //     res.send('no access')
+    // }
+};
 
 
+
+
+//--------------------------------Mail sender function------------------------------------
 
 
 const EmailCheckToresetPassword = async(req,res) =>{
@@ -164,12 +192,10 @@ const EmailCheckToresetPassword = async(req,res) =>{
     catch(error){
         return res.status(500).json({ message: 'Server error', error: error.message });
     }
-}
+};
 
 
-
-
-
+//------------------------------Password reset function-------------------------------------
 
 const ResetPassword = async(req,res) =>{
     try{
@@ -190,6 +216,23 @@ const ResetPassword = async(req,res) =>{
     catch(error){
         return res.status(500).json({ message: 'Server error', error: error.message });
     }
-}
+};
 
-module.exports = { customerDetails, customerLogin, EmailCheckToresetPassword,ResetPassword };
+
+const getUserDetails = async (req, res) => {
+    try {
+        const userId = req.user.id;
+        let user = await Customer.findById(userId) || await Vendor.findById(userId) || await Admin.findById(userId);
+        
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        console.log(user)
+
+        return res.status(200).json({ user });
+    } catch (error) {
+        return res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
+
+module.exports = { customerDetails, customerLogin, EmailCheckToresetPassword, ResetPassword, verifyToken, getUserDetails };

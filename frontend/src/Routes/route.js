@@ -13,6 +13,8 @@ import CartDetails from '../pages/cartProduct';
 import Payment from '../pages/Payment';
 import RegisterPage from '../pages/Register';
 import ResetPassword from '../pages/ResetPassword';
+import CustomerProfile from '../pages/CustomerProfile';
+import VendorProfile from '../pages/VendorProfile';
 
 let AppRoute = () => {
     return (
@@ -34,6 +36,8 @@ let AppRoute = () => {
                     <Route path='/payment' element={<Payment/>} />
                     <Route path='/register' element={<RegisterPage/>} />
                     <Route path='/reset-password' element={<ResetPassword/>} />
+                    <Route path='/customerprofile' element={<CustomerProfile/>} />
+                    <Route path='/vendorprofile' element={<VendorProfile/>} />
                 </Route>
             </Routes>
         </BrowserRouter>
