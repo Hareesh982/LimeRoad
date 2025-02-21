@@ -3,6 +3,7 @@ const dotenv = require('dotenv')
 const cors = require('cors')
 const router = require('./routes/userRoutes')
 const connectDB = require('./config/database')
+const cookieParser = require('cookie-parser');
 
 connectDB()
 dotenv.config()
@@ -12,7 +13,7 @@ const PORT = process.env.SERVER_PORT
 
 
 app.use(cors())
-
+app.use(cookieParser())
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(router)

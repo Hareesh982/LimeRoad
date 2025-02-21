@@ -4,7 +4,7 @@ import './login.css'
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 
 let AuthRegister = () => {
     const navigate = useNavigate()
@@ -18,8 +18,8 @@ let AuthRegister = () => {
             email : '',
             mobile : '',
             password : '',
-            re_password : '',
-            user_type : ''
+            userType : '',
+            re_password : ''
         }
     )
 
@@ -61,7 +61,7 @@ let AuthRegister = () => {
 
         try{
             await axios.post('http://127.0.0.1:3005/register',formData)
-            swal.fire({
+            Swal.fire({
                 title: "Registration Successful",
                 icon: "success",
                 confirmButtonText: "Click to continue",
@@ -94,17 +94,36 @@ let AuthRegister = () => {
                     </div>
                     <div className='d-flex justify-content-around'>
                         <div>
-                            <input type='radio' name='userType' id='customer' value='customer' required /> 
+                            <input 
+                                type='radio' 
+                                name='userType' 
+                                id='customer' 
+                                value='customer' 
+                                required 
+                                onChange={(event) => handleChange(event)}
+                            /> 
                             <label htmlFor='customer'>Customer</label>
                         </div>
 
                         <div>
-                            <input type='radio' id='vendor' name='userType' value='vendor' /> 
+                            <input 
+                                type='radio' 
+                                id='vendor' 
+                                name='userType' 
+                                value='vendor'
+                                onChange={(event) => handleChange(event)}
+                            /> 
                             <label htmlFor='vendor'>Vendor</label>
                         </div>
 
                         <div>
-                            <input type='radio' id='admin' name='userType' value='admin' />
+                            <input 
+                                type='radio' 
+                                id='admin' 
+                                name='userType' 
+                                value='admin' 
+                                onChange={(event) => handleChange(event)}
+                            />
                             <label htmlFor='admin'>Admin</label>
                         </div>
                     </div>
