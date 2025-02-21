@@ -5,16 +5,25 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 let Profile = ({user}) =>{
     let navigate = useNavigate()
     let handleLogout = () => {
         localStorage.removeItem('token')
         user = null
-        alert('You have been logged out')
-        navigate('/login')
-
+        Swal.fire({
+            title : 'You have been logged out',
+            icon : 'success',
+            allowOutsideClick : false,
+            confirmButtonText : 'Click to continue'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                navigate('/login'); 
+            }
+          });
     }
+
     return (
 
         <div style={{ 
@@ -33,7 +42,7 @@ let Profile = ({user}) =>{
             {
                 user ? (
                     <>
-                        <span style={{ fontSize: '12px', fontWeight: 'bold' }}>WELCOME! {user.name}</span>
+                        <span style={{ fontSize: '12px', fontWeight: 'bold' }}>WELCOME! {user.name} / {user.userType}</span>
                         {
                             user.userType === 'vendor' ? (
                                 <div style={{ paddingTop: '10px' }}>
