@@ -1,508 +1,859 @@
 [
   {
-    "id": 1,
-    "title": "Men's Slim Fit Casual Shirt",
-    "price": 25.99,
-    "description": "Classic slim fit shirt, perfect for casual wear.",
-    "category": "men",
-    "subcategory" : "shirts",
-    "image": "https://n-img0.junaroad.com/uiproducts/21032010/zoom_0-1709314404.jpg",
-    "rating": {
-      "rate": 3,
-      "count": 180
-    }
+      "title": "Men's Slim Fit Casual Shirt",
+      "price": 2079,
+      "description": "Classic slim fit shirt, perfect for casual wear.",
+      "category": "men",
+      "subcategory": "shirts",
+      "image": "https://n-img0.junaroad.com/uiproducts/21032010/zoom_0-1709314404.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21032010/zoom_1-1709314404.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21032010/zoom_2-1709314404.jpg",
+      "rating": {
+          "rate": 3
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Nike",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 2,
-    "title": "Men's Cotton T-Shirt",
-    "price": 19.99,
-    "description": "Comfortable cotton t-shirt for everyday use.",
-    "category": "men",
-    "subcategory" : "tshirt",
-    "image": "https://n-img0.junaroad.com/uiproducts/21624443/zoom_0-1733316053.jpg",
-    "rating": {
-      "rate": 2.5,
-      "count": 220
-    }
+      "title": "Men's Cotton T-Shirt",
+      "price": 1599,
+      "description": "Comfortable cotton t-shirt for everyday use.",
+      "category": "men",
+      "subcategory": "tshirt",
+      "image": "https://n-img0.junaroad.com/uiproducts/21624443/zoom_0-1733316053.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21624443/zoom_1-1733316053.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21624443/zoom_2-1733316053.jpg",
+      "rating": {
+          "rate": 2.5
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Adidas",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 3,
-    "title": "Men's Linen Shirt",
-    "price": 32.50,
-    "description": "Lightweight linen shirt, ideal for summer.",
-    "category": "men",
-    "subcategory" : "shirts",
-    "image": "https://n-img0.junaroad.com/uiproducts/21717944/zoom_0-1738583459.jpg",
-    "rating": {
-      "rate": 4.5,
-      "count": 150
-    }
+      "title": "Men's Linen Shirt",
+      "price": 2600,
+      "description": "Lightweight linen shirt, ideal for summer.",
+      "category": "men",
+      "subcategory": "shirts",
+      "image": "https://n-img0.junaroad.com/uiproducts/21717944/zoom_0-1738583459.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21717944/zoom_1-1738583459.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21717944/zoom_2-1738583459.jpg",
+      "rating": {
+          "rate": 4.5
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Puma",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 4,
-    "title": "Men's Chinos",
-    "price": 39.99,
-    "description": "Stylish and comfortable chinos for any occasion.",
-    "category": "men",
-    "subcategory" : "pants",
-    "image": "https://redtape.com/cdn/shop/files/RTC0027_1.jpg?v=1738408352",
-    "rating": {
-      "rate": 4.3,
-      "count": 190
-    }
+      "title": "Men's Chinos",
+      "price": 3199,
+      "description": "Stylish and comfortable chinos for any occasion.",
+      "category": "men",
+      "subcategory": "pants",
+      "image": "https://n-img0.junaroad.com/uiproducts/18398379/zoom_0-1654694183.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/18398379/zoom_1-1654694183.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/18398379/zoom_2-1654694183.jpg",
+      "rating": {
+          "rate": 4.3
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Reebok",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 5,
-    "title": "Men's Cargo Pants",
-    "price": 44.99,
-    "description": "Durable cargo pants with multiple pockets.",
-    "category": "men",
-    "subcategory" : "pants",
-    "image": "https://m.media-amazon.com/images/I/81xRg0piFpL._AC_UY1100_.jpg",
-    "rating": {
-      "rate": 4.1,
-      "count": 160
-    }
-  },
-    {
-    "id": 6,
-    "title": "Men's Dress Pants",
-    "price": 54.99,
-    "description": "Classic dress pants for formal events.",
-    "category": "men",
-    "subcategory" : "pants",
-    "image": "https://m.media-amazon.com/images/I/616evE3EBIL._AC_UY1100_.jpg",
-    "rating": {
-      "rate": 4.6,
-      "count": 120
-    }
+      "title": "Men's Cargo Pants",
+      "price": 3599,
+      "description": "Durable cargo pants with multiple pockets.",
+      "category": "men",
+      "subcategory": "pants",
+      "image": "https://n-img0.junaroad.com/uiproducts/21375649/zoom_0-1720436327.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21375649/zoom_1-1720436327.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21375649/zoom_2-1720436327.jpg",
+      "rating": {
+          "rate": 4.1
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Under Armour",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 7,
-    "title": "Men's Kurta",
-    "price": 49.99,
-    "description": "Traditional kurta for festive occasions.",
-    "category": "men",
-    "subcategory" : "ethnic",
-    "image": "https://assets.panashindia.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/0/904mw18-2418_1.jpg",
-    "rating": {
-      "rate": 4.4,
-      "count": 170
-    }
+      "title": "Men's Dress Pants",
+      "price": 4399,
+      "description": "Classic dress pants for formal events.",
+      "category": "men",
+      "subcategory": "pants",
+      "image": "https://n-img0.junaroad.com/uiproducts/21677612/zoom_0-1737120005.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21677612/zoom_1-1737120005.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21677612/zoom_2-1737120005.jpg",
+      "rating": {
+          "rate": 4.6
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "New Balance",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 8,
-    "title": "Men's Silk Kurta",
-    "price": 69.99,
-    "description": "Elegant silk kurta for special events.",
-    "category": "men",
-    "subcategory" : "ethnic",
-    "image": "https://sojanya.com/cdn/shop/files/V-SJR-LK-SilkPrint-48033-Pblu-2_2048x.jpg?v=1718193179",
-    "rating": {
-      "rate": 4.7,
-      "count": 100
-    }
+      "title": "Men's Kurta",
+      "price": 3999,
+      "description": "Traditional kurta for festive occasions.",
+      "category": "men",
+      "subcategory": "ethnic",
+      "image": "https://n-img0.junaroad.com/uiproducts/21728727/zoom_0-1739247725.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21728727/zoom_1-1739247725.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21728727/zoom_2-1739247725.jpg",
+      "rating": {
+          "rate": 4.4
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Levi's",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 9,
-    "title": "Men's Embroidered Kurta",
-    "price": 59.99,
-    "description": "Intricately embroidered kurta for a rich look.",
-    "category": "men",
-    "subcategory" : "ethnic",
-    "image": "https://sanwara.com/cdn/shop/files/1_273dc620-3b44-4e2e-b134-1af8a96d5591.jpg?v=1738145311",
-    "rating": {
-      "rate": 4.5,
-      "count": 140
-    }
+      "title": "Men's Silk Kurta",
+      "price": 5599,
+      "description": "Elegant silk kurta for special events.",
+      "category": "men",
+      "subcategory": "ethnic",
+      "image": "https://n-img0.junaroad.com/uiproducts/21507193/zoom_0-1724520266.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21507193/zoom_1-1724520266.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21507193/zoom_2-1724520266.jpg",
+      "rating": {
+          "rate": 4.7
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Wrangler",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 10,
-    "title": "Men's Jeans",
-    "price": 49.99,
-    "description": "Classic denim jeans for a timeless style.",
-    "category": "men",
-    "subcategory" : "pants",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJS3OgBMDZnfSn9LX5PlxSgI_vw6s51RH0Fw&s",
-    "rating": {
-      "rate": 4.3,
-      "count": 200
-    }
+      "title": "Men's Embroidered Kurta",
+      "price": 4799,
+      "description": "Intricately embroidered kurta for a rich look.",
+      "category": "men",
+      "subcategory": "ethnic",
+      "image": "https://n-img0.junaroad.com/uiproducts/21524975/zoom_0-1726040061.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21524975/zoom_1-1726040061.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21524975/zoom_2-1726040061.jpg",
+      "rating": {
+          "rate": 4.5
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Lee",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 11,
-    "title": "Women's Blouse",
-    "price": 29.99,
-    "description": "Stylish blouse for any occasion.",
-    "category": "women",
-    "subcategory" : "tops",
-    "image": "https://n-img0.junaroad.com/uiproducts/15138397/zoom_0-1526474748.jpg",
-    "image_2" : "https://n-img1.junaroad.com/uiproducts/15138397/zoom_1-1526474748.jpg",
-    "image_3" : "https://n-img2.junaroad.com/uiproducts/15138397/zoom_2-1526474748.jpg",
-    "rating": {
-      "rate": 4.2,
-      "count": 180
-    }
+      "title": "Men's Jeans",
+      "price": 3999,
+      "description": "Classic denim jeans for a timeless style.",
+      "category": "men",
+      "subcategory": "pants",
+      "image": "https://n-img1.junaroad.com/uiproducts/21703911/zoom_0-1737121261.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21703911/zoom_1-1737121261.jpg",
+      "image_3": "https://n-img1.junaroad.com/uiproducts/21703911/zoom_2-1737121261.jpg",
+      "rating": {
+          "rate": 4.3
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Tommy Hilfiger",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 12,
-    "title": "silver sequin regular top",
-    "price": 19.99,
-    "description": "Trendy crop top for a modern look.",
-    "category": "women",
-    "subcategory" : "tops",
-    "image": "https://n-img0.junaroad.com/uiproducts/21496510/zoom_0-1723829620.jpg",
-    "image_2" : "https://n-img1.junaroad.com/uiproducts/21496510/zoom_1-1723829620.jpg",
-    "image_3" : "https://n-img0.junaroad.com/uiproducts/21496510/zoom_3-1723829620.jpg",
-     "rating": {
-      "rate": 4.0,
-      "count": 220
-    }
+      "title": "Women's Blouse",
+      "price": 2399,
+      "description": "Stylish blouse for any occasion.",
+      "category": "women",
+      "subcategory": "tops",
+      "image": "https://n-img0.junaroad.com/uiproducts/15138397/zoom_0-1526474748.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/15138397/zoom_1-1526474748.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/15138397/zoom_2-1526474748.jpg",
+      "rating": {
+          "rate": 4.2
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Calvin Klein",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 13,
-    "title": "Women's Formal Top",
-    "price": 34.99,
-    "description": "Elegant formal top for special events.",
-    "subcategory" : "tops",
-    "category": "women",
-    "image": "https://n-img0.junaroad.com/uiproducts/19695344/zoom_0-1681300455.jpg",
-    "image_2" : "https://n-img1.junaroad.com/uiproducts/19695344/zoom_1-1681300455.jpg",
-    "image_3" : "https://n-img0.junaroad.com/uiproducts/19695344/zoom_3-1681300455.jpg",
-    "rating": {
-      "rate": 4.5,
-      "count": 150
-    }
+      "title": "silver sequin regular top",
+      "price": 1599,
+      "description": "Trendy crop top for a modern look.",
+      "category": "women",
+      "subcategory": "tops",
+      "image": "https://n-img0.junaroad.com/uiproducts/21496510/zoom_0-1723829620.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21496510/zoom_1-1723829620.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21496510/zoom_3-1723829620.jpg",
+      "rating": {
+          "rate": 4
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Ralph Lauren",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 14,
-    "title": "Women's Silk Saree",
-    "price": 79.99,
-    "description": "Beautiful silk saree for traditional occasions.",
-    "category": "women",
-    "subcategory" : "sarees",
-    "image": "https://static3.azafashions.com/tr:w-450/uploads/product_gallery/1658028-0534682001659701578.jpg",
-    "rating": {
-      "rate": 4.6,
-      "count": 120
-    }
+      "title": "Women's Formal Top",
+      "price": 2799,
+      "description": "Elegant formal top for special events.",
+      "subcategory": "tops",
+      "category": "women",
+      "image": "https://n-img0.junaroad.com/uiproducts/19695344/zoom_0-1681300455.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/19695344/zoom_1-1681300455.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/19695344/zoom_3-1681300455.jpg",
+      "rating": {
+          "rate": 4.5
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Gucci",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 15,
-    "title": "Women's Cotton Saree",
-    "price": 59.99,
-    "description": "Comfortable cotton saree for everyday wear.",
-    "category": "women",
-    "subcategory" : "sarees",
-    "image": "https://royskart.com/cdn/shop/products/57_e99f93a3-96fe-45df-b50e-b6367c0bb902.jpg?v=1683877286",
-    "rating": {
-      "rate": 4.3,
-      "count": 190
-    }
+      "title": "Women's Silk Saree",
+      "price": 6399,
+      "description": "Beautiful silk saree for traditional occasions.",
+      "category": "women",
+      "subcategory": "sarees",
+      "image": "https://n-img0.junaroad.com/uiproducts/21397378/zoom_0-1723630606.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21397378/zoom_1-1723630606.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21397378/zoom_2-1723630606.jpg",
+      "rating": {
+          "rate": 4.6
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Prada",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
   {
-    "id": 16,
-    "title": "Women's Georgette Saree",
-    "price": 69.99,
-    "description": "Lightweight georgette saree for a graceful look.",
-    "category": "women",
-    "subcategory" : "sarees",
-    "image": "https://images.cbazaar.com/images/embroidered-cord-work-teal-georgette-saree-with-blouse-for-women-sasacy6730-u.jpg",
-    "rating": {
-      "rate": 4.3,
-      "count": 190
-    }
+      "title": "Women's Cotton Saree",
+      "price": 4799,
+      "description": "Comfortable cotton saree for everyday wear.",
+      "category": "women",
+      "subcategory": "sarees",
+      "image": "https://n-img0.junaroad.com/uiproducts/21677154/zoom_0-1735141108.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21677154/zoom_1-1735141108.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21677154/zoom_2-1735141108.jpg",
+      "rating": {
+          "rate": 4.3
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Versace",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
   },
-    {
-      "id": 17,
+  {
+      "title": "Women's Georgette Saree",
+      "price": 5599,
+      "description": "Lightweight georgette saree for a graceful look.",
+      "category": "women",
+      "subcategory": "sarees",
+      "image": "https://n-img0.junaroad.com/uiproducts/21469477/zoom_0-1722619405.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21469477/zoom_3-1722619405.jpg",
+      "image_3": "https://n-img1.junaroad.com/uiproducts/21469477/zoom_4-1722619405.jpg",
+      "rating": {
+          "rate": 4.3
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Louis Vuitton",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Women's Churidar Set",
-      "price": 64.99,
+      "price": 5199,
       "description": "Elegant churidar set for a traditional look.",
       "category": "women",
-      "subcategory" : "kurthas",
-      "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/JULY/30/PLWAYMxM_bc4bd48f7f67404e81b6e125ef1fd677.jpg",
+      "subcategory": "kurthas",
+      "image": "https://n-img1.junaroad.com/uiproducts/20342307/zoom_0-1695843980.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/20342307/zoom_1-1695843980.jpg",
+      "image_3": "https://n-img1.junaroad.com/uiproducts/20342307/zoom_2-1695843980.jpg",
       "rating": {
-        "rate": 4.4,
-        "count": 170
-      }
-    },
-    {
-      "id": 18,
+          "rate": 4.4
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Dolce & Gabbana",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Women's Embroidered Churidar",
-      "price": 74.99,
+      "price": 5999,
       "description": "Beautifully embroidered churidar for special occasions.",
       "category": "women",
-      "subcategory" : "kurthas",
-      "image": "https://cdn.sareeka.com/image/cache/data2024/purple-georgette-salwar-suit-with-embroidered-and-thread-work-for-women-283341-1000x1375.jpg",
+      "subcategory": "kurthas",
+      "image": "https://n-img0.junaroad.com/uiproducts/21581388/zoom_0-1729080366.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21581388/zoom_1-1729080366.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21581388/zoom_2-1729080366.jpg",
       "rating": {
-        "rate": 4.7,
-        "count": 100
-      }
-    },
-    {
-      "id": 19,
+          "rate": 4.7
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Balenciaga",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Women's Printed Churidar",
-      "price": 54.99,
+      "price": 4399,
       "description": "Stylish printed churidar for casual wear.",
       "category": "women",
-      "subcategory" : "kurthas",
-      "image": "https://img.faballey.com/images/Product/ILK00361Z/3.jpg",
+      "subcategory": "kurthas",
+      "image": "https://n-img0.junaroad.com/uiproducts/21541671/zoom_0-1726748912.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21541671/zoom_1-1726748912.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21541671/zoom_2-1726748912.jpg",
       "rating": {
-        "rate": 4.5,
-        "count": 140
-      }
-    },
-    {
-      "id": 20,
+          "rate": 4.5
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Zara",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Women's Handbag",
-      "price": 49.99,
+      "price": 3999,
       "description": "Trendy handbag for everyday use.",
       "category": "women",
-      "subcategory" : "bags",
-      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/hand-messenger-bag/i/e/k/waqar-bag-waqar-bag-handbag-hercraft-original-imagnyafqyjdpc6g.jpeg?q=90&crop=false",
+      "subcategory": "bags",
+      "image": "https://n-img0.junaroad.com/uiproducts/20617146/zoom_0-1702902017.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/20617146/zoom_1-1702902017.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/20617146/zoom_2-1702902017.jpg",
       "rating": {
-        "rate": 4.3,
-        "count": 200
-      }
-    },
-    {
-      "id": 21,
+          "rate": 4.3
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "H&M",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Kids Cotton Shirt",
-      "price": 14.99,
+      "price": 1199,
       "description": "Comfortable cotton shirt for kids.",
       "category": "kids",
-      "image": "https://www.ratanjaipur.com/cdn/shop/files/1_1_c1239015-7e2f-4d5a-b8be-cac251277395.jpg?v=1737689294&width=1500",
+      "subcategory": "shirts",
+      "image": "https://n-img0.junaroad.com/uiproducts/21570722/zoom_0-1731948073.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21570722/zoom_1-1731948073.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21570722/zoom_2-1731948073.jpg",
       "rating": {
-        "rate": 4.2,
-        "count": 180
-      }
-    },
-    {
-      "id": 22,
+          "rate": 4.2
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "Forever 21",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Kids Graphic Tee",
-      "price": 12.99,
+      "price": 1039,
       "description": "Fun graphic tee for kids.",
       "category": "kids",
-      "image": "https://thetribekids.com/cdn/shop/files/neel-boys-relaxed-spread-collar-checked-cotton-casual-shirt-white-534428_460x@2x.jpg?v=1735211583",
+      "subcategory": "shirts",
+      "image": "https://n-img0.junaroad.com/uiproducts/21175308/zoom_0-1714387422.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21175308/zoom_1-1714387422.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21175308/zoom_2-1714387422.jpg",
       "rating": {
-        "rate": 4.0,
-        "count": 220
-      }
-    },
-    {
-      "id": 23,
+          "rate": 4
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "GAP",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Kids Formal Shirt",
-      "price": 19.99,
+      "price": 1599,
       "description": "Smart formal shirt for kids.",
       "category": "kids",
-      "image": "https://images.meesho.com/images/products/422905233/dam5m_512.webp",
+      "subcategory": "shirts",
+      "image": "https://n-img0.junaroad.com/uiproducts/20416515/zoom_0-1697556250.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/20416515/zoom_1-1697556250.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/20416515/zoom_2-1697556250.jpg",
       "rating": {
-        "rate": 4.5,
-        "count": 150
-      }
-    },
-    {
-      "id": 24,
+          "rate": 4.5
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "Uniqlo",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Kids Cotton Pants",
-      "price": 17.99,
+      "price": 1439,
       "description": "Comfortable cotton pants for kids.",
       "category": "kids",
-      "image": "https://assets0.mirraw.com/images/11110674/1_luxe_webp.webp?1709151044",
+      "subcategory": "bottoms",
+      "image": "https://n-img2.junaroad.com/uiproducts/21626415/zoom_0-1730140191.jpg",
+      "image_2": "https://n-img2.junaroad.com/uiproducts/21626415/zoom_1-1730140191.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/21626415/zoom_2-1730140191.jpg",
       "rating": {
-        "rate": 4.3,
-        "count": 190
-      }
-    },
-    {
-      "id": 25,
+          "rate": 4.3
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "Mango",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Kids Cargo Pants",
-      "price": 22.99,
+      "price": 1839,
       "description": "Durable cargo pants for kids.",
       "category": "kids",
-      "image": "https://assets.ajio.com/medias/sys_master/root/20240814/ZB3R/66bc85921d763220fa7a05fb/-473Wx593H-700283150-khaki-MODEL.jpg",
+      "subcategory": "bottoms",
+      "image": "https://n-img0.junaroad.com/uiproducts/21626413/zoom_0-1730140191.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21626413/zoom_1-1730140191.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21626413/zoom_2-1730140191.jpg",
       "rating": {
-        "rate": 4.1,
-        "count": 160
-      }
-    },
-    {
-      "id": 26,
+          "rate": 4.1
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "Diesel",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "Kids Dress Pants",
-      "price": 24.99,
+      "price": 1999,
       "description": "Stylish dress pants for kids.",
       "category": "kids",
-      "image": "https://media.kohlsimg.com/is/image/kohls/3770255_ALT62?wid=400&hei=400&op_sharpen=1",
+      "subcategory": "bottoms",
+      "image": "https://n-img1.junaroad.com/uiproducts/17756216/pri_175_p-1624270038.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/17756216/zoom_1-1624270038.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/17756216/zoom_2-1624270038.jpg",
       "rating": {
-        "rate": 4.6,
-        "count": 120
-      }
-    },
-    {
-      "id": 27,
-      "title": "Kids Building Blocks",
-      "price": 29.99,
-      "description": "Fun building blocks for kids.",
+          "rate": 4.6
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "Superdry",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
+      "title": "girls round neck printed short sleeves t-shirt",
+      "price": 2399,
+      "description": "Casual wear sleeve type color black Cotton blend graphic neck chest print.",
       "category": "kids",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlLq3_ry0EO8qLdTaLxdzTN5fqmvbgdeIezg&s",
+      "subcategory": "tops",
+      "image": "https://n-img1.junaroad.com/uiproducts/21618874/zoom_1-1729782237.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21618874/zoom_0-1729782237.jpg",
+      "image_3": "https://n-img1.junaroad.com/uiproducts/21618874/zoom_2-1729782237.jpg",
       "rating": {
-        "rate": 4.4,
-        "count": 170
-      }
-    },
-    {
-      "id": 28,
-      "title": "Kids Plush Toy",
-      "price": 19.99,
-      "description": "Soft plush toy for kids.",
+          "rate": 4.4
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "The North Face",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
+      "title": "navy blue cotton blend front print tee",
+      "price": 1599,
+      "description": "printed tops for kids , daily regular wear .",
       "category": "kids",
-      "image": "https://storio.in/cdn/shop/files/41Guk9aQzxL.jpg?v=1716550469",
+      "subcategory": "tops",
+      "image": "https://n-img0.junaroad.com/uiproducts/21169028/zoom_0-1713607331.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21169028/zoom_1-1713607331.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21169028/zoom_2-1713607331.jpg",
       "rating": {
-        "rate": 4.7,
-        "count": 100
-      }
-    },
-    {
-      "id": 29,
-      "title": "Kids Educational Toy",
-      "price": 34.99,
-      "description": "Engaging educational toy for kids.",
+          "rate": 4.7
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "Columbia",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
+      "title": "round neck graphic tee",
+      "price": 2799,
+      "description": "Round neck casual wear short sleeves with cotton material type, purple color.",
       "category": "kids",
-      "image": "https://www.jiomart.com/images/product/original/rvbke820ci/whinsy-kids-learning-educational-toys-for-2-year-old-product-images-orvbke820ci-p605686019-0-202310212034.png?im=Resize=(1000,1000)",
+      "subcategory": "tops",
+      "image": "https://n-img0.junaroad.com/uiproducts/18404907/zoom_0-1655303008.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/18404907/zoom_1-1655303008.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/18404907/zoom_2-1655303008.jpg",
       "rating": {
-        "rate": 4.5,
-        "count": 140
-      }
-    },
-    {
-      "id": 30,
-      "title": "Kids Baseball Cap",
-      "price": 9.99,
-      "description": "Stylish baseball cap for kids.",
+          "rate": 4.5
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "Patagonia",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
+      "title": "girls printed sleeveless high low frock",
+      "price": 799,
+      "description": "party wear kids girl sleevless polyester material with knee length.",
       "category": "kids",
-      "image": "https://d1ejm5im4bv2vf.cloudfront.net/pub/media/mf_webp/jpg/media/catalog/product/cache/718154c3aff62b1ad64160986aa81112/r/e/red-cap-side.webp",
+      "subcategory": "frocks",
+      "image": "https://n-img0.junaroad.com/uiproducts/21709308/zoom_0-1737713472.jpg",
+      "image_2": "https://n-img0.junaroad.com/uiproducts/21709308/zoom_1-1737713472.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21709308/zoom_2-1737713472.jpg",
       "rating": {
-        "rate": 4.3,
-        "count": 200
-      }
-    },
-    {
-      "id": 31,
+          "rate": 4.3
+      },
+      "size": [
+          "5 years",
+          "8 years",
+          "10 years",
+          "12 years",
+          "14 years"
+      ],
+      "brand": "Champion",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "women white solid cotton shirt",
-      "price": 12,
+      "price": 960,
       "description": "Regular fit sleeve type Long Sleeves color white material Cotton.",
       "category": "women",
-      "subcategory" : "tops",
+      "subcategory": "tops",
       "image": "https://n-img0.junaroad.com/uiproducts/21492438/zoom_0-1732540208.jpg",
-      "image_2" : "https://n-img1.junaroad.com/uiproducts/21492438/zoom_1-1732540208.jpg",
-      "image_3" : "https://n-img2.junaroad.com/uiproducts/21492438/zoom_2-1732540208.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21492438/zoom_1-1732540208.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/21492438/zoom_2-1732540208.jpg",
       "rating": {
-        "rate": 4.2,
-        "count": 180
-      }
-    },
-    {
-      "id": 32,
+          "rate": 4.2
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Armani",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "women printed sleeveless crop top",
-      "price": 20,
+      "price": 1600,
       "description": "Regular fit sleeve type Long Sleeves color white material Cotton.",
       "category": "women",
-      "subcategory" : "tops",
+      "subcategory": "tops",
       "image": "https://n-img0.junaroad.com/uiproducts/21525150/zoom_0-1726039533.jpg",
-      "image_2" : "https://n-img1.junaroad.com/uiproducts/21525150/zoom_1-1726039533.jpg",
-      "image_3" : "https://n-img0.junaroad.com/uiproducts/21525150/zoom_3-1726039533.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21525150/zoom_1-1726039533.jpg",
+      "image_3": "https://n-img0.junaroad.com/uiproducts/21525150/zoom_3-1726039533.jpg",
       "rating": {
-        "rate": 4.2,
-        "count": 180
-      }
-    },
-    {
-      "id": 33,
+          "rate": 4.2
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Burberry",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "women white cotton regular top",
-      "price": 15,
+      "price": 1200,
       "description": "Regular fit sleeve type Long Sleeves color white material Cotton.",
       "category": "women",
-      "subcategory" : "tops",
+      "subcategory": "tops",
       "image": "https://n-img2.junaroad.com/uiproducts/21092653/zoom_0-1716399939.jpg",
-      "image_2" : "https://n-img1.junaroad.com/uiproducts/21092653/zoom_1-1716399939.jpg",
-      "image_3" : "https://n-img2.junaroad.com/uiproducts/21092653/zoom_2-1716399939.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21092653/zoom_1-1716399939.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/21092653/zoom_2-1716399939.jpg",
       "rating": {
-        "rate": 4.2,
-        "count": 180
-      }
-    },
-    {
-      "id": 34,
+          "rate": 4.2
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Fendi",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "women printed v neck flared tunic",
-      "price": 10,
+      "price": 800,
       "description": "Regular fit sleeve type Long Sleeves color white material Cotton.",
       "category": "women",
-      "subcategory" : "tops",
+      "subcategory": "tops",
       "image": "https://n-img0.junaroad.com/uiproducts/21374139/zoom_0-1720186659.jpg",
-      "image_2" : "https://n-img1.junaroad.com/uiproducts/21374139/zoom_1-1720186659.jpg",
-      "image_3" : "https://n-img2.junaroad.com/uiproducts/21374139/zoom_2-1720186659.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21374139/zoom_1-1720186659.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/21374139/zoom_2-1720186659.jpg",
       "rating": {
-        "rate": 4.2,
-        "count": 180
-      }
-    },
-    {
-      "id": 35,
+          "rate": 4.2
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Lacoste",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "maroon self design banarasi saree with blouse",
-      "price": 200,
+      "price": 16000,
       "description": "SANGAM PRINTS brings to you this saree which is made from Banarasi Silk fabric and is available in attractive colours..",
       "category": "women",
-      "subcategory" : "sarees",
+      "subcategory": "sarees",
       "image": "https://n-img0.junaroad.com/uiproducts/19708632/zoom_0-1683305342.jpg",
-      "image_2" : "https://n-img1.junaroad.com/uiproducts/19708632/zoom_1-1683305342.jpg",
-      "image_3" : "https://n-img1.junaroad.com/uiproducts/19708632/zoom_1-1683305342.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/19708632/zoom_1-1683305342.jpg",
+      "image_3": "https://n-img1.junaroad.com/uiproducts/19708632/zoom_1-1683305342.jpg",
       "rating": {
-        "rate": 4.6,
-        "count": 120
-      }
-    },
-    {
-      "id": 36,
+          "rate": 4.6
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "G-Star RAW",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "women solid with work embroidered saree with blouse",
-      "price": 99,
+      "price": 7920,
       "description": "SANGAM PRINTS brings to you this saree which is made from Banarasi Silk fabric and is available in attractive colours..",
       "category": "women",
-      "subcategory" : "sarees",
+      "subcategory": "sarees",
       "image": "https://n-img1.junaroad.com/uiproducts/21559060/zoom_0-1730524451.jpg",
-      "image_2" : "https://n-img1.junaroad.com/uiproducts/21559060/zoom_1-1730524451.jpg",
-      "image_3" : "https://n-img2.junaroad.com/uiproducts/21559060/zoom_2-1730524451.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21559060/zoom_1-1730524451.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/21559060/zoom_2-1730524451.jpg",
       "rating": {
-        "rate": 4.6,
-        "count": 120
-      }
-    },
-    {
-      "id": 37,
+          "rate": 4.6
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Ted Baker",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "women self design bordered saree with blouse",
-      "price": 149,
+      "price": 11920,
       "description": "SANGAM PRINTS brings to you this saree which is made from Banarasi Silk fabric and is available in attractive colours..",
       "category": "women",
-      "subcategory" : "sarees",
+      "subcategory": "sarees",
       "image": "https://n-img0.junaroad.com/uiproducts/21185980/zoom_0-1714465509.jpg",
-      "image_2" : "https://n-img1.junaroad.com/uiproducts/21185980/zoom_1-1714465509.jpg",
-      "image_3" : "https://n-img2.junaroad.com/uiproducts/21185980/zoom_2-1714465509.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21185980/zoom_1-1714465509.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/21185980/zoom_2-1714465509.jpg",
       "rating": {
-        "rate": 4.6,
-        "count": 120
-      }
-    },
-    {
-      "id": 38,
+          "rate": 4.6
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "AllSaints",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
       "title": "women solid with bordered saree with blouse",
-      "price": 129,
+      "price": 10320,
       "description": "SANGAM PRINTS brings to you this saree which is made from Banarasi Silk fabric and is available in attractive colours..",
       "category": "women",
-      "subcategory" : "sarees",
+      "subcategory": "sarees",
       "image": "https://n-img2.junaroad.com/uiproducts/21305433/zoom_0-1717410255.jpg",
-      "image_2" : "https://n-img1.junaroad.com/uiproducts/21305433/zoom_1-1717410255.jpg",
-      "image_3" : "https://n-img2.junaroad.com/uiproducts/21305433/zoom_2-1717410255.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21305433/zoom_1-1717410255.jpg",
+      "image_3": "https://n-img2.junaroad.com/uiproducts/21305433/zoom_2-1717410255.jpg",
       "rating": {
-        "rate": 4.6,
-        "count": 120
-      }
-    }
+          "rate": 4.6
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "brand": "Hackett",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  },
+  {
+      "title": "men solid blue denim casual shirt",
+      "price": 759,
+      "description": "good shirts",
+      "category": "men",
+      "subcategory": "shirts",
+      "image": "https://n-img0.junaroad.com/uiproducts/21558772/zoom_0-1729862309.jpg",
+      "image_2": "https://n-img1.junaroad.com/uiproducts/21558772/zoom_1-1729862309.jpg",
+      "image_3": "https://n-img1.junaroad.com/uiproducts/21558772/zoom_4-1729862309.jpg",
+      "rating": {
+          "rate": 5
+      },
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL"
+      ],
+      "brand": "puma",
+      "vendor_id": "67b8b1d862e928bcd917bad2"
+  }
 ]

@@ -262,5 +262,16 @@
         "profile_image" : "https://n-img4.junaroad.com/stories/story_p_678f367d209967094478f672-1737449591.jpeg",
         "seller_name" : "Trend Experts",
         "followers" : "6k"
+    },
+    {
+        "id" : 25,
+        "title" : "FAIRY TALE MAGIC",
+        "category" : "kids",
+        "sub_category" : "frocks",
+        "likes"  : 1,
+        "image" : "https://n-img2.junaroad.com/stories/story_p_67b5a6df20996794883fb850-1739959509.jpeg",
+        "profile_image" : "https://n-img4.junaroad.com/stories/story_p_678f367d209967094478f672-1737449591.jpeg",
+        "seller_name" : "Trend Experts",
+        "followers" : "4k"
     }
 ]

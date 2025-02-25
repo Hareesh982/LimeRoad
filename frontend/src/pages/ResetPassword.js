@@ -40,9 +40,10 @@ function ResetPassword() {
             return;
         }
         try{
-            await axios.post('http://127.0.0.1:3005/reset-password',formData)
+            let response = await axios.post('http://127.0.0.1:3005/reset-password',formData)
+            let message = response.data.message
             Swal.fire({
-                title: "Password updated Successfully",
+                title: message,
                 icon: "success",
                 confirmButtonText: "Click to continue",
                 allowOutsideClick: false 
@@ -53,7 +54,16 @@ function ResetPassword() {
               });
         }
         catch(err){
-            setEmailError(err.response?.data?.message)
+            if(err.response?.data?.message_subject === 'email'){
+                setEmailError(err.response?.data?.message)
+            }
+            else if(err.response?.data?.message_subject === 'password'){
+                setPasswordError(err.response?.data?.message)
+            }
+            else{
+                alert(err.response?.data?.message)
+            }
+            
         }
     }
 

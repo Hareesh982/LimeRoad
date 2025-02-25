@@ -1,6 +1,6 @@
 body{
     background-color: rgb(239, 238, 238);
-}
+  }
 .navbar {
     background-color: white;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
@@ -10,6 +10,7 @@ body{
     top: 0;
     z-index: 1000;
 }
+
 
 .navbar-nav{
     gap:25px

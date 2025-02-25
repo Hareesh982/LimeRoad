@@ -1,41 +1,56 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-function Kidsfeed() {
-    const women = [
-        { wear: 'FROKS', path: '/aspects/kids_girl_froks.jpg' },
-        { wear: 'TWIN SETS', path: '/aspects/kids_girl_twin_sets.jpg' },
-        { wear: 'TWIN SETS', path: '/aspects/kids_boy_twin_sets.jpg' },
-        { wear: 'T SHIRTS', path: '/aspects/kids_boy_tshirts.jpg' },
-        { wear: 'SHIRTS', path: '/aspects/kids_boy_shirts.jpeg' },
-        { wear: 'BOTTOM', path: '/aspects/kids_boy_bottoms.jpg' },
-        { wear: 'TOPS', path: '/aspects/kids_girl_tops.jpg' },
-        { wear: 'ETHNIC WEAR', path: '/aspects/kids_girl_ethnic.jpg' },
-        { wear: 'BOTTOM', path: '/aspects/kids_girl_bottom.jpg' } ,
-        { wear: 'WINTERWEAR', path: '/aspects/kids_winter.jpg' } ,
-        { wear: 'LOUNGEWEAR', path: '/aspects/kids_girl_lounge.jpg' } ,
-        { wear: 'HOME', path: '/aspects/home.jpg' } ,
-        { wear: 'LOUNGEWEAR', path: '/aspects/kids_boy_lounge.jpg' }
+import { useState } from 'react';
 
-      ]
-    return (
-        <div className='d-flex justify-content-center' style={{margin:"10px 200px", gap:'25px'}}>
-            <Link className="d-flex flex-column align-items-center" style={{textDecoration:'none',color:'black'}}>
-                <img src='/aspects/myfeed.png' alt='kurthas' height={'60px'} width={'60px'} style={{borderRadius:'50%',border:'2px solid lightgreen', padding:'2px'}}/>
-                <p style={{fontSize:'10px'}}>MY FEED</p>
-            </Link>
+function Kidsfeed({onSubCategoryChange}) {
+    const [selectedIndex, setSelectedIndex] = useState(null);
     
-            {
-                women.map(item => {
-                return <>
-                    <Link className="d-flex flex-column align-items-center" style={{textDecoration:'none',color:'black'}}>
-                    <img src={item.path} alt='kurthas' height={'60px'} width={'60px'} style={{borderRadius:'50%', padding:'5px'}}/>
-                    <p style={{fontSize:'10px'}}>{item.wear}</p>
+      const handleRefresh = () => {
+        window.location.reload();
+      };
+
+    const kids = [
+        {wear: 'FROKS',         path: '/aspects/kids_girl_froks.jpg',       subCategory: 'frocks'   },
+        {wear: 'TWIN SETS',     path: '/aspects/kids_girl_twin_sets.jpg',   subCategory: 'twinsets' },
+        {wear: 'TWIN SETS',     path: '/aspects/kids_boy_twin_sets.jpg',    subCategory: 'twinsets' },
+        {wear: 'T SHIRTS',      path: '/aspects/kids_boy_tshirts.jpg',      subCategory: 'tshirts'  },
+        {wear: 'SHIRTS',        path: '/aspects/kids_boy_shirts.jpeg',      subCategory: 'shirts'   },
+        {wear: 'BOTTOM',        path: '/aspects/kids_boy_bottoms.jpg',      subCategory: 'bottoms'  },
+        {wear: 'TOPS',          path: '/aspects/kids_girl_tops.jpg',        subCategory: 'tops'     },
+        {wear: 'ETHNIC WEAR',   path: '/aspects/kids_girl_ethnic.jpg',      subCategory: 'ethnic'   },
+        {wear: 'BOTTOM',        path: '/aspects/kids_girl_bottom.jpg',      subCategory: 'bottoms'  },
+        {wear: 'WINTERWEAR',    path: '/aspects/kids_winter.jpg',           subCategory: 'winter'   },
+        {wear: 'LOUNGEWEAR',    path: '/aspects/kids_girl_lounge.jpg',      subCategory: 'lounge'   },
+        {wear: 'HOME',          path: '/aspects/home.jpg',                  subCategory: 'home'     },
+        {wear: 'LOUNGEWEAR',    path: '/aspects/kids_boy_lounge.jpg',       subCategory: 'lounge'   }
+      ]
+      
+    return (
+        <>
+            <div className="container my-3">
+                <div className="row justify-content-center align-items-center g-3">
+                <div className="col-auto">
+                    <Link to="/kids" className="d-flex flex-column align-items-center text-decoration-none text-dark" onClick={handleRefresh}>
+                    <img src="/aspects/myfeed.png" alt="kurthas"  height="80" width="80"
+                        style={{ borderRadius: '50%', border: '2px solid lightgreen', padding: '5px' }}
+                    />
+                    <p className="small" style={{ fontSize: '10px' }}>MY FEED</p>
                     </Link>
-                </>
-                }
-                )
-            }
-      </div>
+                </div>
+
+                {kids.map((item, index) => (
+                    <div key={index} className="col-auto">
+                    <Link to="/kids" className="d-flex flex-column align-items-center text-decoration-none text-dark" onClick={() => { onSubCategoryChange(item.subCategory); setSelectedIndex(index); }}>
+                        <img src={item.path} alt={item.wear} height="65px" width="65px"
+                        style={{ borderRadius: '50%', padding: '5px', border: selectedIndex === index ? '2px solid lightgreen' : 'none' }}
+                        />
+                        <p className="small" style={{ fontSize: '10px' }}>{item.wear}</p>
+                    </Link>
+                    </div>
+                ))}
+                </div>
+            </div>
+        </>
     )
 }
 

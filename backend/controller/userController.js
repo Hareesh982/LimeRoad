@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const Customer = require('../model/customer');
 const Vendor = require('../model/vendor')
 const Admin = require('../model/admin')
+const Product = require('../model/products')
 
 const sendResetMail = require('../mailer/mail')
 
@@ -32,8 +33,8 @@ const customerDetails = async (req, res) => {
             if (customermobileCheck) {
                 return res.status(400).json({ message: 'Mobile number already in use' });
             }
-
-            let user = new Customer({ name, email, mobile, password: hashedPassword,userType});
+            
+            let user = new Customer({name, email, mobile, password: hashedPassword,userType});
             await user.save();
             return res.status(201).json({ message: 'Customer registered successfully' });
         }
@@ -145,7 +146,7 @@ const verifyToken = (req, res, next) => {
         return res.status(401).json({ message: 'Unauthorized' });
     }
 
-    const token = authHeader.split(" ")[1]; // Extract token from "Bearer <token>"
+    const token = authHeader.split(" ")[1]; 
 
     jwt.verify(token, process.env.JWT_SECRET_KEY, (err, payload) => {
         if (err) {
@@ -155,18 +156,6 @@ const verifyToken = (req, res, next) => {
         next();
     });
 
-    // let token = req.header("Authorization")
-    // if(token){
-    //     let payload = jwt.verify(token,process.env.JWT_SECRET)
-    //     console.log(payload.id)
-    //     let user = await User.findById(payload.id)
-    //     console.log(user)
-    //     req.user = user
-    //     next()
-    // }
-    // else{
-    //     res.send('no access')
-    // }
 };
 
 
@@ -187,7 +176,7 @@ const EmailCheckToresetPassword = async(req,res) =>{
         }
         await sendResetMail(email,'http://localhost:3000/reset-password')
         
-        return res.status(201).json({message : 'Email found'})
+        return res.status(201).json({message : 'we have send a reset password Link to youe email : '})
     }
     catch(error){
         return res.status(500).json({ message: 'Server error', error: error.message });
@@ -201,23 +190,34 @@ const ResetPassword = async(req,res) =>{
     try{
         let {email,password} = req.body
         email = email.toLowerCase();
-        const newPassword = await bcrypt.hash(password, 10);
-        let response_message = 'Email not found'
+        
         let user = await checkEmail(email)
 
         if (!user) {
-            return res.status(400).json({ message: response_message });
+            return res.status(400).json({message_subject : "email", message: 'Email not found' });
         }
 
+        let isMatch = await bcrypt.compare(password, user.password)
+
+        if(isMatch){
+            return res.status(400).json({message_subject : "password",message : 'Dont use old password'})
+        }
+
+        const newPassword = await bcrypt.hash(password, 10);
         user.password = newPassword;
         await user.save();
-        return res.status(201).json({message : 'Password changed successfully'})
+        return res.status(200).json({message : 'Password changed successfully'})
     }
     catch(error){
+        console.log(error)
         return res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
 
+
+
+
+//-------------------------user details------------------------------
 
 const getUserDetails = async (req, res) => {
     try {
@@ -235,4 +235,83 @@ const getUserDetails = async (req, res) => {
     }
 };
 
-module.exports = { customerDetails, customerLogin, EmailCheckToresetPassword, ResetPassword, verifyToken, getUserDetails };
+const getCustomerDetails = async (req, res) => {
+    try {
+        const userId = req.user.id;
+        let user = await Customer.findById(userId);
+        
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        console.log(user)
+
+        return res.status(200).json({ user });
+    } catch (error) {
+        return res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
+
+
+const getVendorDetails = async (req, res) => {
+    try {
+        const userId = req.user.id;
+        let user = await Vendor.findById(userId);
+        
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        console.log(user)
+
+        return res.status(200).json({ user });
+    } catch (error) {
+        return res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
+
+const getClothingDetails = async (req,res) =>{
+    try{
+        let user = await Product.find({})
+        return res.status(200).json({user})
+    }
+    catch(error){
+        return res.status(500).json({ message: 'Server error', error: error.message });
+    }
+}
+
+const uploadProducts = async(req,res) =>{
+    try{
+        let { title, price, description, category, subcategory, image, image_2, image_3, rating, brand, vendor_id } = req.body;
+        console.log({ title, price, description, category, subcategory, image, image_2, image_3, rating, brand, vendor_id })
+        let size;
+        if (category === 'men' || category === 'women') {
+            size = ['S', 'M', 'L', 'XL'];
+        } else {
+            size = ['5 years', '8 years', '10 years', '12 years', '14 years'];
+        }
+
+        let product = new Product({
+            title,
+            price,
+            description,
+            category,
+            subcategory,
+            image,
+            image_2,
+            image_3,
+            rating: { rate: rating },
+            size, 
+            brand,
+            vendor_id
+        });
+        await product.save()
+        return res.status(201).json({ message: 'product uploaded successfully' });
+
+    }
+    catch(error){
+        console.log(error)
+        return res.status(500).json({ message: 'Server error', error: error.message });
+    }
+}
+
+
+module.exports = { customerDetails, customerLogin, EmailCheckToresetPassword, ResetPassword, verifyToken, getUserDetails, getCustomerDetails, getVendorDetails,getClothingDetails,uploadProducts };

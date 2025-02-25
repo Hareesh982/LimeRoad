@@ -17,17 +17,17 @@ function CartDetails() {
     const grandTotal = useSelector(state => state.cart.grandTotal);
     const dispatch = useDispatch();
 
-    const incrementQuantity = (id) => {
-        dispatch({ type: "UPDATE_QUANTITY", payload: { id, quantity: cartItems.find(item => item.id === id).quantity + 1 } });
+    const incrementQuantity = (_id) => {
+        dispatch({ type: "UPDATE_QUANTITY", payload: { _id, quantity: cartItems.find(item => item._id === _id).quantity + 1 } });
     };
 
-    const decrementQuantity = (id) => {
-        const currentQuantity = cartItems.find(item => item.id === id).quantity;
+    const decrementQuantity = (_id) => {
+        const currentQuantity = cartItems.find(item => item._id === _id).quantity;
         if (currentQuantity > 1) {
-            dispatch({ type: "UPDATE_QUANTITY", payload: { id, quantity: currentQuantity - 1 } });
+            dispatch({ type: "UPDATE_QUANTITY", payload: { _id, quantity: currentQuantity - 1 } });
         }
         else{
-            dispatch({ type: "REMOVE_FROM_CART", payload: id });
+            dispatch({ type: "REMOVE_FROM_CART", payload: _id });
             setShowAlert(true);
     
             setTimeout(() => {
@@ -40,8 +40,8 @@ function CartDetails() {
         dispatch(setCurrentProduct(product));
       };
 
-    const removeFromCart = (id) => {
-        dispatch({ type: "REMOVE_FROM_CART", payload: id });
+    const removeFromCart = (_id) => {
+        dispatch({ type: "REMOVE_FROM_CART", payload: _id });
         setShowAlert(true);
     
         setTimeout(() => {
@@ -67,7 +67,7 @@ function CartDetails() {
                         <div className="col-md-6">
                             <div >
                                 {cartItems.map(item => (
-                                    <div className="row py-2" key={item.id}>
+                                    <div className="row py-2" key={item._id}>
                                         <div className='col-md-8 d-flex'>
                                             <Link to="/details">
                                                 <img onClick={() => handleCurrentProduct(item)} src={item.image} alt={item.title} style={{width:"150px", height:"200px", borderRadius:'5px'}}/>   
@@ -76,18 +76,18 @@ function CartDetails() {
                                             <div className='d-flex flex-column'>
                                                 <p className='px-3'>{item.title}</p>
                                                 <p className='px-3' style={{fontSize:'12px'}}>{item.description}</p>
-                                                <p className="px-3">${item.price}</p>
+                                                <p className="px-3">Rs.{item.price}</p>
                                                 <div className="d-flex px-3 justify-content-start align-items-center gap-2">
-                                                    <button className="btn btn-secondary d-flex align-items-center justify-content-center" style={{ width: '30px', height: '30px' }} onClick={() => decrementQuantity(item.id)}>-</button>
+                                                    <button className="btn btn-secondary d-flex align-items-center justify-content-center" style={{ width: '30px', height: '30px' }} onClick={() => decrementQuantity(item._id)}>-</button>
                                                     <p className="m-0">{item.quantity}</p>
-                                                    <button className="btn btn-secondary d-flex align-items-center justify-content-center" style={{ width: '30px', height: '30px' }} onClick={() => incrementQuantity(item.id)}>+</button>
+                                                    <button className="btn btn-secondary d-flex align-items-center justify-content-center" style={{ width: '30px', height: '30px' }} onClick={() => incrementQuantity(item._id)}>+</button>
                                                 </div>
 
                                             </div>
                                         </div>
                                         <div className='col-md-4'>
                                             <p className="">Total amount - ${item.total_item_price.toFixed(2)}</p>
-                                            <button className="btn btn-danger" onClick={() => removeFromCart(item.id)}>Remove</button>
+                                            <button className="btn btn-danger" onClick={() => removeFromCart(item._id)}>Remove</button>
                                         </div>
                                     </div>
                                 ))}

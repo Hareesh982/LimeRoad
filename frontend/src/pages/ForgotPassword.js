@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 function ForgotPassword() {
     let navigate = useNavigate()
@@ -16,8 +17,20 @@ function ForgotPassword() {
     let handleEmailSubmit = async(event) =>{
         event.preventDefault()
         try{
-            await axios.post('http://localhost:3005/forgot-password',{email})
-            navigate('/reset-password')
+            let response = await axios.post('http://localhost:3005/forgot-password',{email})
+            let message = response.data.message + email
+            Swal.fire({
+                title : 'Email Found',
+                text : message,
+                allowOutsideClick : false,
+                icon : 'success',
+                confirmButtonText : 'Continue'
+            }).then((result) => {
+                if(result.isConfirmed){
+                    navigate('/login')
+                    window.location.reload()
+                }
+            })
         }
         catch(error){
             setErrorMessage(error.response?.data?.message)

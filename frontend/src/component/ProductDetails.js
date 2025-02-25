@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductDetails.css';
-import { Clothingfetch } from '../pages/Womenclothing';
+import { Clothingfetch } from '../pages/Mainclothing';
 import Footer from './Footer';
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../actions/cartActions';

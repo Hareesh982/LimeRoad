@@ -33,29 +33,28 @@ let Profile = ({user}) =>{
             backgroundColor: "white", 
             position: "absolute", 
             top: "40px", 
-            left: "-370%", 
+            left: "-300%", 
             zIndex: "1000", 
-            width: '270px',
+            width: '240px',
             height: 'auto',
             boxShadow: '1px 4px 4px rgba(0, 0, 0, 0.1)'
         }}>
             {
                 user ? (
                     <>
-                        <span style={{ fontSize: '12px', fontWeight: 'bold' }}>WELCOME! {user.name} / {user.userType}</span>
+                        <span style={{ fontSize: '12px' }}>WELCOME!</span>
+                        <span style={{ fontSize: '14px', fontWeight: 'bold' }}>{user.name} / {user.userType}</span>
                         {
                             user.userType === 'vendor' ? (
-                                <div style={{ paddingTop: '10px' }}>
-                                    <span style={{ fontSize: '14px', backgroundImage: "linear-gradient(to right, red, red)", borderRadius: '5px', padding: '3px 5px', color: 'white' }}>
-                                        <Link to='/vendorprofile'>PROFILE</Link>
-                                    </span><hr />
+                                <div className='mt-2'>
+                                    <button style={{fontSize:'12px'}} onClick={() => navigate('/vendorprofile')} className='btn btn-info'>PROFILE</button>
+                                    <hr/>
                                 </div>
                             ):
                             (
-                                <div style={{ paddingTop: '10px' }}>
-                                    <span style={{ fontSize: '14px', backgroundImage: "linear-gradient(to right, red, red)", borderRadius: '5px', padding: '3px 5px', color: 'white' }}>
-                                        <Link to='/customerprofile'>PROFILE</Link>
-                                    </span><hr />
+                                <div className='mt-2'>
+                                    <button style={{fontSize:'12px'}} onClick={() => navigate('/customerprofile')} className='btn btn-info'>PROFILE</button>
+                                    <hr/>
                                 </div>
                             )
                         }
@@ -72,11 +71,10 @@ let Profile = ({user}) =>{
                     <>
                         <span style={{ fontSize: '12px', fontWeight: 'bold' }}>WELCOME!</span>
                         <span style={{ fontSize: '12px' }}>To view account Details</span>
-                        <div style={{ paddingTop: '10px' }}>
-                            <span style={{ fontSize: '14px', backgroundImage: "linear-gradient(to right, red, red)", borderRadius: '5px', padding: '3px 5px', color: 'white' }}>
-                                <Link to='/login'>LOGIN</Link>
-                            </span><hr />
+                        <div className='mt-2'>
+                            <button style={{fontSize:'12px'}} onClick={() => navigate('/login')} className='btn btn-danger'>LOGIN</button>
                         </div>
+                        <hr/>
                         <span style={{ fontSize: '12px' }}>ORDERS</span>
                         <span style={{ fontSize: '12px' }}>RETURN REPLACEMENT</span>
                         <span style={{ fontSize: '12px' }}>LR CREDITS</span><hr />
@@ -118,7 +116,7 @@ function Navbar() {
     return (
         <>
             {!search ? (
-                <nav className="navbar navbar-expand-lg d-flex g-5 justify-content-center">
+                <nav style={{padding:'5px 70px'}} className="navbar navbar-expand-lg d-flex g-5 justify-content-center">
                     <div>
                         <Link className="navbar-brand" to="/">
                             <img 
@@ -162,14 +160,15 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item dropdown">
-                                <Link className="nav-link" to="/kids-clothing">KIDS</Link>
+                                <Link className="nav-link" to="/main-clothing?category=kids">KIDS</Link>
                                 <ul className="dropdown-menu fixed-dropdown">
                                     <div>
                                         <p className='major-category'>Regular wear</p>
-                                        <li><Link className="dropdown-item" to="/kids/shirts">Shirts</Link></li>
-                                        <li><Link className="dropdown-item" to="/kids/pants">Pants</Link></li>
-                                        <li><Link className="dropdown-item" to="/kids/toys">Toys</Link></li>
-                                        <li><Link className="dropdown-item" to="/kids/caps">Caps</Link></li>
+                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=frocks&category=kids">frocks</Link></li>
+                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=bottoms&category=kids">Bottoms</Link></li>
+                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=tops&category=kids">Tops</Link></li>
+                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=shirts&category=kids">shirts</Link></li>
+                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=caps&category=kids">caps</Link></li>
                                     </div>
                                 </ul>
                             </li>

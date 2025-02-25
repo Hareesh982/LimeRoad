@@ -58,9 +58,17 @@ export function Clothingfetch({ category, subcategory }) {
   let new_data = data;
 
   useEffect(() => {
-    axios.get('/product.json')
-      .then(response => setData(response.data))
-      .catch(error => console.error('Error fetching data:', error));
+    let GetProductDetails = async() =>{
+      try{
+        let response = await axios.get('http://127.0.0.1:3005/clothing-details')
+        setData(response.data.user)
+      }
+      catch(error){
+        console.error('Error fetching data:', error)
+      }
+    }
+    GetProductDetails()
+      
   }, []);
 
   const applyFilters = (products) => {
@@ -116,7 +124,7 @@ export function Clothingfetch({ category, subcategory }) {
           <div className={routeSubcategory ? "col-md-9" : "col-md-12"}>
             <div className='row'>
               {new_data.length > 0 ? (
-                new_data.map(product => <Clothing key={product.id} product={product} />)
+                new_data.map(product => <Clothing key={product._id} product={product} />)
               ) : (
                 <p>No products in this section.</p>
               )}
@@ -128,7 +136,7 @@ export function Clothingfetch({ category, subcategory }) {
   );
 }
 
-function Womenclothing() {
+function Mainclothing() {
   return (
     <>
       <Navbar />
@@ -137,4 +145,4 @@ function Womenclothing() {
   );
 }
 
-export default Womenclothing;
+export default Mainclothing;

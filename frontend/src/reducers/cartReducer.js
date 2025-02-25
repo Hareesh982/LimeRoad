@@ -28,10 +28,10 @@ const cartReducer = (state = InitialState, action) => {
     let updatedCartItems;
     switch(action.type){
         case 'ADD_TO_CART' : 
-            const existingProduct = state.cartItems.find(item => item.id === action.payload.id);
+            const existingProduct = state.cartItems.find(item => item._id === action.payload._id);
             if(existingProduct){
                 updatedCartItems = state.cartItems.map(item => 
-                    item.id === action.payload.id 
+                    item._id === action.payload._id 
                     ? { ...item, quantity: item.quantity + 1, total_item_price: (item.quantity + 1) * item.price } 
                     : item
                 );
@@ -44,15 +44,15 @@ const cartReducer = (state = InitialState, action) => {
 
 
         case "REMOVE_FROM_CART" : 
-            updatedCartItems = state.cartItems.filter(item => item.id !== action.payload);
+            updatedCartItems = state.cartItems.filter(item => item._id !== action.payload);
             const newStateRemove = { ...state, cartItems: updatedCartItems, ...calculateTotals(updatedCartItems) };
             saveToLocalStorage(newStateRemove);
             return newStateRemove;
             
         case "UPDATE_QUANTITY" : 
-            const { id, quantity } = action.payload;
+            const { _id, quantity } = action.payload;
             updatedCartItems = state.cartItems.map(item => 
-                item.id === id 
+                item._id === _id 
                 ? { ...item, quantity, total_item_price: quantity * item.price } 
                 : item
             );
