@@ -4,17 +4,24 @@ import Menfeed from '../component/Menfeed';
 import Allfeed from '../component/Allfeed';
 import Carouselfeed from '../carousel/Carouselfeed';
 import Productitem from '../component/Productitem';
+import axios from 'axios'
 
 function MenHomedata({ subCategory }) {
   let [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/seller.json")
-      .then(response => response.json())
-      .then(productdata => {
-        const menProducts = productdata.filter(product => product.category === "men" && (!subCategory || product.sub_category === subCategory));
-        setData(menProducts);
-      });
+    let SellerData = async() =>{
+      try{
+        let response = await axios.get("http://127.0.0.1:3005/seller-card")
+        let menProducts = response.data.user
+        const sellerData = menProducts.filter(product => product.category === "men" && (!subCategory || product.sub_category === subCategory));
+        setData(sellerData);
+      }
+      catch(error){
+        alert(error.response?.data?.message)
+      }
+    }
+    SellerData()
   }, [subCategory]);
 
   return (

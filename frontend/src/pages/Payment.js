@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../component/Navbar'
 import './payment.css'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 function Paymentpage(){
     const cartCounter = useSelector(state => state.cart.cartCounter);
@@ -11,64 +14,126 @@ function Paymentpage(){
     const deliveryCharges = useSelector(state => state.cart.deliveryCharges);
     const taxes = useSelector(state => state.cart.taxes);
     const grandTotal = useSelector(state => state.cart.grandTotal);
+
+    const [MobileError, setMobileError] = useState("");
+    const navigate = useNavigate()
+
+    let [formData,setFormData] = useState({
+        pincode : '',
+        mobile : '',
+        fullname : '',
+        area : '',
+        landmark : '',
+        city : '',
+        state : '',
+        addresstype : ''
+    })
+
+    const handleMobile = (event) => {
+        const value = event.target.value;
+        if (!/^\d+$/.test(value)) {
+            setMobileError("Only numbers are allowed");
+        } else if (value.length !== 10) {
+            setMobileError("Enter a 10-digit mobile number");
+        } else {
+            setMobileError("");
+        }
+    };
+
+    const handleChange = (event) =>{
+        setFormData({...formData, [event.target.name] : event.target.value})
+    } 
+
+    const handleSubmit = async(event) =>{
+        event.preventDefault()
+        let token = localStorage.getItem('token')
+        if(token){
+            try{
+                let response = await axios.put('http://localhost:3005/api/customeraddress',formData,{
+                    headers : {
+                        Authorization : `Bearer ${token}`
+                    }
+                })
+                alert(response.data.message)
+            }
+            catch(error){
+                alert(error.response?.data?.message)
+            }
+        }
+        else{
+            Swal.fire({
+                title : 'Error',
+                text : 'You are not logged in',
+                confirmButtonText: "Click to login",
+                allowOutsideClick : 'false',
+                icon : 'error',
+            }).then((result) =>{
+                if(result.isConfirmed){
+                    navigate('/login')
+                }
+            })
+        }
+    }
+
     return (
         <>
             <div className='container'>
-                <div className='row'>
+                <form className='row' onSubmit={handleSubmit}>
                     <div className='col-md-5 mt-4'>
                         <p>Please Fill Address For Shipping</p>
                         <div className='p-4 bg-white'>
-                            <form>
+                            <div>
                                 <div className='row'>
                                     <div className='col-6'>
                                         <label className='labeldata' for='pincode'>Pincode *</label>
-                                        <input className='inputdata' type='text' id='pincode' style={{width:'100%'}}/>
+                                        <input onChange={handleChange} name='pincode' value={formData.pincode} className='inputdata' type='text' required id='pincode' style={{width:'100%'}}/>
                                     </div>
                                     <div className='col-6'>
                                         <label className='labeldata' for='mobile'>Mobile Number *</label>
-                                        <input className='inputdata' type='text' id='mobile' style={{width:'100%'}}/>
+                                        <input onChange={(event) => {handleChange(event); handleMobile(event);}} name='mobile' value={formData.mobile} className='inputdata' type='text' required id='mobile' style={{width:'100%'}}/>
+                                        {MobileError && <small style={{ color: 'red', marginTop: '5px', fontSize:'10px' }}>{MobileError}</small>}
                                     </div>
                                 </div>
                                 <div className='row mt-4'>
                                     <div className='col-12'>
                                         <label className='labeldata' for='fullname'>Full Name *</label>
-                                        <input className='inputdata' type='text' id='fullname' style={{width:'100%'}} />
+                                        <input onChange={handleChange} name='fullname' value={formData.fullname} className='inputdata' type='text' required id='fullname' style={{width:'100%'}} />
                                     </div>
                                 </div>
                                 <div className='row mt-5'>
                                     <div className='col-12'>
                                         <label for='address' className='text-secondary'>Locality/Area* <br/><span className='labeldata'>Flat / House No. / Building Name*</span></label>
-                                        <input className='inputdata' type='text' id='address' style={{width:'100%'}} />
+                                        <input onChange={handleChange} name='area' value={formData.area} className='inputdata' type='text' required id='address' style={{width:'100%'}} />
                                     </div>
                                 </div>
                                 <div className='row mt-4'>
                                     <div className='col-12'>
                                         <label className='labeldata' for='landmark'>Building/Street/Landmark*</label>
-                                        <input className='inputdata' type='text' id='landmark' style={{width:'100%'}} />
+                                        <input onChange={handleChange} name='landmark' value={formData.landmark} className='inputdata' type='text' required id='landmark' style={{width:'100%'}} />
                                     </div>
                                 </div>
                                 <div className='row mt-4'>
                                     <div className='col-6'>
                                         <label className='labeldata' for='city'>City *</label>
-                                        <input className='inputdata' type='text' id='city' style={{width:'100%'}}/>
+                                        <input onChange={handleChange} name='city' value={formData.city} className='inputdata' type='text' required id='city' style={{width:'100%'}}/>
                                     </div>
                                     <div className='col-6'>
                                         <label className='labeldata' for='state'>State *</label>
-                                        <input className='inputdata' type='text' id='state' style={{width:'100%'}}/>
+                                        <input onChange={handleChange} name='state' value={formData.state} className='inputdata' type='text' required id='state' style={{width:'100%'}}/>
                                     </div>
                                 </div>
                                 <div className='row mt-4'>
                                     <p className='text-secondary' style={{fontSize:'12px'}}>Address type</p>
                                     <div className='col-6 d-flex align-items-center gap-2'>
-                                        <input  type='radio' id='home'/>
-                                        <label  for='home'>Home</label>
+                                        <input  onChange={(event) => handleChange(event)}  type='radio' name='addresstype' required value='home' id='home'/>
+                                        <label  htmlFor='home'>Home</label>
                                     </div>
                                     <div className='col-6 d-flex align-items-center gap-2'>
-                                        <input  type='radio' id='office'/>
-                                        <label for='office'>Office</label>
+                                        <input  onChange={(event) => handleChange(event)}  type='radio' name='addresstype' required value='work' id='work'/>
+                                        <label htmlFor='work' >work</label>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                         <div>
                             <p className='mt-4'>Cart Items ({cartCounter})</p>
@@ -117,32 +182,31 @@ function Paymentpage(){
                                         <div className='p-1'>
                                             <div className='d-flex justify-content-between'>
                                                 <span className='card-price'>Total price</span>
-                                                <span>${totalPrice.toFixed(2)}</span>
+                                                <span className='card-price'>Rs.{totalPrice.toFixed(2)}</span>
                                             </div>
                                             <div className='d-flex justify-content-between'>
                                                 <span className='card-price'>Shipping Charges</span>
-                                                <span>${deliveryCharges}</span>
+                                                <span className='card-price'>Rs.{deliveryCharges}</span>
                                             </div>
                                             <div className='d-flex justify-content-between'>
                                                 <span className='card-price'>Handling Charges</span>
-                                                <span>${taxes.toFixed(2)}</span>
+                                                <span className='card-price'>Rs.{taxes.toFixed(2)}</span>
                                             </div>
                                             <hr/>
                                             <div className='d-flex justify-content-between'>
                                                 <span style={{color:'rgb(217, 26, 26)'}}>Amount Payable</span>
-                                                <span>${grandTotal.toFixed(2)}</span>
+                                                <span>Rs.{grandTotal.toFixed(2)}</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <button className='payment-button'>
+                                    <button className='payment-button' type='submit'>
                                         confirm order <span>${grandTotal.toFixed(2)}</span>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
+                </form>
             </div>
         </>
     )

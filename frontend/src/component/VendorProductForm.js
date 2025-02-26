@@ -7,7 +7,6 @@ import axios from 'axios';
 function VendorProductForm({ user }) {
     const [categoryData, setCategory] = useState("");
     const [subcategoryData, setSubcategory] = useState("");
-    // const [fromSection,setFormSection] = useState(true)
     const [formData, setFormData] = useState({
         title: '',
         price: 0,
@@ -37,7 +36,7 @@ function VendorProductForm({ user }) {
     const subcategories = {
         men: ["tshirt", "shirts", "jeans", "trousers", "ethnic", "footwear", "home", "accessory", "winter"],
         women: ["kurthas", "tops", "ethnic", "sarees", "dresses", "suits", "bottoms", "bags", "footwear", "addons", "home", "winter", "lingerie"],
-        kids: ["froks", "twinsets", "tshirts", "shirts", "girlbottom", "tops", "ethnic", "boybottom", "winterwear", "loungewear", "home"]
+        kids: ["frocks", "twinsets", "tshirts", "shirts", "girlbottom", "tops", "ethnic", "boybottom", "winterwear", "loungewear", "home"]
     };
 
     const handleSubmit = async (event) => {

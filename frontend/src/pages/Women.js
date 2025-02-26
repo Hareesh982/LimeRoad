@@ -5,17 +5,25 @@ import Womenfeed from '../component/Womenfeed'
 import Carouselfeed from '../carousel/Carouselfeed'
 import Mainbanner from '../component/Mainbanner'
 import Productitem from '../component/Productitem'
+import axios from 'axios'
 
 function Womenhomedata({subCategory}){
   let [data, setData] = useState([]);
+
   useEffect(() => {
-    fetch("/seller.json")
-      .then(response => response.json())
-      .then(productdata => {
-        const womenProducts = productdata.filter(product => product.category === 'women' && (!subCategory || product.sub_category === subCategory))
-        setData(womenProducts)
-      })
-  }, [subCategory])
+    let SellerData = async() =>{
+      try{
+        let response = await axios.get("http://127.0.0.1:3005/seller-card")
+        let womenProducts = response.data.user
+        const sellerData = womenProducts.filter(product => product.category === "women" && (!subCategory || product.sub_category === subCategory));
+        setData(sellerData);
+      }
+      catch(error){
+        alert(error.response?.data?.message)
+      }
+    }
+    SellerData()
+  }, [subCategory]);
   
   return (
     <>

@@ -14,6 +14,7 @@ function ProductDetails({ product }) {
 
   let dispatch = useDispatch()
   let [showAlert, setShowAlert] = useState(false);
+  let [selectedSize, setSelectedSize] = useState(product.size[0]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +22,7 @@ function ProductDetails({ product }) {
 
 
   let handleCart = () => {
-    dispatch(addToCart(product));
+    dispatch(addToCart({ ...product, selectedSize })); 
     setShowAlert(true);
 
     setTimeout(() => {
@@ -85,26 +86,24 @@ function ProductDetails({ product }) {
               </div>
               <div className='mt-3' style={{ width: '100px' }}>
                 <label htmlFor='size'>Select size:</label>
-                <select id='size' className='form-select'>
-                  <option value='S'>S</option>
-                  <option value='M'>M</option>
-                  <option value='L'>L</option>
-                  <option value='XL'>XL</option>
+                <select id='size' className='form-select' onChange={(e) => setSelectedSize(e.target.value)}>
+                  {
+                    product.size.map(size => <option value={size}>{size}</option>)
+                  }
                 </select>
               </div>
               
-              <span className='mt-3'>M.R.P : ${mrpPrice.toFixed(2)}</span>
+              <span className='mt-3'>M.R.P : Rs.{mrpPrice.toFixed(2)}</span>
               <span className='mt-3'><span style={{color:'red'}}>30%</span> Discount</span>
               <hr/>
               <span className='mt-3'>After Discount</span>
-              <span className='mt-3'>Price : ${product.price}</span>
+              <span className='mt-3'>Price : Rs.{product.price}</span>
               
               <div>
                 <span style={{fontSize:'12px'}}>M.R.P. inclusive of all taxes</span>
               </div>
               
               <button onClick={handleCart} className='mt-3' style={{ width: '100%',backgroundColor:'yellowgreen',border:'none',padding:'10px',color:'white',fontWeight:'bold',borderRadius:'5px' }}>Add to Cart</button>
-              <button className='mt-3' style={{ width: '100%',backgroundColor:'yellowgreen',border:'none',padding:'10px',color:'white',fontWeight:'bold',borderRadius:'5px' }}>Buy now</button>
             </div>
           </div>
         </div>

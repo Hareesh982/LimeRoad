@@ -1,6 +1,6 @@
 [
     {
-        "id" : 1,
+        
         "title" : "INSPO I HARSH VARRDHAN KAPOOR",
         "category" : "men",
         "sub_category" : "tshirt",
@@ -11,7 +11,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 2,
+        
         "title" : "The #UrbanAdeventurer",
         "category" : "men",
         "sub_category" : "tshirt",
@@ -22,7 +22,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 3,
+        
         "title" : "GET HIS LOOKS",
         "category" : "men",
         "sub_category" : "tshirt",
@@ -33,7 +33,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 4,
+        
         "title" : "POOKIE SPOTTED!",
         "category" : "men",
         "sub_category" : "tshirt",
@@ -44,7 +44,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 5,
+        
         "title" : "WORK WEAR PICKS",
         "category" : "men",
         "sub_category" : "shirts",
@@ -55,7 +55,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 6,
+        
         "title" : "#HERITAGECHECKS",
         "category" : "men",
         "sub_category" : "shirts",
@@ -66,7 +66,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 7,
+        
         "title" : "SHOP THESE NOW",
         "category" : "men",
         "sub_category" : "shirts",
@@ -77,7 +77,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 8,
+        
         "title" : "INSPO I ROHIT SARAF",
         "category" : "men",
         "sub_category" : "shirts",
@@ -88,7 +88,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 9,
+        
         "title" : "DRUM ROLLS PLEASE",
         "category" : "men",
         "sub_category" : "jeans",
@@ -99,7 +99,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 10,
+        
         "title" : "SEASON ESSENTIALS",
         "category" : "men",
         "sub_category" : "trousers",
@@ -110,7 +110,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 11,
+        
         "title" : "SHOP NOW!",
         "category" : "men",
         "sub_category" : "trousers",
@@ -121,7 +121,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 12,
+        
         "title" : "SHOP NOW!",
         "category" : "men",
         "sub_category" : "ethnic",
@@ -132,7 +132,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 13,
+        
         "title" : "NEW IN TOWN",
         "category" : "women",
         "sub_category" : "kurthas",
@@ -143,7 +143,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 14,
+        
         "title" : "SHOP NOW!",
         "category" : "women",
         "sub_category" : "kurthas",
@@ -154,7 +154,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 15,
+        
         "title" : "COP HANIA'S FIT",
         "category" : "women",
         "sub_category" : "kurthas",
@@ -165,7 +165,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 16,
+        
         "title" : "SHOP NOW!",
         "category" : "women",
         "sub_category" : "kurthas",
@@ -176,7 +176,7 @@
         "followers" : "34k"
     },
     {
-        "id" : 17,
+        
         "title" : "LESS IS MORE",
         "category" : "women",
         "sub_category" : "tops",
@@ -187,7 +187,7 @@
         "followers" : "15k"
     },
     {
-        "id" : 18,
+        
         "title" : "COLOR CHAOS",
         "category" : "women",
         "sub_category" : "tops",
@@ -198,7 +198,7 @@
         "followers" : "15k"
     },
     {
-        "id" : 19,
+        
         "title" : "INSPO I PRIYANKA CHOPRA",
         "category" : "women",
         "sub_category" : "tops",
@@ -209,7 +209,7 @@
         "followers" : "15k"
     },
     {
-        "id" : 20,
+        
         "title" : "GENZ CODED",
         "category" : "women",
         "sub_category" : "tops",
@@ -220,7 +220,7 @@
         "followers" : "15k"
     },
     {
-        "id" : 21,
+        
         "title" : "SHOP NOW",
         "category" : "women",
         "sub_category" : "ethnic",
@@ -231,7 +231,7 @@
         "followers" : "6k"
     },
     {
-        "id" : 22,
+        
         "title" : "SLAY TIME GLOW TIME",
         "category" : "women",
         "sub_category" : "ethnic",
@@ -242,7 +242,7 @@
         "followers" : "6k"
     },
     {
-        "id" : 23,
+        
         "title" : "FRESH IN TOWN",
         "category" : "women",
         "sub_category" : "sarees",
@@ -253,7 +253,7 @@
         "followers" : "6k"
     },
     {
-        "id" : 24,
+        
         "title" : "WRAPPED IN ROMANCE",
         "category" : "women",
         "sub_category" : "sarees",
@@ -264,7 +264,7 @@
         "followers" : "6k"
     },
     {
-        "id" : 25,
+        
         "title" : "FAIRY TALE MAGIC",
         "category" : "kids",
         "sub_category" : "frocks",

@@ -15,24 +15,25 @@ function Clothing({ product }) {
   return (
     <>
       <div
-        className="d-flex col-3 flex-column justify-content-start"
+        className="d-flex col-3 flex-column justify-content-center"
         style={{
-          height: '500px',
+          height: '450px',
           width: '300px',
-          margin: '10px',
+          margin: '10px'
         }}
         >
-        <Link onClick={handleCurrentProduct} to={{ pathname: '/details' }} style={{ width: '100%', height: '80%',position:'relative' }}>
-          <img src={product.image} alt='...' width='100%' height='100%' style={{ objectFit: "cover", borderRadius: '10px' }} />
+        <Link  onClick={handleCurrentProduct} to={{ pathname: '/details' }} style={{ width: '100%', height: '80%',position:'relative' }}>
+          <img src={product.image} alt='...' width='100%' height='100%' style={{ objectFit: "cover",borderTopLeftRadius:'10px',borderTopRightRadius:'10px' }} />
           <p className='px-3' style={{position:'absolute',borderBottomRightRadius:'10px',borderTopRightRadius:'10px', bottom:'50px',left:'0px',color:'black',backgroundColor:'white'}}>new arrival</p>
+          <span className='px-3' style={{ position:'absolute', color: 'white', borderBottomRightRadius:'10px',borderTopRightRadius:'10px', bottom:'30px',left:'0px',backgroundColor:'yellowgreen', fontSize: '12px', padding: '3px 5px' }}>Get it now with 30% OFFER</span>
         </Link>
-
-        <div className='mt-2 d-flex align-items-center gap-2'>
-          <span style={{ border: '1px solid limegreen', color: 'limegreen', borderRadius: '5px', fontSize: '12px', padding: '3px 5px' }}>OFFER</span>
-          <span style={{ fontSize: '13px', color: 'limegreen' }}>Deals</span>
-        </div><hr />
-        <div className='d-flex align-items-center justify-content-around'>
-          <span>${product.price}</span>
+        <div className='d-flex bg-white p-1'>
+          <span className='px-2 rounded'  style={{ color: 'limegreen', border:'1px solid limegreen', bottom:'30px',left:'0px', fontSize: '12px' }}>OFFER</span>
+          <span className='px-2' style={{fontSize:'12px',color:'limegreen'}}>Deals</span>
+        </div>
+        
+        <div className='d-flex w-100 justify-content-around py-1' style={{border:'1px solid white',backgroundColor:'white'}}>
+          <span>Rs.{product.price}</span>
           <span className='d-flex gap-2'>
             {product.rating.rate}
             <i className="bi bi-star-fill" style={{ color: 'yellowgreen' }}></i>
@@ -73,13 +74,13 @@ export function Clothingfetch({ category, subcategory }) {
 
   const applyFilters = (products) => {
     if (filters.low) {
-      return products.filter(product => product.price < 100);
+      return products.filter(product => product.price < 1000);
     }
     if (filters.medium) {
-      return products.filter(product => product.price >= 100 && product.price < 200);
+      return products.filter(product => product.price >= 1000 && product.price < 3000);
     }
     if (filters.high) {
-      return products.filter(product => product.price >= 200);
+      return products.filter(product => product.price >= 5000);
     }
     return products;
   };
@@ -109,13 +110,13 @@ export function Clothingfetch({ category, subcategory }) {
                 <div className='d-flex flex-column gap-2'>
                   <p>Price Filters</p>
                   <label>
-                    <input type="checkbox" name="price" onChange={() => handleFilterChange('low')} /> &lt; $100
+                    <input type="checkbox" name="price" onChange={() => handleFilterChange('low')} /> &lt; 1000
                   </label>
                   <label>
-                    <input type="checkbox" name="price" onChange={() => handleFilterChange('medium')} /> $100 & $200
+                    <input type="checkbox" name="price" onChange={() => handleFilterChange('medium')} /> 1000 & 3000
                   </label>
                   <label>
-                    <input type="checkbox" name="price" onChange={() => handleFilterChange('high')} /> &gt; $200
+                    <input type="checkbox" name="price" onChange={() => handleFilterChange('high')} /> &gt; 5000
                   </label>
                 </div>
               </div>
