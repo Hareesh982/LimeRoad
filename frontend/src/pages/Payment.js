@@ -75,10 +75,41 @@ function Paymentpage(){
         }
     }
 
+    const handlePayment = async(event) =>{
+        event.preventDefault()
+        let token = localStorage.getItem('token')
+        if(token){
+            try{
+                // let payment = true
+                // let PaymentStatus
+                // if(payment){
+                //     PaymentStatus = 'success'
+                // }
+                // else{
+                //     PaymentStatus = 'pending'
+                // }
+                let data = {OrderStatus : 'success'}
+                let paymentResponse = await axios.post('http://localhost:3005/api/payment-status',data,{
+                    headers : {
+                        Authorization : `Bearer ${token}`
+                    }
+                })
+                alert(paymentResponse.data.message)
+            }
+            catch(error){
+                alert(error.response?.data?.message)
+            }
+            
+        }
+    }
+
     return (
         <>
             <div className='container'>
-                <form className='row' onSubmit={handleSubmit}>
+                <form className='row' onSubmit={(event) => {
+                    handleSubmit(event);
+                    handlePayment(event);
+                }}>
                     <div className='col-md-5 mt-4'>
                         <p>Please Fill Address For Shipping</p>
                         <div className='p-4 bg-white'>

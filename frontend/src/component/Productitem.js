@@ -28,9 +28,6 @@ function Productitem({ product }) {
 
           </div>
 
-
-
-
           <div className='d-flex align-items-center gap-2'>
             
               <img src={product.image} height='30px' width='30px' alt='...' style={{borderRadius:'50%'}}/>

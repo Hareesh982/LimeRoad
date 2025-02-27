@@ -19,7 +19,9 @@ const CartSchema = new mongoose.Schema({
     deliveryCharges: { type: Number, required: true },
     taxes: { type: Number, required: true },
     grandTotal: { type: Number, required: true },
+    OrderStatus : {type : String, required : true}
 });
+
 
 module.exports = mongoose.model('Cart', CartSchema, 'cart');
 

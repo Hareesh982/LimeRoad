@@ -8,6 +8,7 @@ const Admin = require('../model/admin');
 const Product = require('../model/products');
 const Cart = require('../model/cart');
 const Seller = require('../model/seller')
+const Order = require('../model/order')
 const sendResetMail = require('../mailer/mail');
 
 dotenv.config();
@@ -286,10 +287,12 @@ const getClothingDetails = async (req,res) =>{
     }
 }
 
+
+
 const uploadProducts = async(req,res) =>{
     try{
-        let { title, price, description, category, subcategory, image, image_2, image_3, rating, brand, vendor_id } = req.body;
-        console.log({ title, price, description, category, subcategory, image, image_2, image_3, rating, brand, vendor_id })
+        let { title, price, description, category, subcategory, image, image_2, image_3, rating, brand, vendor_id,inventory_quantity } = req.body;
+        console.log({ title, price, description, category, subcategory, image, image_2, image_3, rating, brand, vendor_id,inventory_quantity })
         let size;
         if (category === 'men' || category === 'women') {
             size = ['S', 'M', 'L', 'XL'];
@@ -297,6 +300,8 @@ const uploadProducts = async(req,res) =>{
             size = ['5 years', '8 years', '10 years', '12 years', '14 years'];
         }
 
+        let stock_quantity = 0
+        let available_quantity = inventory_quantity
         let product = new Product({
             title,
             price,
@@ -309,7 +314,10 @@ const uploadProducts = async(req,res) =>{
             rating: { rate: rating },
             size, 
             brand,
-            vendor_id
+            vendor_id,
+            inventory_quantity,
+            stock_quantity,
+            available_quantity 
         });
         await product.save()
         return res.status(201).json({ message: 'product uploaded successfully' });
@@ -352,6 +360,7 @@ const postCartData = async (req, res) => {
             cart.deliveryCharges = deliveryCharges;
             cart.taxes = taxes;
             cart.grandTotal = grandTotal;
+            cart.OrderStatus = 'pending'
         } else {
             cart = new Cart({
                 userId,
@@ -360,7 +369,8 @@ const postCartData = async (req, res) => {
                 totalPrice,
                 deliveryCharges,
                 taxes,
-                grandTotal
+                grandTotal,
+                OrderStatus : 'pending'
             });
         }
 
@@ -400,7 +410,7 @@ const UpdateAddress = async(req,res) =>{
         const user = await Customer.findById(userId)
         user.address = {pincode,mobile,fullname,area,landmark,city,state,addresstype}
         await user.save()
-        return res.status(201).json({message : 'data came succesfully'})
+        return res.status(201).json({message : 'Address updated for delivery'})
     }
     catch(error){
         return res.status(500).json({ message: 'Server error', error: error.message });
@@ -414,6 +424,45 @@ const getSellerCard = async(req,res) =>{
         return res.status(200).json({user})
     }
     catch(error){
+        return res.status(500).json({ message: 'Server error', error: error.message });
+    }
+}
+
+const AvailableStock = async(OrderItems) => {
+    for(let item of OrderItems){
+        let product = await Product.findById(item._id)
+        if(product){
+            product.stock_quantity = product.stock_quantity + item.quantity
+            product.available_quantity = product.inventory_quantity - product.stock_quantity
+            await product.save()
+        }
+    }
+}
+
+const PaymentStatus = async(req,res) =>{
+    let customer_id = req.user.id
+    try{
+        let {OrderStatus} = req.body
+        console.log({OrderStatus})
+        let cart = await Cart.findOne({userId : customer_id})
+        if(!cart){
+            return res.status(400).json({message : 'No products in your cart'})
+        }
+        await Cart.updateOne({userId : customer_id}, {$set : {OrderStatus : OrderStatus}});
+
+        OrderItems = []
+        cart.cartItems.map(item => OrderItems.push({_id : item._id,selectedSize : item.selectedSize,quantity : item.quantity}))
+        let order = new Order({userId : customer_id,OrderItems})
+        await order.save()
+
+        await AvailableStock(OrderItems)
+
+        await cart.deleteOne({userId:customer_id})
+
+        return res.status(200).json({message : 'Order placed succesfully'})
+    }
+    catch(error){
+        console.log(error)
         return res.status(500).json({ message: 'Server error', error: error.message });
     }
 }
@@ -432,5 +481,6 @@ module.exports = {
     postCartData,
     getCartData,
     UpdateAddress,
-    getSellerCard
+    getSellerCard,
+    PaymentStatus
 };

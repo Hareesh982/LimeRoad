@@ -96,14 +96,30 @@ function ProductDetails({ product }) {
               <span className='mt-3'>M.R.P : Rs.{mrpPrice.toFixed(2)}</span>
               <span className='mt-3'><span style={{color:'red'}}>30%</span> Discount</span>
               <hr/>
+              {
+                product.available_quantity < 1 ?(
+                  <span>No items left</span>
+                ):
+                (
+                  <span>Hurry up Only {product.available_quantity} items left</span>
+                )
+              }
+              
               <span className='mt-3'>After Discount</span>
               <span className='mt-3'>Price : Rs.{product.price}</span>
               
               <div>
                 <span style={{fontSize:'12px'}}>M.R.P. inclusive of all taxes</span>
               </div>
+              {
+                product.available_quantity < 1 ? (
+                  <div className='mt-4'><span className='bg-danger rounded p-1 text-white'>Out of Stock</span></div>
+                ):
+                (
+                  <button onClick={handleCart} className='mt-3' style={{ width: '100%',backgroundColor:'yellowgreen',border:'none',padding:'10px',color:'white',fontWeight:'bold',borderRadius:'5px' }}>Add to Cart</button>
+                )
+              }
               
-              <button onClick={handleCart} className='mt-3' style={{ width: '100%',backgroundColor:'yellowgreen',border:'none',padding:'10px',color:'white',fontWeight:'bold',borderRadius:'5px' }}>Add to Cart</button>
             </div>
           </div>
         </div>

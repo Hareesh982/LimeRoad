@@ -18,7 +18,8 @@ function VendorProductForm({ user }) {
         image_3: '',
         rating: 0,
         brand: '',
-        vendor_id: user._id
+        vendor_id: user._id,
+        inventory_quantity : 1
     });
 
     useEffect(() => {
@@ -117,11 +118,17 @@ function VendorProductForm({ user }) {
                         </div>
                     </div>
                     <div className="row g-3 mt-3">
-                        <div className="col-md-6">
+                        <div className="col-md-4">
+                        <label><small className='fw-lighter'>Rating</small></label>
                             <input className="form-control" placeholder="Rating *" type="number" name="rating" value={formData.rating} onChange={handleChange} required />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-4">
+                            <label><small className='fw-lighter'>Brand</small></label>
                             <input className="form-control" placeholder="Product Brand Name *" type="text" name="brand" value={formData.brand} onChange={handleChange} required />
+                        </div>
+                        <div className="col-md-4">
+                            <label><small className='fw-lighter'>Inventory quantity</small></label>
+                            <input className="form-control" placeholder="Product Inventory *"  type="number" min="1" name="inventory_quantity" value={formData.inventory_quantity} onChange={handleChange} required />
                         </div>
                     </div>
                     <div className="text-center mt-4">

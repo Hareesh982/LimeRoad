@@ -14,8 +14,11 @@ const productSchema = new mongoose.Schema({
               },
   size:       [{ type: String, required: true }],
   brand:      { type: String, required: true },
-  vendor_id:  { type: String, required: true } 
+  vendor_id:  { type: String, required: true },
+  inventory_quantity : {type: Number, required : true},
+  stock_quantity : {type : Number, required : true},
+  available_quantity : {type : Number, required : true}
 });
- 
+
 
 module.exports = mongoose.model('Product', productSchema,'products');

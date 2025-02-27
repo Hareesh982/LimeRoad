@@ -15,8 +15,10 @@ const {
     postCartData,
     getCartData,
     UpdateAddress,
-    getSellerCard
+    getSellerCard,
+    PaymentStatus
 } = require('../controller/userController')
+
 
 
 router.post('/register', customerDetails)
@@ -32,6 +34,7 @@ router.post('/upload-products',uploadProducts)
 router.post('/api/cart',verifyToken,postCartData)
 router.get('/api/cartData',verifyToken,getCartData)
 router.put('/api/customeraddress',verifyToken,UpdateAddress)
+router.post('/api/payment-status',verifyToken,PaymentStatus)
 
 
 module.exports = router
