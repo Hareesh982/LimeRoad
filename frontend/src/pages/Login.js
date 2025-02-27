@@ -42,6 +42,7 @@ let Authlogin = () => {
                 }).then((result) => {
                     if (result.isConfirmed) {
                         navigate('/');
+                        window.location.reload()
                     }
                 });
             };

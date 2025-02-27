@@ -20,6 +20,7 @@ let Profile = ({user}) =>{
         }).then((result) => {
             if (result.isConfirmed) {
                 navigate('/login'); 
+                window.location.reload()
             }
           });
     }
@@ -47,13 +48,20 @@ let Profile = ({user}) =>{
                         {
                             user.userType === 'vendor' ? (
                                 <div className='mt-2'>
-                                    <button style={{fontSize:'12px'}} onClick={() => navigate('/vendorprofile')} className='btn btn-info'>PROFILE</button>
+                                    <button style={{fontSize:'12px'}} onClick={() => {
+                                        navigate('/vendorprofile'); 
+                                        window.location.reload();
+                                        }} 
+                                        className='btn btn-info'>PROFILE</button>
                                     <hr/>
                                 </div>
                             ):
                             (
                                 <div className='mt-2'>
-                                    <button style={{fontSize:'12px'}} onClick={() => navigate('/customerprofile')} className='btn btn-info'>PROFILE</button>
+                                    <button style={{fontSize:'12px'}} onClick={() => {
+                                        navigate('/customerprofile');
+                                        window.location.reload()
+                                    }} className='btn btn-info'>PROFILE</button>
                                     <hr/>
                                 </div>
                             )
