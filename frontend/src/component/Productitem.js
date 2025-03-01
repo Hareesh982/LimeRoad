@@ -6,16 +6,17 @@ function Productitem({ product }) {
     
     return (
 
-      <div 
-        className="d-flex flex-column  justify-content-start" 
+      <div
+        className="d-flex col-md-3 flex-column justify-content-center"
         style={{
-          backgroundColor: 'white',
-          height: '400px',
-          width: 'calc(25% - 20px)',
+          height: '450px',
+          width: '300px',
           margin: '10px',
-          position:'relative'
+          position: 'relative',
+          backgroundColor : 'white'
         }}
-      >
+        >
+        
 
           <p style={{margin:'5px'}}>{product.title}</p>
 

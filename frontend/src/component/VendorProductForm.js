@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import axios from 'axios';
 
-
-
 function VendorProductForm({ user }) {
     const [categoryData, setCategory] = useState("");
     const [subcategoryData, setSubcategory] = useState("");
@@ -13,13 +11,16 @@ function VendorProductForm({ user }) {
         description: '',
         category: '',
         subcategory: '',
-        image: '',
-        image_2: '',
-        image_3: '',
         rating: 0,
         brand: '',
         vendor_id: user._id,
         inventory_quantity : 1
+    });
+
+    const [files, setFiles] = useState({
+        file1: null,
+        file2: null,
+        file3: null
     });
 
     useEffect(() => {
@@ -40,6 +41,13 @@ function VendorProductForm({ user }) {
         kids: ["frocks", "twinsets", "tshirts", "shirts", "girlbottom", "tops", "ethnic", "boybottom", "winterwear", "loungewear", "home"]
     };
 
+    const handleFileChange = (event) => {
+        setFiles((prevFiles) => ({
+            ...prevFiles,
+            [event.target.name]: event.target.files[0]
+        }));
+    };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         if (!subcategoryData) {
@@ -50,9 +58,29 @@ function VendorProductForm({ user }) {
             });
             return;
         }
+        const data = new FormData();
+        data.append("title", formData.title);
+        data.append("price", formData.price);
+        data.append("description", formData.description);
+        data.append("category", categoryData);
+        data.append("subcategory", subcategoryData);
+        data.append("rating", formData.rating);
+        data.append("brand", formData.brand);
+        data.append("vendor_id", user._id);
+        data.append("inventory_quantity", formData.inventory_quantity);
+        
+        data.append("file1", files.file1);
+        data.append("file2", files.file2);
+        data.append("file3", files.file3);
+
+        console.log('FormData:', data);
 
         try {
-            let response = await axios.post('http://127.0.0.1:3005/upload-products', formData);
+            let response = await axios.post('http://127.0.0.1:3005/upload-products', data, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
             let message = response.data.message;
             Swal.fire({
                 title: message,
@@ -108,13 +136,13 @@ function VendorProductForm({ user }) {
                     </div>
                     <div className="row g-3 mt-3">
                         <div className="col-md-4">
-                            <input className="form-control" placeholder="Product Image URL *" type="text" name="image" value={formData.image} onChange={handleChange} required />
+                            <input className="form-control" placeholder="Product Image URL *" type="file" name="file1" onChange={(event) => handleFileChange(event)}  accept="image/*"  required />
                         </div>
                         <div className="col-md-4">
-                            <input className="form-control" placeholder="Product Sub Image URL *" type="text" name="image_2" value={formData.image_2} onChange={handleChange} required />
+                            <input className="form-control" placeholder="Product Sub Image URL *" type="file" name="file2" onChange={(event) => handleFileChange(event)}  accept="image/*" required />
                         </div>
                         <div className="col-md-4">
-                            <input className="form-control" placeholder="Product Sub Image URL *" type="text" name="image_3" value={formData.image_3} onChange={handleChange} required />
+                            <input className="form-control" placeholder="Product Sub Image URL *" type="file" name="file3" onChange={(event) => handleFileChange(event)}  accept="image/*" required />
                         </div>
                     </div>
                     <div className="row g-3 mt-3">

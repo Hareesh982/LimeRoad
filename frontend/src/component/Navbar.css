@@ -111,11 +111,12 @@ body{
     align-items: center;
     justify-content: center;
 }
-.search-overlay{
+
+.productSearchOverlay{
     background-color: white;
     padding: 10px;
 }
-.search-box{
+.productSearchBox{
     border: 3px solid yellowgreen;
     background-color: white;
     transition: 2s ease;
@@ -124,7 +125,7 @@ body{
     gap: 10px;
     border-radius: 10px;
 }
-.search-close{
+.productSearchClose{
     text-align: center;
     border: none;
     background-color: white;
@@ -133,7 +134,7 @@ body{
     margin-left: 50%;
 }
 
-.search-input{
+.productSearch{
     all: unset;
     background: transparent;
 }

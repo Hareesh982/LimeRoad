@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const upload = require('../fileStorage/storage')
 
 const {
     customerDetails, 
@@ -16,7 +17,8 @@ const {
     getCartData,
     UpdateAddress,
     getSellerCard,
-    PaymentStatus
+    PaymentStatus,
+    UpdateCart
 } = require('../controller/userController')
 
 
@@ -30,11 +32,12 @@ router.get('/customer-details',verifyToken,getCustomerDetails)
 router.get('/vendor-details',verifyToken,getVendorDetails)
 router.get('/clothing-details',getClothingDetails)
 router.get('/seller-card',getSellerCard)
-router.post('/upload-products',uploadProducts)
+router.post('/upload-products',upload.fields([{name : 'file1'},{name : 'file2'},{name : 'file3'}]),uploadProducts)
 router.post('/api/cart',verifyToken,postCartData)
 router.get('/api/cartData',verifyToken,getCartData)
 router.put('/api/customeraddress',verifyToken,UpdateAddress)
 router.post('/api/payment-status',verifyToken,PaymentStatus)
+router.get('/api/update-cart',verifyToken,UpdateCart)
 
 
 module.exports = router

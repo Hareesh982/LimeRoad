@@ -221,17 +221,17 @@ function Navbar() {
 
                     </div>
                 </nav>) : (
-                <div className="search-overlay">
-                    <div className="search-box">
+                <div className="productSearchOverlay">
+                    <div className="productSearchBox">
                         <i className="bi bi-search"></i>
                         <input
                             type="text"
                             placeholder="Search for products"
-                            className="search-input"
+                            className="productSearch"
                             autoFocus
                         />
                     </div>
-                    <button className="search-close" onClick={() => setSearch(false)}>✖</button>
+                    <button className="productSearchClose" onClick={() => setSearch(false)}><i className='bi bi-x'></i></button>
                 </div>
             )}
 

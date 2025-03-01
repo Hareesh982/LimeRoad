@@ -28,7 +28,7 @@ function KidsHomedata({ subCategory }) {
   return (
     <>
       <div className='container mt-5'>
-        <div className='row'>
+        <div className='row d-flex justify-content-center'>
           { 
             data.map((product) => <Productitem key={product.id} product={product} />)
           }

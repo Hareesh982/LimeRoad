@@ -13,31 +13,36 @@ const Carouselfeed = () => {
     }, []);
 
     return (
-        <div className='d-flex align-items-center justify-content-center' style={{ width: '63%', marginLeft: '280px', gap: '1px' }}>
-            <div id='carousel1' className='carousel slide' style={{ width: '50%' }}>
-                <div className='carousel-inner'>
-                    <div className='carousel-item active'>
-                        <img src='/aspects/banner2.jpg' className="d-block w-100" alt='...' height='175px' />
-                    </div>
-                    <div className='carousel-item'>
-                        <img src='/aspects/banner3.jpg' className="d-block w-100" alt='...' height='175px' />
-                    </div>
-                    <div className='carousel-item'>
-                        <img src='/aspects/banner4.jpg' className="d-block w-100" alt='...' height='175px' />
-                    </div>
-                </div>
-            </div>
-
-            <div id='carousel2' className='carousel slide' style={{ width: '50%' }}>
-                <div className='carousel-inner'>
-                    <div className='carousel-item active'>
-                        <img src='/aspects/banner3.jpg' className="d-block w-100" alt='...' height='175px' />
-                    </div>
-                    <div className='carousel-item'>
-                        <img src='/aspects/banner4.jpg' className="d-block w-100" alt='...' height='175px' />
-                    </div>
-                    <div className='carousel-item'>
-                        <img src='/aspects/banner2.jpg' className="d-block w-100" alt='...' height='175px' />
+        <div className="container">
+            <div className="row d-flex justify-content-center">
+                <div className="col-md-12 w-75 d-flex justify-content-center">
+                    <div className="d-flex justify-content-center">
+                        <div id='carousel1' className='carousel slide w-50'>
+                            <div className='carousel-inner w-100'>
+                                <div className='carousel-item active'>
+                                    <img src='/aspects/banner2.jpg'  alt='...'  width='100%' />
+                                </div>
+                                <div className='carousel-item'>
+                                    <img src='/aspects/banner3.jpg' alt='...'   width='100%'/>
+                                </div>
+                                <div className='carousel-item'>
+                                    <img src='/aspects/banner4.jpg'  alt='...'  width='100%'/>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='carousel2' className='carousel slide w-50'>
+                            <div className='carousel-inner w-100'>
+                                <div className='carousel-item active'>
+                                    <img src='/aspects/banner3.jpg'  alt='...'  width='100%' />
+                                </div>
+                                <div className='carousel-item'>
+                                    <img src='/aspects/banner4.jpg'  alt='...'  width='100%' />
+                                </div>
+                                <div className='carousel-item'>
+                                    <img src='/aspects/banner2.jpg'  alt='...'  width='100%'/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

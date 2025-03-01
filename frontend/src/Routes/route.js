@@ -14,6 +14,8 @@ import RegisterPage from '../pages/Register';
 import ResetPassword from '../pages/ResetPassword';
 import CustomerProfile from '../pages/CustomerProfile';
 import VendorProfile from '../pages/VendorProfile';
+import Cancel from '../pages/Cancel';
+import Success from '../pages/Success';
 
 let AppRoute = () => {
     return (
@@ -36,6 +38,8 @@ let AppRoute = () => {
                     <Route path='/reset-password' element={<ResetPassword/>} />
                     <Route path='/customerprofile' element={<CustomerProfile/>} />
                     <Route path='/vendorprofile' element={<VendorProfile/>} />
+                    <Route path='/cancel' element={<Cancel/>} />
+                    <Route path='/success' element={<Success/>} />
                 </Route>
             </Routes>
         </BrowserRouter>

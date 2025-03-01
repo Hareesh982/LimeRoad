@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import {loadStripe} from '@stripe/stripe-js';
 
 function Paymentpage(){
     const cartCounter = useSelector(state => state.cart.cartCounter);
@@ -62,11 +63,11 @@ function Paymentpage(){
         }
         else{
             Swal.fire({
-                title : 'Error',
+                title : 'Info',
                 text : 'You are not logged in',
-                confirmButtonText: "Click to login",
-                allowOutsideClick : 'false',
-                icon : 'error',
+                icon : 'info',
+                allowOutsideClick : false,
+                confirmButtonText: "Click to login"
             }).then((result) =>{
                 if(result.isConfirmed){
                     navigate('/login')
@@ -78,37 +79,40 @@ function Paymentpage(){
     const handlePayment = async(event) =>{
         event.preventDefault()
         let token = localStorage.getItem('token')
-        if(token){
-            try{
-                // let payment = true
-                // let PaymentStatus
-                // if(payment){
-                //     PaymentStatus = 'success'
-                // }
-                // else{
-                //     PaymentStatus = 'pending'
-                // }
-                let data = {OrderStatus : 'success'}
-                let paymentResponse = await axios.post('http://localhost:3005/api/payment-status',data,{
-                    headers : {
-                        Authorization : `Bearer ${token}`
+        if (token) {
+            try {
+                const stripe = await loadStripe('pk_test_51QxBtkFVFNHtzLnlnQqHRJtis6IQ9iZnk5khWrFBFPYYctLDz5AeE0LScivtiNsl2TSWG0vQS3UEQ2pODMDRFZYI00v6vTvHRo');
+                let data = { products: cartItems };
+                let paymentResponse = await axios.post('http://localhost:3005/api/payment-status', data, {
+                    headers: {
+                        Authorization: `Bearer ${token}`
                     }
-                })
-                alert(paymentResponse.data.message)
+                });
+    
+                if (paymentResponse.data && paymentResponse.data.id) {
+                    const result = await stripe.redirectToCheckout({
+                        sessionId: paymentResponse.data.id
+                    });
+    
+                    if (result.error) {
+                        alert(result.error.message);
+                    }
+                } else {
+                    alert('Payment session could not be created');
+                }
+            } catch (error) {
+                alert(error.response?.data?.message || 'error occurred during payment processing');
             }
-            catch(error){
-                alert(error.response?.data?.message)
-            }
-            
         }
     }
 
     return (
         <>
             <div className='container'>
-                <form className='row' onSubmit={(event) => {
-                    handleSubmit(event);
-                    handlePayment(event);
+                <form className='row' onSubmit={async(event) => {
+                    event.preventDefault()
+                    await handleSubmit(event);
+                    await handlePayment(event);
                 }}>
                     <div className='col-md-5 mt-4'>
                         <p>Please Fill Address For Shipping</p>
@@ -189,25 +193,15 @@ function Paymentpage(){
                                 </Link>
                             </div>
                         </div>
-                        <div className='text-center mt-5' style={{fontSize:'12px',color:'grey'}}>
-                            <p>Limeroad is offered in : हिन्दी</p>
-                            <p>For order related queries, please use our need help section in My Orders</p>
-                        </div>
+                        
                     </div>
                     
                     <div className='col-md-7 bg-white'>
                         <div className='py-4 px-5'>
-                            <p className='text-secondary'>Payment Mode</p>
+                            <p className='text-secondary'>Payment</p>
                             <div className='row'>
-                                <div className='col-md-5'>
-                                    <div>
-                                        <p className='payment-option'>Cash on Delivery</p>
-                                        <p className='payment-option'>ATM / Debit Card</p>
-                                        <p className='payment-option'>Credit Card</p>
-                                        <p className='payment-option'>Net Banking</p>
-                                    </div>
-                                </div>
-                                <div className='col-md-7'>
+                                
+                                <div className='col-md-12'>
                                     <div className='border rounded p-2'>
                                         <p>Order Details</p>
                                         <div className='p-1'>
@@ -238,6 +232,10 @@ function Paymentpage(){
                         </div>
                     </div>
                 </form>
+                <div className='text-center mt-5' style={{fontSize:'12px',color:'grey'}}>
+                    <p>Limeroad is offered in : हिन्दी</p>
+                    <p>For order related queries, please use our need help section in My Orders</p>
+                </div>
             </div>
         </>
     )
