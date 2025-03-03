@@ -1,6 +1,5 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-let path = require('path');
 const dotenv = require('dotenv');
 dotenv.config();
 const Customer = require('../model/customer');
@@ -258,6 +257,9 @@ const getCustomerDetails = async (req, res) => {
 };
 
 
+
+
+
 const getVendorDetails = async (req, res) => {
     try {
         const userId = req.user.id;
@@ -467,7 +469,7 @@ const PaymentStatus = async(req,res) =>{
                     name : product.title,
                     images : [product.image]
                 },
-                unit_amount : Math.round(product.price),    
+                unit_amount : Math.round(product.price)*100,    
             },
             quantity : product.quantity
         }));

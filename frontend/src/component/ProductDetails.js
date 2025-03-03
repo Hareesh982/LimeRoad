@@ -11,7 +11,8 @@ import Stack from '@mui/material/Stack';
 
 function ProductDetails({ product }) {
   let mrpPrice = product.price + product.price * 0.3;
-
+  
+  
   let dispatch = useDispatch()
   let [showAlert, setShowAlert] = useState(false);
   let [selectedSize, setSelectedSize] = useState(product.size[0]);

@@ -35,6 +35,7 @@ function VendorProductForm({ user }) {
         setFormData({ ...formData, [event.target.name]: event.target.value });
     };
 
+    
     const subcategories = {
         men: ["tshirt", "shirts", "jeans", "trousers", "ethnic", "footwear", "home", "accessory", "winter"],
         women: ["kurthas", "tops", "ethnic", "sarees", "dresses", "suits", "bottoms", "bags", "footwear", "addons", "home", "winter", "lingerie"],

@@ -9,22 +9,23 @@ function Kidsfeed({onSubCategoryChange}) {
         window.location.reload();
       };
 
+
     const kids = [
-        {wear: 'FROKS',         path: '/aspects/kids_girl_froks.jpg',       subCategory: 'frocks'   },
-        {wear: 'TWIN SETS',     path: '/aspects/kids_girl_twin_sets.jpg',   subCategory: 'twinsets' },
-        {wear: 'TWIN SETS',     path: '/aspects/kids_boy_twin_sets.jpg',    subCategory: 'twinsets' },
-        {wear: 'T SHIRTS',      path: '/aspects/kids_boy_tshirts.jpg',      subCategory: 'tshirts'  },
-        {wear: 'SHIRTS',        path: '/aspects/kids_boy_shirts.jpeg',      subCategory: 'shirts'   },
-        {wear: 'BOTTOM',        path: '/aspects/kids_boy_bottoms.jpg',      subCategory: 'bottoms'  },
-        {wear: 'TOPS',          path: '/aspects/kids_girl_tops.jpg',        subCategory: 'tops'     },
-        {wear: 'ETHNIC WEAR',   path: '/aspects/kids_girl_ethnic.jpg',      subCategory: 'ethnic'   },
-        {wear: 'BOTTOM',        path: '/aspects/kids_girl_bottom.jpg',      subCategory: 'bottoms'  },
-        {wear: 'WINTERWEAR',    path: '/aspects/kids_winter.jpg',           subCategory: 'winter'   },
-        {wear: 'LOUNGEWEAR',    path: '/aspects/kids_girl_lounge.jpg',      subCategory: 'lounge'   },
-        {wear: 'HOME',          path: '/aspects/home.jpg',                  subCategory: 'home'     },
-        {wear: 'LOUNGEWEAR',    path: '/aspects/kids_boy_lounge.jpg',       subCategory: 'lounge'   }
+        {wear: 'FROKS',         path: '/aspects/kids_girl_froks.jpg',       subCategory: 'frocks'       },
+        {wear: 'TWIN SETS',     path: '/aspects/kids_girl_twin_sets.jpg',   subCategory: 'twinsets'     },
+        {wear: 'TWIN SETS',     path: '/aspects/kids_boy_twin_sets.jpg',    subCategory: 'twinsets'     },
+        {wear: 'T SHIRTS',      path: '/aspects/kids_boy_tshirts.jpg',      subCategory: 'tshirts'      },
+        {wear: 'SHIRTS',        path: '/aspects/kids_boy_shirts.jpeg',      subCategory: 'shirts'       },
+        {wear: 'BOTTOM',        path: '/aspects/kids_boy_bottoms.jpg',      subCategory: 'boybottom'    },
+        {wear: 'TOPS',          path: '/aspects/kids_girl_tops.jpg',        subCategory: 'tops'         },
+        {wear: 'ETHNIC WEAR',   path: '/aspects/kids_girl_ethnic.jpg',      subCategory: 'ethnic'       },
+        {wear: 'BOTTOM',        path: '/aspects/kids_girl_bottom.jpg',      subCategory: 'girlbottom'   },
+        {wear: 'WINTERWEAR',    path: '/aspects/kids_winter.jpg',           subCategory: 'winterwear'   },
+        {wear: 'LOUNGEWEAR',    path: '/aspects/kids_girl_lounge.jpg',      subCategory: 'loungewear'   },
+        {wear: 'HOME',          path: '/aspects/home.jpg',                  subCategory: 'home'         },
+        {wear: 'LOUNGEWEAR',    path: '/aspects/kids_boy_lounge.jpg',       subCategory: 'loungewear'   }
       ]
-      
+
     return (
         <>
             <div className="container my-3">

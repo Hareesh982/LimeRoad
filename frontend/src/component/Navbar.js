@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
 let Profile = ({user}) =>{
+    
     let navigate = useNavigate()
     let handleLogout = () => {
         localStorage.removeItem('token')
@@ -101,6 +102,14 @@ function Navbar() {
     const [user, setUser] = useState(null);
     const [showProfile, setShowProfile] = useState(false);
 
+    const kids_1 = ["tshirts", "shirts", "girlbottom", "tops",  "boybottom", "home"]
+    const kids_2 = ["frocks","twinsets","ethnic","winterwear","loungewear"]
+    const men_1 = ["tshirt", "shirts", "jeans",  "footwear"]
+    const men_2 = ["trousers", "ethnic","home", "accessory", "winter"]
+    const women_1 = ["tops",  "dresses",  "bottoms"]
+    const women_2 = ["ethnic", "kurthas", "sarees", "suits"]
+    const women_3 = ["bags", "footwear", "addons", "home", "winter", "lingerie"]
+
     useEffect(() => {
         const token = localStorage.getItem('token');
         if (token) {
@@ -112,6 +121,7 @@ function Navbar() {
                         }
                     });
                     setUser(response.data.user);
+                    
                 } catch (error) {
                     console.error('Error fetching user details:', error.response ? error.response.data : error.message);
                 }
@@ -125,6 +135,21 @@ function Navbar() {
         <>
             {!search ? (
                 <nav style={{padding:'5px 70px'}} className="navbar navbar-expand-lg d-flex g-5 justify-content-center">
+                    <button 
+                        className="navbar-toggler mx-2" 
+                        style={{ border: 'none', backgroundColor: '#d3d3d3' }}  
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav"
+                        >
+                        <span 
+                            className="navbar-toggler-icon" 
+                            style={{ color: 'white', fontSize: '12px' }}
+                        >
+                            &#9776;
+                        </span>
+                    </button>
+
                     <div>
                         <Link className="navbar-brand" to="/">
                             <img 
@@ -135,9 +160,7 @@ function Navbar() {
                             />
                         </Link>
                     </div>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+                    
 
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav d-flex">
@@ -145,25 +168,42 @@ function Navbar() {
                                 <Link className="nav-link" to="/main-clothing?category=women">WOMEN</Link>
                                 <ul className="dropdown-menu fixed-dropdown">
                                     <div>
-                                        <p className='major-category'>Daily Wear</p>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=kurthas&category=women">Kurtas</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=tops&category=women">Tops</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=ethnic&category=women">ethnic</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=sarees&category=women">sarees</Link></li>
+                                        <p className='major-category px-2'>Regular wear</p>
+                                        {
+                                            women_1.map((item) => <li><Link className="dropdown-item" to={`/main-clothing?subcategory=${item}&category=women`}>{item}</Link></li>)
+                                        }
+                                    </div>
+                                    <div>
+                                        <p className='major-category px-2'>Occasion</p>
+                                        {
+                                            women_2.map((item) => <li><Link className="dropdown-item" to={`/main-clothing?subcategory=${item}&category=women`}>{item}</Link></li>)
+                                        }
+                                    </div>
+                                    <div>
+                                        <p className='major-category px-2'>Othes</p>
+                                        {
+                                            women_3.map((item) => <li><Link className="dropdown-item" to={`/main-clothing?subcategory=${item}&category=women`}>{item}</Link></li>)
+                                        }
                                     </div>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
                                 <Link className="nav-link" to="/main-clothing?category=men">MEN</Link>
                                 <ul className="dropdown-menu fixed-dropdown">
+                                    
                                     <div>
-                                        <p className='major-category'>Daily Wear</p>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=tshirt&category=men">T-Shirts</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=shirts&category=men">Shirts</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=jeans&category=men">Jeans</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=trousers&category=men">Trousers</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=ethnic&category=men">Ethnic sets</Link></li>
+                                        <p className='major-category px-2'>Regular wear</p>
+                                        {
+                                            men_1.map((item) => <li><Link className="dropdown-item" to={`/main-clothing?subcategory=${item}&category=men`}>{item}</Link></li>)
+                                        }
                                     </div>
+                                    <div>
+                                        <p className='major-category px-2'>Occasion</p>
+                                        {
+                                            men_2.map((item) => <li><Link className="dropdown-item" to={`/main-clothing?subcategory=${item}&category=men`}>{item}</Link></li>)
+                                        }
+                                    </div>
+                                
                                 </ul>
                             </li>
 
@@ -171,12 +211,16 @@ function Navbar() {
                                 <Link className="nav-link" to="/main-clothing?category=kids">KIDS</Link>
                                 <ul className="dropdown-menu fixed-dropdown">
                                     <div>
-                                        <p className='major-category'>Regular wear</p>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=frocks&category=kids">frocks</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=bottoms&category=kids">Bottoms</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=tops&category=kids">Tops</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=shirts&category=kids">shirts</Link></li>
-                                        <li><Link className="dropdown-item" to="/main-clothing?subcategory=caps&category=kids">caps</Link></li>
+                                        <p className='major-category px-2'>Regular wear</p>
+                                        {
+                                            kids_1.map((item) => <li><Link className="dropdown-item" to={`/main-clothing?subcategory=${item}&category=kids`}>{item}</Link></li>)
+                                        }
+                                    </div>
+                                    <div>
+                                        <p className='major-category px-2'>Occasion</p>
+                                        {
+                                            kids_2.map((item) => <li><Link className="dropdown-item" to={`/main-clothing?subcategory=${item}&category=kids`}>{item}</Link></li>)
+                                        }
                                     </div>
                                 </ul>
                             </li>
@@ -218,7 +262,6 @@ function Navbar() {
 
                             {showProfile && <Profile user={user} />}
                         </div>
-
                     </div>
                 </nav>) : (
                 <div className="productSearchOverlay">
