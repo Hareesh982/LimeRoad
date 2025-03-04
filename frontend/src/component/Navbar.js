@@ -102,6 +102,20 @@ function Navbar() {
     const [user, setUser] = useState(null);
     const [showProfile, setShowProfile] = useState(false);
 
+    const [searchItem,setSearchItem] = useState(false)
+    const [searchValue,setSearchValue] = useState('')
+    let debounce
+    const handleInput = (event) =>{
+        setSearchItem(true)
+        clearTimeout(debounce)
+        debounce = setTimeout(() =>{
+            setSearchValue(event.target.value)
+        },500)
+    }
+
+    const kids = ["tshirts", "shirts", "girlbottom", "tops",  "boybottom", "home","tshirts", "shirts", "girlbottom", "tops",  "boybottom", "home" ]
+    const men = ["tshirt", "shirts", "jeans",  "footwear", "trousers", "ethnic","home", "accessory", "winter"]
+    const women = ["tops",  "dresses",  "bottoms","ethnic", "kurthas", "sarees", "suits","bags", "footwear", "addons", "home", "winter", "lingerie"]
     const kids_1 = ["tshirts", "shirts", "girlbottom", "tops",  "boybottom", "home"]
     const kids_2 = ["frocks","twinsets","ethnic","winterwear","loungewear"]
     const men_1 = ["tshirt", "shirts", "jeans",  "footwear"]
@@ -109,6 +123,12 @@ function Navbar() {
     const women_1 = ["tops",  "dresses",  "bottoms"]
     const women_2 = ["ethnic", "kurthas", "sarees", "suits"]
     const women_3 = ["bags", "footwear", "addons", "home", "winter", "lingerie"]
+
+    const allCategories = [kids_1, kids_2, men_1, men_2, women_1, women_2, women_3];
+
+    const searchData = allCategories.flatMap(category => 
+        category.filter(item => item.includes(searchValue) || searchValue.includes(item))
+    );
 
     useEffect(() => {
         const token = localStorage.getItem('token');
@@ -130,6 +150,9 @@ function Navbar() {
             fetchUserDetails();
         }
     }, []);
+
+
+   
 
     return (
         <>
@@ -272,8 +295,29 @@ function Navbar() {
                             placeholder="Search for products"
                             className="productSearch"
                             autoFocus
+                            onChange={(event) => handleInput(event)}
                         />
                     </div>
+                    {
+                        searchItem &&
+                        searchData.map((item) => {
+                            return (
+                                <>
+                                    {kids.includes(item) && (
+                                        <p className='px-4 border-bottom'><Link style={{textDecoration:'none',color:'black'}} to={`/main-clothing?subcategory=${item}&category=kids`}>kids {item}</Link></p>
+                                    )}
+                                    {men.includes(item) && (
+                                        <p className='px-4 border-bottom'><Link style={{textDecoration:'none',color:'black'}} to={`/main-clothing?subcategory=${item}&category=men`}>men {item}</Link></p>
+                                    )}
+                                    {women.includes(item) && (
+                                        <p className='px-4 border-bottom'><Link style={{textDecoration:'none',color:'black'}} to={`/main-clothing?subcategory=${item}&category=women`}>women {item}</Link></p>
+                                    )}
+                                </>
+                            );
+                        })
+                    }
+
+                    
                     <button className="productSearchClose" onClick={() => setSearch(false)}><i className='bi bi-x'></i></button>
                 </div>
             )}

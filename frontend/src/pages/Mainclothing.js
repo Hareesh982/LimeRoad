@@ -23,7 +23,7 @@ function Clothing({ product }) {
         }}
         >
         <Link  onClick={handleCurrentProduct} to={{ pathname: '/details' }} style={{ width: '100%', height: '80%',position:'relative' }}>
-          <img src={product.image} alt='...' width='100%' loading='lazy' height='100%' style={{ objectFit: "cover",borderTopLeftRadius:'10px',borderTopRightRadius:'10px' }} />
+          <img src={product.image} alt='...' width='100%' height='100%' style={{ objectFit: "cover",borderTopLeftRadius:'10px',borderTopRightRadius:'10px' }} />
           <p className='px-3' style={{position:'absolute',borderBottomRightRadius:'10px',borderTopRightRadius:'10px', bottom:'50px',left:'0px',color:'black',backgroundColor:'white'}}>new arrival</p>
           <span className='px-3' style={{ position:'absolute', color: 'white', borderBottomRightRadius:'10px',borderTopRightRadius:'10px', bottom:'30px',left:'0px',backgroundColor:'yellowgreen', fontSize: '12px', padding: '3px 5px' }}>Get it now with 30% OFFER</span>
         </Link>
