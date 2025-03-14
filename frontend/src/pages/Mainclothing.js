@@ -65,7 +65,7 @@ export function Clothingfetch({ category, subcategory }) {
         setData(response.data.user)
       }
       catch(error){
-        console.error('Error fetching data:', error)
+        alert('error fetching data in main clothing')
       }
     }
     GetProductDetails()
