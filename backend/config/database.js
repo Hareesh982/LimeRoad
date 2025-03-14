@@ -5,9 +5,13 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 function connectDB(){
-    mongoose.connect(process.env.MONGO_CONNECTION)
-        .then(() => console.log("---> 1. connected to MongoDB"))
-        .catch(() => console.log("---> 1. Error in database connection"))
+    try{
+        mongoose.connect(process.env.MONGO_CONNECTION)
+        console.log("---> 1. connected to MongoDB")
+    }
+    catch(error){
+        console.log(error)
+    }
 }
 
 module.exports = connectDB

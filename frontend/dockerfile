@@ -1,0 +1,19 @@
+FROM node:22-slim
+
+WORKDIR /usr/src/app
+
+RUN apt-get update
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE $PORT
+
+CMD ["npm", "start"]
+
+
+
+
