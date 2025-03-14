@@ -6,14 +6,14 @@ import Carouselfeed from '../carousel/Carouselfeed'
 import Mainbanner from '../component/Mainbanner'
 import Productitem from '../component/Productitem'
 import axios from 'axios'
-
+const apiUrl = process.env.REACT_APP_API_URL;
 function Womenhomedata({subCategory}){
   let [data, setData] = useState([]);
 
   useEffect(() => {
     let SellerData = async() =>{
       try{
-        let response = await axios.get("http://127.0.0.1:3005/seller-card")
+        let response = await axios.get(`${apiUrl}/seller-card`)
         let womenProducts = response.data.user
         const sellerData = womenProducts.filter(product => product.category === "women" && (!subCategory || product.sub_category === subCategory));
         setData(sellerData);

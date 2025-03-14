@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+const apiUrl = process.env.REACT_APP_API_URL;
 
 let SingleProduct = ({product}) =>{
     return (
@@ -35,7 +36,7 @@ function VendorProducts({user}) {
     useEffect(() =>{
         let GetProductDetails = async() =>{
             try{
-              let response = await axios.get('http://127.0.0.1:3005/clothing-details')
+              let response = await axios.get(`${apiUrl}/clothing-details`)
               setData(response.data.user)
             }
             catch(error){

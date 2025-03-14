@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import axios from 'axios'
-
+const apiUrl = process.env.REACT_APP_API_URL;
 function Success() {
     let navigate = useNavigate()
     useEffect(() =>{
@@ -10,7 +10,7 @@ function Success() {
             let token = localStorage.getItem('token')
             if(token){
                 try{
-                    let response = await axios.get('http://localhost:3005/api/update-cart',{
+                    let response = await axios.get(`${apiUrl}/api/update-cart`,{
                         headers: {
                             Authorization: `Bearer ${token}`
                         }

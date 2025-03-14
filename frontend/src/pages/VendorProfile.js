@@ -3,8 +3,10 @@ import Navbar from '../component/Navbar';
 import axios from 'axios'
 import { useState,useEffect } from 'react';
 
+
 import VendorProductForm from '../component/VendorProductForm';
 import VendorProducts from '../component/VendorProducts';
+const apiUrl = process.env.REACT_APP_API_URL;
 
 function VendorProfile() {
   
@@ -17,7 +19,7 @@ function VendorProfile() {
     if (token) {
         const fetchUserDetails = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:3005/vendor-details', {
+                const response = await axios.get(`${apiUrl}/vendor-details`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

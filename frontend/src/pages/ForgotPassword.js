@@ -4,6 +4,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
+const apiUrl = process.env.REACT_APP_API_URL;
 
 function ForgotPassword() {
     let navigate = useNavigate()
@@ -17,7 +18,7 @@ function ForgotPassword() {
     let handleEmailSubmit = async(event) =>{
         event.preventDefault()
         try{
-            let response = await axios.post('http://localhost:3005/forgot-password',{email})
+            let response = await axios.post(`${apiUrl}/forgot-password`,{email})
             let message = response.data.message + email
             Swal.fire({
                 title : 'Email Found',

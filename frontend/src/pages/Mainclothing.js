@@ -4,7 +4,7 @@ import Navbar from '../component/Navbar';
 import setCurrentProduct from '../actions/setCurrentProduct';
 import { useDispatch } from 'react-redux';
 import { Link, useSearchParams } from 'react-router-dom';
-
+const apiUrl = process.env.REACT_APP_API_URL;
 function Clothing({ product }) {
   let dispatch = useDispatch();
 
@@ -61,7 +61,7 @@ export function Clothingfetch({ category, subcategory }) {
   useEffect(() => {
     let GetProductDetails = async() =>{
       try{
-        let response = await axios.get('http://127.0.0.1:3005/clothing-details')
+        let response = await axios.get(`${apiUrl}/clothing-details`)
         setData(response.data.user)
       }
       catch(error){

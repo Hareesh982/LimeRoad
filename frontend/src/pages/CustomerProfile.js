@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from 'react'
 import Navbar from '../component/Navbar'
 import axios from 'axios'
-
+const apiUrl = process.env.REACT_APP_API_URL;
 const CustomerProfile = () => {
   let [user,setUser] = useState(null)
   useEffect(() => {
@@ -9,7 +9,7 @@ const CustomerProfile = () => {
     if (token) {
         const fetchUserDetails = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:3005/customer-details', {
+                const response = await axios.get(`${apiUrl}/customer-details`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

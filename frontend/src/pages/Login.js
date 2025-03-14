@@ -6,7 +6,7 @@ import axios from 'axios'
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 import ForgotPassword from './ForgotPassword';
-
+const apiUrl = process.env.REACT_APP_API_URL;
 
 let Authlogin = () => {
     const navigate = useNavigate()
@@ -28,7 +28,7 @@ let Authlogin = () => {
         event.preventDefault()
 
         try{
-            let response = await axios.post('http://127.0.0.1:3005/login', formData, { withCredentials: true })
+            let response = await axios.post(`${apiUrl}/login`, formData, { withCredentials: true })
             if (response.status === 200) {
                 const token = response.data.token;
                 const message = response.data.message

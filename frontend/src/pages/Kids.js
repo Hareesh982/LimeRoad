@@ -6,6 +6,7 @@ import Kidsfeed from '../component/Kidsfeed'
 import { useState,useEffect } from 'react'
 import Productitem from '../component/Productitem'
 import axios from 'axios'
+const apiUrl = process.env.REACT_APP_API_URL;
 
 function KidsHomedata({ subCategory }) {
   let [data, setData] = useState([]);
@@ -13,7 +14,7 @@ function KidsHomedata({ subCategory }) {
   useEffect(() => {
     let SellerData = async() =>{
       try{
-        let response = await axios.get("http://127.0.0.1:3005/seller-card")
+        let response = await axios.get(`${apiUrl}/seller-card`)
         let kidProducts = response.data.user
         const sellerData = kidProducts.filter(product => product.category === "kids" && (!subCategory || product.sub_category === subCategory));
         setData(sellerData);

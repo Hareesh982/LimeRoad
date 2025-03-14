@@ -7,6 +7,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import {loadStripe} from '@stripe/stripe-js';
+const apiUrl = process.env.REACT_APP_API_URL;
 
 function Paymentpage(){
     const cartCounter = useSelector(state => state.cart.cartCounter);
@@ -50,7 +51,7 @@ function Paymentpage(){
         let token = localStorage.getItem('token')
         if(token){
             try{
-                let response = await axios.put('http://localhost:3005/api/customeraddress',formData,{
+                let response = await axios.put(`${apiUrl}/api/customeraddress`,formData,{
                     headers : {
                         Authorization : `Bearer ${token}`
                     }
@@ -83,7 +84,7 @@ function Paymentpage(){
             try {
                 const stripe = await loadStripe('pk_test_51QxBtkFVFNHtzLnlnQqHRJtis6IQ9iZnk5khWrFBFPYYctLDz5AeE0LScivtiNsl2TSWG0vQS3UEQ2pODMDRFZYI00v6vTvHRo');
                 let data = { products: cartItems };
-                let paymentResponse = await axios.post('http://localhost:3005/api/payment-status', data, {
+                let paymentResponse = await axios.post(`${apiUrl}/api/payment-status`, data, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

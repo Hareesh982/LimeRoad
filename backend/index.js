@@ -9,10 +9,9 @@ connectDB()
 dotenv.config()
 
 const app = express()
-const PORT = process.env.SERVER_PORT
 
 app.use(cors({
-    origin : 'http://localhost:3000',
+    origin : 'http://15.206.116.161:3000',
     credentials : true
 }))
 
@@ -24,7 +23,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 app.use(router)
 
 app.listen(PORT, () => {
-    console.log(`server running at http://127.0.0.1:${PORT}`)
+    console.log(`server running`)
 })
 
 

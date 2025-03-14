@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+const apiUrl = process.env.REACT_APP_API_URL;
 const defaultState = {
     cartItems: [],
     cartCounter: 0,
@@ -12,7 +12,7 @@ const defaultState = {
 const fetchInitialState = async () => {
     if (localStorage.getItem('token')) {
         try {
-            const response = await axios.get('http://127.0.0.1:3005/api/cartData', {
+            const response = await axios.get(`${apiUrl}/api/cartData`, {
                 headers: {
                     Authorization : `Bearer ${localStorage.getItem('token')}`
                 }
@@ -48,7 +48,7 @@ const saveToDatabase = async (state) => {
     let token = localStorage.getItem('token');
     try {
         console.log('Saving state to database:', state);
-        const response = await axios.post('http://127.0.0.1:3005/api/cart', state, {
+        const response = await axios.post(`${apiUrl}/api/cart`, state, {
             headers: {
                 Authorization : `Bearer ${token}`
             }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import axios from 'axios';
-
+const apiUrl = process.env.REACT_APP_API_URL;
 function VendorProductForm({ user }) {
     const [categoryData, setCategory] = useState("");
     const [subcategoryData, setSubcategory] = useState("");
@@ -77,7 +77,7 @@ function VendorProductForm({ user }) {
         console.log('FormData:', data);
 
         try {
-            let response = await axios.post('http://127.0.0.1:3005/upload-products', data, {
+            let response = await axios.post(`${apiUrl}/upload-products`, data, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

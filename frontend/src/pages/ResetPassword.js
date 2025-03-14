@@ -3,6 +3,7 @@ import Navbar from '../component/Navbar'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
+const apiUrl = process.env.REACT_APP_API_URL;
 
 function ResetPassword() {
     let navigate = useNavigate()
@@ -40,7 +41,7 @@ function ResetPassword() {
             return;
         }
         try{
-            let response = await axios.post('http://127.0.0.1:3005/reset-password',formData)
+            let response = await axios.post(`${apiUrl}/reset-password`,formData)
             let message = response.data.message
             Swal.fire({
                 title: message,
