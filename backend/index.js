@@ -22,7 +22,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 
 app.use(router)
 
-app.listen(PORT, () => {
+app.listen(() => {
     console.log(`server running`)
 })
 
