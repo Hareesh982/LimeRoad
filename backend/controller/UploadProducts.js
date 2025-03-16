@@ -17,7 +17,7 @@ const uploadProducts = async(req,res) =>{
 
         console.log('Files received:', req.files);
 
-        const formatImagePath = (filename) => `http://localhost:3005/uploads/${filename}`;
+        const formatImagePath = (filename) => `http://13.235.24.94:3005/uploads/${filename}`;
 
         let image_path = req.files['file1'] ? formatImagePath(req.files['file1'][0].filename) : null;
         let image_2path = req.files['file2'] ? formatImagePath(req.files['file2'][0].filename) : null;

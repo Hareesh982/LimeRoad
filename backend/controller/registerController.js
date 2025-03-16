@@ -1,6 +1,7 @@
 const Customer = require('../model/customer')
 const Vendor = require('../model/vendor')
 const Admin = require('../model/admin')
+const bcrypt = require('bcryptjs');
 
 const Registration = async (req, res) => {
     try {
